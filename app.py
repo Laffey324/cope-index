@@ -678,20 +678,12 @@ policy_actions = [
         "source_url": "https://www.bbc.com"
     },
     {
-        "date": "Mar 11, 2026",
-        "action": "Trump announces US SPR release — 172mb over 120 days (~1.4 mb/d)",
-        "interpretation": "Marginally bearish but largely symbolic. At 1.4 mb/d, the US SPR contribution is the smallest component of the IEA release. The 120-day delivery timeline means oil won't hit the market quickly enough to offset the immediate supply shock.",
-        "impact": "🔻 Bearish",
-        "source_title": "US to Release 172 Million Barrels From SPR — Bloomberg",
-        "source_url": "https://www.bloomberg.com"
-    },
-    {
-        "date": "Mar 11, 2026",
-        "action": "IEA 400mb emergency reserve release coordinated with G7",
-        "interpretation": "Bearish on paper, but insufficient in practice. Release rate (~6.7 mb/d) covers only ~33% of the daily Hormuz supply gap (~20 mb/d). Markets initially sold off on the news but quickly recovered as traders recognized the arithmetic.",
-        "impact": "🔻 Bearish",
-        "source_title": "IEA agrees to release record 400 million barrels — Al Jazeera",
-        "source_url": "https://www.aljazeera.com"
+    "date": "Mar 11, 2026",
+    "action": "IEA coordinates 400mb emergency reserve release — US SPR contributes 172mb over 120 days",
+    "interpretation": "Bearish on paper, insufficient in practice. Combined release rate (~6.7 mb/d) covers only ~33% of the daily Hormuz supply gap (~20 mb/d). Markets initially sold off but quickly recovered as traders recognized the arithmetic. The 120-day US delivery timeline means oil won't reach markets fast enough to offset the immediate shock.",
+    "impact": "🔻 Bearish",
+    "source_title": "IEA agrees to release record 400 million barrels — Al Jazeera",
+    "source_url": "https://www.aljazeera.com/news/2026/3/11/iea-agrees-to-release-record-400-million-barrels"
     },
 ]
 
