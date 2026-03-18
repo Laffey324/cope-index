@@ -760,7 +760,7 @@ st.markdown(f"*Last updated: {datetime.now().strftime('%B %d, %Y')}*")
 
 st.markdown("""
 <div style="background:rgba(33,150,243,0.06); border-radius:10px; padding:24px 28px; margin-bottom:16px;">
-    <div style="font-size:20px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">MARKET THESIS — March 17, 2026</div>
+    <div style="font-size:20px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">MARKET THESIS</div>
     <div style="font-size:13px; color:#999; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px;">Core Thesis</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
         Brent is trading near $100/bbl in an environment of extreme policy noise and unresolved supply disruption.
