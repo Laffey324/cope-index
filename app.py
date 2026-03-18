@@ -491,7 +491,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Escalation Signals Dominant"
+    war_signal = "🔴 Escalation Intensifying — Leadership Targeting Continues"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"
@@ -644,6 +644,15 @@ st.markdown("""
 st.markdown("How White House policy decisions are affecting crude oil markets — analyst interpretation of each action.")
 
 policy_actions = [
+
+    {
+        "date": "Mar 17, 2026",
+        "action": "Israel kills Iran security chief Larijani and Basij commander Soleimani — confirmed by Iran",
+        "interpretation": "Most significant leadership killing since Khamenei on Feb 28. Larijani was Iran's top security official and lead nuclear negotiator — his death deepens Iran's political vacuum and makes near-term ceasefire negotiations far less likely. Bullish signal — Hormuz reopening timeline extends further.",
+        "impact": "🔺 Bullish",
+        "source_title": "Israel kills Iran's security chief Larijani and Basij commander — Al Jazeera",
+        "source_url": "https://www.aljazeera.com/news/2026/3/17/israel-says-it-has-killed-ali-larijani-irans-top-security-official"
+    },
     {
         "date": "Mar 17, 2026",
         "action": "Hassett signals conflict will end in 4–6 weeks — markets skeptical",
