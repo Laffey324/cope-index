@@ -95,8 +95,8 @@ risk_factors = {
         "note": "US-Israel strikes began Feb 28. Khamenei assassinated. Kharg Island — Iran's main oil export hub handling 90% of exports — struck by US forces. Hormuz near standstill."
     },
     "Middle East Conflict Risk": {
-        "score": 9, "trend": "↑",
-        "note": "Active war theater. Houthi, Iraqi militia, Hezbollah all activated. Regional spillover risk at highest level since 2003."
+        "score": 10, "trend": "↑",
+        "note": "South Pars struck Mar 18 — first attack on Gulf energy infrastructure. Iran lists Saudi, Qatari and Emirati assets as retaliation targets. Infrastructure war has begun."
     },
     "Russia Supply Disruption": {
         "score": 6, "trend": "→",
