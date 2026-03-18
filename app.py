@@ -806,10 +806,11 @@ st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
     <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 17, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Watch Hormuz tanker traffic as the single most important indicator —
+        Today's killing of Larijani — Iran's top security official and former nuclear negotiator — is the most significant leadership strike since Khamenei on Feb 28.
+        It deepens Iran's political vacuum and makes near-term ceasefire negotiations far less likely.
+        Hormuz reopening timeline extends further.
+        Watch tanker traffic as the single most important indicator —
         any confirmed passage of loaded tankers would be the clearest bullish-to-bearish reversal signal.
-        Hassett's 4–6 week timeline is the new key variable: if the market begins to price this in,
-        expect sharp downside volatility even before the war formally ends.
         Until then, upside risk remains dominant.
     </div>
 </div>
