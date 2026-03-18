@@ -32,7 +32,7 @@ except:
     wti_chg_str = ""
     wti_color = "#888"
 
-total_score = round((10 + 9 + 6 + 4) / 4, 1)
+total_score = round((10 + 10 + 6 + 4) / 4, 1)
 risk_label = "CRITICAL" if total_score >= 8 else "ELEVATED" if total_score >= 6 else "MODERATE"
 risk_color = "#f87171" if total_score >= 8 else "#fbbf24" if total_score >= 6 else "#4ade80"
 
