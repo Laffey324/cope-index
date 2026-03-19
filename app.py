@@ -491,10 +491,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Infrastructure War Begins — Gulf Energy Assets Now in Crosshairs"
+    war_signal = "🔴 Full Energy War — Iran Strikes Qatar, Saudi, UAE, Kuwait in Retaliation"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
-    war_border = "#ef4444"
+    war_border = "#ef4444"  
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
@@ -645,41 +645,49 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 18, 2026",
-        "action": "South Pars gas field struck — Iran lists Gulf energy targets for retaliation",
-        "interpretation": "The most significant escalation since Hormuz closure. For three weeks, both sides avoided striking energy infrastructure — that red line is now gone. Iran has publicly named Saudi Aramco's Samref refinery, Qatar's Ras Laffan, and UAE's Al Hosn gas field as 'direct and legitimate targets.' Saudi Aramco has begun evacuating personnel. If Iran follows through, the supply disruption extends far beyond Hormuz into the heart of Gulf production. Strongly bullish — upside risk has materially increased.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran threatens Gulf energy targets after huge gas field is struck — Reuters",
-        "source_url": "https://www.reuters.com"
-    },
-    {
-        "date": "Mar 18, 2026",
-        "action": "Trump: 'We are rapidly putting them out of business' — NATO allies refuse to join operation",
-        "interpretation": "Two signals in one day that point the same direction: no ceasefire coming soon. Trump's language shows zero negotiation intent. NATO's collective refusal to participate means no multilateral diplomatic pressure exists to push toward a settlement. The US is operating unilaterally — and Trump is framing that as a strength, not a liability. Bullish for sustained elevated prices.",
-        "impact": "🔺 Bullish",
-        "source_title": "Trump TrueSocial — Mar 18, 2026",
-        "source_url": "https://truthsocial.com/@realDonaldTrump"
-    },
-    {
-        "date": "Mar 17, 2026",
-        "action": "Israel kills Iran intelligence chief Khatib and security chief Larijani — third top leader eliminated this week",
-        "interpretation": "Systematic decapitation of Iran's decision-making leadership. Khamenei (Feb 28), Larijani (Mar 17), Khatib (Mar 18) — Iran's political vacuum deepens with each killing. Ceasefire negotiations require a counterpart. The more Iran's leadership is eliminated, the longer the conflict extends and the further Hormuz reopening is pushed out.",
-        "impact": "🔺 Bullish",
-        "source_title": "Israel kills Iran's intelligence minister — WSJ",
-        "source_url": "https://www.wsj.com/livecoverage/iran-us-israel-war-news-2026"
-    },
-    {
-        "date": "Mar 13, 2026",
-        "action": "Russia oil sanctions partially eased — stranded cargoes allowed to trade",
-        "interpretation": "Marginally bearish but limited impact. Allows ~1–2 mb/d of previously stranded Russian oil back into market. Volumes too small relative to the ~20 mb/d Hormuz disruption to shift the overall balance. Faces G7 pushback.",
+        "date": "Mar 19, 2026",
+        "action": "Bessent considers releasing sanctioned Iranian oil at sea — 'using Iranian barrels against Iranians'",
+        "interpretation": "The most telling policy signal of the war so far. Treasury Secretary Bessent explicitly framed this as a 10–14 day price suppression tool, not a strategic shift. Translation: the administration is feeling serious economic pain from $100+ oil and is running out of easy options. SPR release and Russia sanctions easing haven't worked. Now they're considering weaponizing Iran's own stranded oil. Marginally bearish short-term, but the volume is limited and the timeline is short.",
         "impact": "🔻 Bearish",
-        "source_title": "US easing of Russia oil sanctions faces pushback — BBC",
-        "source_url": "https://www.bbc.com"
+        "source_title": "US mulls lifting oil sanctions on Iran as it hits key Gulf energy sites — Washington Post",
+        "source_url": "https://www.washingtonpost.com/world/2026/03/19/us-iran-war-trump-gas-prices-qatar/"
+    },
+    {
+        "date": "Mar 19, 2026",
+        "action": "Iran retaliates — strikes Qatar Ras Laffan, Saudi Arabia, UAE, Kuwait and Bahrain energy infrastructure",
+        "interpretation": "Iran followed through on its threat. Ras Laffan — already damaged — hit again. UAE air defenses intercepted 7 missiles and 15 drones. Saudi Eastern Province targeted. IRGC warns retaliation is 'not yet finished.' This is no longer a Hormuz story — it is a full Gulf energy war. Every major production and export hub in the region is now a active target. Strongly bullish.",
+        "impact": "🔺 Bullish",
+        "source_title": "War enters new phase as Israel attack on Iran gasfield sparks Gulf response — Al Jazeera",
+        "source_url": "https://www.aljazeera.com/news/2026/3/19/wrap-iran-ratchets-up-pressure-on-gulf-states"
+    },
+    {
+        "date": "Mar 19, 2026",
+        "action": "Netanyahu: Israel helping reopen Hormuz — 'war may end sooner than people think'",
+        "interpretation": "Brent briefly hit $119 then fell back to $108 on this headline. Two things to note: first, Netanyahu provided no mechanism or timeline for how Israel helps reopen Hormuz. Second, Iran's IRGC simultaneously said retaliation is not finished. The market's partial retreat shows it wants to believe this — but doesn't fully. Watch for any confirmed tanker passage as the real test.",
+        "impact": "🟡 Neutral",
+        "source_title": "Oil prices fall after Brent briefly touches $119 as Netanyahu says Israel helping to open Hormuz — CNBC",
+        "source_url": "https://www.cnbc.com/2026/03/19/oil-jumps-iran-strikes-qatar-lng-facility-supply-worries.html"
+    },
+    {
+        "date": "Mar 19, 2026",
+        "action": "Trump confirms $200bn war funding request — 'small price to pay'",
+        "interpretation": "Confirms the war is far from over financially. Hegseth said the number 'could move' higher. Senate opposition from Schumer signals domestic political friction ahead. No direct oil price impact, but confirms the administration's commitment to a prolonged campaign.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran war live updates — CBS News",
+        "source_url": "https://www.cbsnews.com/live-updates/iran-war-israel-strike-south-pars-gas-field-trump-threat-oil-gas-prices/"
+    },
+    {
+        "date": "Mar 18, 2026",
+        "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — $20bn annual revenue loss",
+        "interpretation": "This permanently reframes the market. Previously the assumption was: war ends → Hormuz reopens → supply recovers. That assumption is now broken. Even if the war ends tomorrow, 17% of Qatar's LNG — nearly a fifth of global shipments — is gone for up to five years. ExxonMobil (34% stake in Train S4, 30% in Train S6) and Shell are directly impacted. Europe and Asia face a structural LNG supply deficit regardless of war outcome.",
+        "impact": "🔺 Bullish",
+        "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
+        "source_url": "https://www.reuters.com"
     },
     {
         "date": "Mar 11, 2026",
         "action": "IEA coordinates 400mb emergency reserve release — US SPR contributes 172mb",
-        "interpretation": "Bearish on paper, insufficient in practice. Release rate ~6.7 mb/d covers only 33% of the daily Hormuz gap. The 120-day US delivery timeline means physical barrels can't reach markets fast enough to offset the immediate shock.",
+        "interpretation": "Bearish on paper, insufficient in practice. Release rate ~6.7 mb/d covers only 33% of the daily Hormuz gap. Has not moved prices — market has fully seen through it.",
         "impact": "🔻 Bearish",
         "source_title": "IEA agrees to release record 400 million barrels — Al Jazeera",
         "source_url": "https://www.aljazeera.com/news/2026/3/11/iea-agrees-to-release-record-400-million-barrels"
@@ -803,18 +811,15 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 18, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 19, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Today marks a structural shift in the conflict. For three weeks, both sides observed an unspoken rule: don't touch energy infrastructure.
-        That rule is gone. South Pars — the world's largest gas field — was struck today, and Iran has publicly named Saudi, Qatari and Emirati energy assets as next.
-        This is no longer just a Hormuz closure story. It is now a Gulf energy infrastructure war.
+        The war has entered a new structural phase. Iran followed through on its threats — Ras Laffan, Saudi Eastern Province, UAE, Kuwait and Bahrain all hit overnight. Every major Gulf energy hub is now an active target, not a theoretical one.
         <br><br>
-        The ceasefire path is narrowing fast. Three of Iran's top decision-makers have been eliminated in one week.
-        Trump's language and NATO's refusal to participate both point to a prolonged conflict with no external diplomatic pressure to end it.
+        Two contradictory signals are emerging from Washington. Netanyahu says Israel is helping reopen Hormuz and the war may end sooner than expected — Brent briefly touched $119 then pulled back to $108 on that headline. Simultaneously, Bessent is considering releasing sanctioned Iranian oil at sea, framing it explicitly as a 10–14 day price fix. The combination tells you one thing clearly: the administration is feeling serious economic pain and is searching for an exit, but has no clear path yet.
         <br><br>
-        Watch one thing above all else: whether Iran follows through on its retaliation threats against Saudi and Qatari infrastructure.
-        If Ras Laffan or Samref are hit, the supply shock escalates to a level the IEA reserve release cannot address.
-        Until then, upside risk remains dominant.
+        The most important development is structural, not tactical: Qatar's 17% LNG capacity loss for up to five years means the pre-war supply baseline is gone permanently. Even a ceasefire tomorrow does not restore it. The market is only beginning to price this in.
+        <br><br>
+        Watch two things: confirmed tanker passage through Hormuz as the clearest bearish reversal signal, and whether Iran's IRGC follows through on its warning that retaliation is "not yet finished."
     </div>
 </div>
 """, unsafe_allow_html=True)
