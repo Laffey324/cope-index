@@ -494,7 +494,7 @@ def assess_signals(articles):
     hormuz_evidence = [a for a in articles if any(k in a["title_lower"] for k in hormuz_kw)][:3]
     if not hormuz_evidence:
         hormuz_evidence = articles[:3]
-    open_kw = ["open", "resume", "reopen", "pass", "transit", "allowing", "escort", "sneak"]
+    open_kw = ["open", "resume", "reopen", "pass", "transit", "escort", "sneak"]
     open_hits = [a for a in hormuz_evidence if any(k in a["title_lower"] for k in open_kw)]
     hormuz_status = "🟡 Partial Recovery Signals" if len(open_hits) >= 2 else "🔴 Effectively Closed"
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
