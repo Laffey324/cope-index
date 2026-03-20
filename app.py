@@ -246,11 +246,9 @@ def load_dxy_data():
         df["date"] = df["date"].apply(lambda x: x.replace(tzinfo=None) if hasattr(x, 'tzinfo') else x)
         df["dxy"] = pd.to_numeric(df["dxy"], errors="coerce")
         df = df.dropna()
-        if len(df) < 2:
-            return None
         return df
     except:
-        return None
+        return pd.DataFrame({"date": [], "dxy": []})
 
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
@@ -260,14 +258,11 @@ st.markdown("""
 st.markdown("A stronger dollar typically pressures oil prices lower — dollar and crude move inversely.")
 st.caption("Source: Yahoo Finance")
 
-dxy = load_dxy_data()
+try:
+    dxy = load_dxy_data()
+    wti_df, brent_df = load_price_data()
 
-if dxy is None:
-    st.info("DXY data temporarily unavailable — market may be closed or data feed delayed. Will auto-refresh.")
-else:
-    try:
-        wti_df, brent_df = load_price_data()
-
+    if len(dxy) >= 1:
         fig = go.Figure()
         fig.add_trace(go.Scatter(x=wti_df["date"], y=wti_df["wti"], mode="lines", name="WTI (USD/bbl)",
             line=dict(color="#2196F3", width=1.5), yaxis="y1"))
@@ -281,6 +276,7 @@ else:
             margin=dict(t=40, b=20, r=80))
         st.plotly_chart(fig, use_container_width=True)
 
+    if len(dxy) >= 2:
         dxy_latest = float(dxy["dxy"].iloc[-1])
         dxy_prev = float(dxy["dxy"].iloc[-2])
         dxy_change = dxy_latest - dxy_prev
@@ -332,9 +328,11 @@ else:
             st.metric("DXY vs 1-Year Average", f"{dxy_1y_mean:.2f} avg", f"Currently {dxy_vs_mean} average")
         with col3:
             st.metric("30-Day Correlation", f"{corr:.2f}", "Positive = relationship broken" if corr > 0.3 else "Inverse intact")
+    else:
+        st.caption("⏸ Live metrics unavailable — market closed. Chart shows historical data through last trading day.")
 
-    except Exception as e:
-        st.info("DXY data temporarily unavailable — market may be closed or data feed delayed. Will auto-refresh.")
+except Exception as e:
+    st.error(f"Error loading DXY data: {e}")
 
 st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
 
