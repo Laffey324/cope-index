@@ -240,7 +240,9 @@ st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6fa
 @st.cache_data(ttl=3600)
 def load_dxy_data():
     try:
-        raw = yf.download("DX=F", start="2000-01-01", auto_adjust=True, progress=False)
+        raw = yf.download("DX=F", period="max", auto_adjust=True, progress=False)
+        if raw.empty:
+            raw = yf.download("DX-Y.NYB", period="max", auto_adjust=True, progress=False)
         df = raw[["Close"]].copy().reset_index()
         df.columns = ["date", "dxy"]
         df["date"] = pd.to_datetime(df["date"]).dt.tz_localize(None)
