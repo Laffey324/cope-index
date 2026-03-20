@@ -247,11 +247,10 @@ def load_dxy_data():
         df["dxy"] = pd.to_numeric(df["dxy"], errors="coerce")
         df = df.dropna()
         if len(df) < 2:
-            raise ValueError("Insufficient DXY data")
+            return None
         return df
     except:
-        # 返回一个假的最小数据集避免crash
-        return pd.DataFrame({"date": pd.date_range("2020-01-01", periods=5), "dxy": [100.0]*5})
+        return None
 
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
@@ -261,77 +260,81 @@ st.markdown("""
 st.markdown("A stronger dollar typically pressures oil prices lower — dollar and crude move inversely.")
 st.caption("Source: Yahoo Finance")
 
-try:
-    dxy = load_dxy_data()
-    wti_df, brent_df = load_price_data()
+dxy = load_dxy_data()
 
-    fig = go.Figure()
-    fig.add_trace(go.Scatter(x=wti_df["date"], y=wti_df["wti"], mode="lines", name="WTI (USD/bbl)",
-        line=dict(color="#2196F3", width=1.5), yaxis="y1"))
-    fig.add_trace(go.Scatter(x=dxy["date"], y=dxy["dxy"], mode="lines", name="DXY Index",
-        line=dict(color="#f59e0b", width=1.5), yaxis="y2"))
-    fig.update_layout(height=480, hovermode="x unified",
-        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
-        yaxis=dict(title="WTI (USD/bbl)", gridcolor="rgba(128,128,128,0.15)"),
-        yaxis2=dict(title="DXY", overlaying="y", side="right", gridcolor="rgba(0,0,0,0)"),
-        legend=dict(bgcolor="rgba(0,0,0,0)", borderwidth=0),
-        margin=dict(t=40, b=20, r=80))
-    st.plotly_chart(fig, use_container_width=True)
+if dxy is None:
+    st.info("DXY data temporarily unavailable — market may be closed or data feed delayed. Will auto-refresh.")
+else:
+    try:
+        wti_df, brent_df = load_price_data()
 
-    dxy_latest = float(dxy["dxy"].iloc[-1])
-    dxy_prev = float(dxy["dxy"].iloc[-2]) if len(dxy) >= 2 else dxy_latest
-    dxy_change = dxy_latest - dxy_prev
-    dxy_1y_mean = float(dxy["dxy"].tail(252).mean())
-    dxy_vs_mean = "above" if dxy_latest > dxy_1y_mean else "below"
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=wti_df["date"], y=wti_df["wti"], mode="lines", name="WTI (USD/bbl)",
+            line=dict(color="#2196F3", width=1.5), yaxis="y1"))
+        fig.add_trace(go.Scatter(x=dxy["date"], y=dxy["dxy"], mode="lines", name="DXY Index",
+            line=dict(color="#f59e0b", width=1.5), yaxis="y2"))
+        fig.update_layout(height=480, hovermode="x unified",
+            plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+            yaxis=dict(title="WTI (USD/bbl)", gridcolor="rgba(128,128,128,0.15)"),
+            yaxis2=dict(title="DXY", overlaying="y", side="right", gridcolor="rgba(0,0,0,0)"),
+            legend=dict(bgcolor="rgba(0,0,0,0)", borderwidth=0),
+            margin=dict(t=40, b=20, r=80))
+        st.plotly_chart(fig, use_container_width=True)
 
-    dxy_30 = dxy.tail(30).set_index("date")["dxy"]
-    wti_30 = wti_df.tail(30).set_index("date")["wti"]
-    merged = pd.merge(dxy_30.reset_index(), wti_30.reset_index(), on="date")
-    corr = merged["dxy"].corr(merged["wti"])
+        dxy_latest = float(dxy["dxy"].iloc[-1])
+        dxy_prev = float(dxy["dxy"].iloc[-2])
+        dxy_change = dxy_latest - dxy_prev
+        dxy_1y_mean = float(dxy["dxy"].tail(252).mean())
+        dxy_vs_mean = "above" if dxy_latest > dxy_1y_mean else "below"
 
-    if dxy_change < -0.3:
-        day_signal, dollar_word, oil_signal = "fell", "weakening", "bullish for oil prices"
-    elif dxy_change > 0.3:
-        day_signal, dollar_word, oil_signal = "rose", "strengthening", "bearish for oil prices"
-    else:
-        day_signal, dollar_word, oil_signal = "was stable", "stable", "neutral for oil prices"
+        dxy_30 = dxy.tail(30).set_index("date")["dxy"]
+        wti_30 = wti_df.tail(30).set_index("date")["wti"]
+        merged = pd.merge(dxy_30.reset_index(), wti_30.reset_index(), on="date")
+        corr = merged["dxy"].corr(merged["wti"])
 
-    line1 = "DXY {} {:+.2f} today to {:.2f}, currently {} its 1-year average ({:.2f}) — a {} dollar is typically {}.".format(
-        day_signal, dxy_change, dxy_latest, dxy_vs_mean, dxy_1y_mean, dollar_word, oil_signal)
+        if dxy_change < -0.3:
+            day_signal, dollar_word, oil_signal = "fell", "weakening", "bullish for oil prices"
+        elif dxy_change > 0.3:
+            day_signal, dollar_word, oil_signal = "rose", "strengthening", "bearish for oil prices"
+        else:
+            day_signal, dollar_word, oil_signal = "was stable", "stable", "neutral for oil prices"
 
-    if corr > 0.3:
-        box_bg, box_border = "#fffbeb", "#f59e0b"
-        corr_title_color = "#92400e"
-        corr_title = "⚠️ 30-Day DXY/WTI Correlation: {:.2f} — Traditional inverse relationship has broken down".format(corr)
-        corr_body = "Hormuz closure has become the dominant price driver. The traditional DXY-oil inverse relationship no longer applies — geopolitics, not the dollar, is setting the price."
-    elif corr < -0.3:
-        box_bg, box_border = "#f0fdf4", "#22c55e"
-        corr_title_color = "#166534"
-        corr_title = "✅ 30-Day DXY/WTI Correlation: {:.2f} — Inverse relationship intact".format(corr)
-        corr_body = "DXY remains a reliable leading indicator. Dollar strength/weakness is transmitting normally into oil prices."
-    else:
-        box_bg, box_border = "#f8fafc", "#94a3b8"
-        corr_title_color = "#475569"
-        corr_title = "➡️ 30-Day DXY/WTI Correlation: {:.2f} — Decoupled".format(corr)
-        corr_body = "DXY and oil are temporarily decoupled. Other factors are dominating price direction."
+        line1 = "DXY {} {:+.2f} today to {:.2f}, currently {} its 1-year average ({:.2f}) — a {} dollar is typically {}.".format(
+            day_signal, dxy_change, dxy_latest, dxy_vs_mean, dxy_1y_mean, dollar_word, oil_signal)
 
-    st.markdown(
-        "<div style='background:" + box_bg + "; border-left:4px solid " + box_border + "; border-radius:6px; padding:20px 24px; margin-bottom:20px;'>"
-        "<div style='font-size:15px; color:#333; margin-bottom:10px;'>" + line1 + "</div>"
-        "<div style='font-size:17px; font-weight:700; color:" + corr_title_color + "; margin-bottom:10px;'>" + corr_title + "</div>"
-        "<div style='font-size:14px; color:#555; line-height:1.7;'>" + corr_body + "</div>"
-        "</div>", unsafe_allow_html=True)
+        if corr > 0.3:
+            box_bg, box_border = "#fffbeb", "#f59e0b"
+            corr_title_color = "#92400e"
+            corr_title = "⚠️ 30-Day DXY/WTI Correlation: {:.2f} — Traditional inverse relationship has broken down".format(corr)
+            corr_body = "Hormuz closure has become the dominant price driver. The traditional DXY-oil inverse relationship no longer applies — geopolitics, not the dollar, is setting the price."
+        elif corr < -0.3:
+            box_bg, box_border = "#f0fdf4", "#22c55e"
+            corr_title_color = "#166534"
+            corr_title = "✅ 30-Day DXY/WTI Correlation: {:.2f} — Inverse relationship intact".format(corr)
+            corr_body = "DXY remains a reliable leading indicator. Dollar strength/weakness is transmitting normally into oil prices."
+        else:
+            box_bg, box_border = "#f8fafc", "#94a3b8"
+            corr_title_color = "#475569"
+            corr_title = "➡️ 30-Day DXY/WTI Correlation: {:.2f} — Decoupled".format(corr)
+            corr_body = "DXY and oil are temporarily decoupled. Other factors are dominating price direction."
 
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("DXY Latest", f"{dxy_latest:.2f}", f"{dxy_change:+.2f} vs prev day")
-    with col2:
-        st.metric("DXY vs 1-Year Average", f"{dxy_1y_mean:.2f} avg", f"Currently {dxy_vs_mean} average")
-    with col3:
-        st.metric("30-Day Correlation", f"{corr:.2f}", "Positive = relationship broken" if corr > 0.3 else "Inverse intact")
+        st.markdown(
+            "<div style='background:" + box_bg + "; border-left:4px solid " + box_border + "; border-radius:6px; padding:20px 24px; margin-bottom:20px;'>"
+            "<div style='font-size:15px; color:#333; margin-bottom:10px;'>" + line1 + "</div>"
+            "<div style='font-size:17px; font-weight:700; color:" + corr_title_color + "; margin-bottom:10px;'>" + corr_title + "</div>"
+            "<div style='font-size:14px; color:#555; line-height:1.7;'>" + corr_body + "</div>"
+            "</div>", unsafe_allow_html=True)
 
-except Exception as e:
-    st.error(f"Error loading DXY data: {e}")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("DXY Latest", f"{dxy_latest:.2f}", f"{dxy_change:+.2f} vs prev day")
+        with col2:
+            st.metric("DXY vs 1-Year Average", f"{dxy_1y_mean:.2f} avg", f"Currently {dxy_vs_mean} average")
+        with col3:
+            st.metric("30-Day Correlation", f"{corr:.2f}", "Positive = relationship broken" if corr > 0.3 else "Inverse intact")
+
+    except Exception as e:
+        st.info("DXY data temporarily unavailable — market may be closed or data feed delayed. Will auto-refresh.")
 
 st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
 
