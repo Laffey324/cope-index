@@ -754,11 +754,12 @@ with col2:
     <div style="background:rgba(239,68,68,0.06); border-left:3px solid #ef4444; border-radius:6px; padding:16px 18px; margin-top:20px;">
         <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:8px;">Current White House Stance</div>
         <div style="font-size:14px; color:#555; line-height:1.7;">
-            Net policy impact is <strong>marginally bearish</strong> — SPR release and Russia sanctions easing add supply on paper.
-            But all measures combined cover less than 50% of the Hormuz supply gap.
+            Net policy direction has shifted <strong>bullish</strong> — Trump ruled out ceasefire, Marines are mobilizing toward the region, and the SPR toolkit is nearly exhausted.
+            Washington is escalating, not de-escalating.
             <br><br>
-            The dominant variable remains the war itself — not White House policy.
-            Watch for any shift in Trump's position on Iran negotiations as the key policy catalyst.
+            Every supply-side measure deployed so far has failed to move prices.
+            The dominant variable remains the war itself.
+            Watch for any reversal in Trump's position on Iran negotiations as the only credible bearish catalyst.
         </div>
     </div>
     """, unsafe_allow_html=True)
