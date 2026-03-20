@@ -273,7 +273,7 @@ try:
     st.plotly_chart(fig, use_container_width=True)
 
     dxy_latest = float(dxy["dxy"].iloc[-1])
-    dxy_prev = float(dxy["dxy"].iloc[-2])
+    dxy_prev = float(dxy["dxy"].iloc[-2]) if len(dxy) >= 2 else dxy_latest
     dxy_change = dxy_latest - dxy_prev
     dxy_1y_mean = float(dxy["dxy"].tail(252).mean())
     dxy_vs_mean = "above" if dxy_latest > dxy_1y_mean else "below"
@@ -771,10 +771,12 @@ st.markdown("""
     <div style="font-size:20px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">MARKET THESIS</div>
     <div style="font-size:13px; color:#999; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px;">Core Thesis</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Brent is trading near $100/bbl in an environment of extreme policy noise and unresolved supply disruption.
-        Hassett signaled the conflict could end in 4–6 weeks — markets rallied briefly, but oil prices rose simultaneously as Iranian strikes on Gulf infrastructure escalated.
-        This contradiction tells you everything: the market does not believe the war is ending soon.
-        The Hormuz closure remains the single dominant force — DXY, China PMI, IEA reserves are all secondary until tanker traffic resumes.
+        Brent is trading above $110/bbl — up over 45% since the war began on February 28.
+        Every policy tool Washington has deployed — SPR release, Russia sanctions easing, Iranian crude unsanctioning —
+        has failed to move prices. The market is pricing one thing only: Hormuz is closed, and neither side wants to end the war.
+        Iraq's force majeure, Qatar's permanent LNG loss, and the cascade of Gulf infrastructure damage
+        mean the supply disruption is now self-compounding.
+        DXY, China PMI, and IEA reserves are all secondary until tanker traffic resumes.
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -785,11 +787,11 @@ with col1:
     <div style="background:rgba(239,68,68,0.08); border-left:3px solid #ef4444; border-radius:6px; padding:16px 18px;">
         <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:12px;">🔺 Key Upside Risks</div>
         <div style="font-size:14px; color:#444; line-height:2.0;">
-            • Hormuz remains closed — every additional week compounds the supply deficit<br>
-            • Iranian political vacuum after Khamenei assassination prolongs conflict<br>
-            • Escalating strikes on Gulf infrastructure (Kharg Island, Qatar LNG)<br>
-            • Red Sea alternative route also under threat — no viable bypass at scale<br>
-            • Stagflation risk — central banks forced to choose between growth and inflation
+            • Hormuz closure compounds — every week adds to the structural supply deficit<br>
+            • Marines seize Kharg Island — permanent loss of 85–95% of Iran's export capacity<br>
+            • Iran follows through on "zero restraint" — Saudi/UAE infrastructure hit at scale<br>
+            • Iraq force majeure extends — cascade effect spreads to other Gulf producers<br>
+            • Stagflation trap — central banks paralyzed between inflation and recession
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -799,12 +801,12 @@ with col2:
     <div style="background:rgba(34,197,94,0.08); border-left:3px solid #22c55e; border-radius:6px; padding:16px 18px;">
         <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:12px;">🔻 Key Downside Risks</div>
         <div style="font-size:14px; color:#444; line-height:2.0;">
-            • Ceasefire/negotiated settlement — prices could drop $20–30/bbl within days<br>
-            • Hassett "4–6 weeks" timeline — front-month futures will price this in immediately if credible<br>
-            • IEA reserve release provides partial short-term supply buffer<br>
-            • Demand destruction — high prices already slowing global economy<br>
-            • US shale response accelerating — rig count rising<br>
-            • Fed hawkish pivot — rate hikes to combat oil-driven inflation could suppress demand
+            • Ceasefire or negotiated Hormuz reopening — prices could drop $20–30/bbl within days<br>
+            • 140mb Iranian crude unsanctioning — short-term 7–10 day price suppression<br>
+            • Demand destruction accelerating — $112 Brent already slowing global economy<br>
+            • US shale response — rig count rising, non-OPEC supply increasing<br>
+            • China demand weakness — PMI below 50 for 6 months, imports softening<br>
+            • Fed forced rate hikes — combating oil-driven inflation suppresses demand
         </div>
     </div>
     """, unsafe_allow_html=True)
