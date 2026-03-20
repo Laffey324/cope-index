@@ -491,7 +491,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Full Energy War — Iran Strikes Qatar, Saudi, UAE, Kuwait in Retaliation"
+    war_signal = "🔴 Escalation Accelerating — No Exit Visible on Either Side"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -645,52 +645,52 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 19, 2026",
-        "action": "Bessent considers releasing sanctioned Iranian oil at sea — 'using Iranian barrels against Iranians'",
-        "interpretation": "The most telling policy signal of the war so far. Treasury Secretary Bessent explicitly framed this as a 10–14 day price suppression tool, not a strategic shift. Translation: the administration is feeling serious economic pain from $100+ oil and is running out of easy options. SPR release and Russia sanctions easing haven't worked. Now they're considering weaponizing Iran's own stranded oil. Marginally bearish short-term, but the volume is limited and the timeline is short.",
+        "date": "Mar 20, 2026",
+        "action": "US Marines mobilize toward Middle East — possible seizure of Kharg Island or Hormuz straits islands",
+        "interpretation": "2,200 Marines aboard amphibious assault ships en route from Japan. Former CENTCOM commander McKenzie stated two options explicitly: destroy Kharg Island's oil infrastructure permanently, or occupy it as a bargaining chip. Either outcome is deeply bearish for supply — Kharg handles 85–95% of Iran's crude exports. Seizure would also mark a major ground escalation. Strongly bullish for prices.",
+        "impact": "🔺 Bullish",
+        "source_title": "More Marines headed to Middle East as Iran war reaches 3-week mark — NPR",
+        "source_url": "https://www.npr.org/2026/03/20/nx-s1-5754550/israel-strikes-tehran-iran-attacks-gulf"
+    },
+    {
+        "date": "Mar 20, 2026",
+        "action": "F-35 hit by Iranian air defense over Iran — emergency landing at US base",
+        "interpretation": "The most significant military signal of the war. Iran's new advanced air defense system downed a $100M+ stealth fighter — the backbone of US-Israeli air superiority. If Iran can reliably threaten F-35s, the cost and risk of the air campaign rises materially. This extends the conflict timeline and reduces the probability of a quick military resolution. Bullish.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran war live — Al Jazeera / Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3767953"
+    },
+    {
+        "date": "Mar 20, 2026",
+        "action": "Trump: 'I don't want a ceasefire' — IDF chief: operation 'not even halfway done'",
+        "interpretation": "Two statements that eliminate any near-term exit. Trump explicitly rejected ceasefire while 'obliterating the other side.' IDF chief Zamiri said in an internal briefing the campaign is less than halfway complete. Bloomberg simultaneously confirmed Iran has stopped discussing Hormuz reopening. Both sides locked in with no diplomatic off-ramp visible.",
+        "impact": "🔺 Bullish",
+        "source_title": "Trump Says He Doesn't Want Cease-Fire With Iran — WSJ",
+        "source_url": "https://www.wsj.com/livecoverage/iran-us-israel-war-news-2026"
+    },
+    {
+        "date": "Mar 20, 2026",
+        "action": "Iraq force majeure: Basra output cut from 3.3 mb/d to 900,000 bpd — storage full, exports halted",
+        "interpretation": "A 72% production cut at OPEC's second largest producer — not from direct attack, but because Hormuz closure filled storage to capacity. This is the cascade effect: you don't need to be bombed to stop producing. Iraq's finances depend 90%+ on oil exports. Citi targets Brent $120 near-term, $150 bull case. Saudi officials privately see $180+ if disruptions last through April.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iraq declares force majeure on foreign-operated oilfields — Reuters",
+        "source_url": "https://www.cnbc.com/2026/03/20/oil-wti-brent-us-weighs-releasing-sanctioned-iranian-crude.html"
+    },
+    {
+        "date": "Mar 20, 2026",
+        "action": "Bessent considers releasing 140mb sanctioned Iranian crude — but SPR near physical limits",
+        "interpretation": "Symbolic gesture, not a supply solution. 140mb covers ~7 days of the Hormuz gap. More critically, SPR is now at its physical floor: after the announced 172mb release, reserves drop to ~244mb — already below the 252mb legal minimum. JPMorgan estimates the physical safety floor at 150–160mb. Actual remaining headroom: 80–90mb maximum, requiring emergency declaration. Market has already seen through this — oil did not fall on the announcement.",
         "impact": "🔻 Bearish",
-        "source_title": "US mulls lifting oil sanctions on Iran as it hits key Gulf energy sites — Washington Post",
-        "source_url": "https://www.washingtonpost.com/world/2026/03/19/us-iran-war-trump-gas-prices-qatar/"
-    },
-    {
-        "date": "Mar 19, 2026",
-        "action": "Iran retaliates — strikes Qatar Ras Laffan, Saudi Arabia, UAE, Kuwait and Bahrain energy infrastructure",
-        "interpretation": "Iran followed through on its threat. Ras Laffan — already damaged — hit again. UAE air defenses intercepted 7 missiles and 15 drones. Saudi Eastern Province targeted. IRGC warns retaliation is 'not yet finished.' This is no longer a Hormuz story — it is a full Gulf energy war. Every major production and export hub in the region is now a active target. Strongly bullish.",
-        "impact": "🔺 Bullish",
-        "source_title": "War enters new phase as Israel attack on Iran gasfield sparks Gulf response — Al Jazeera",
-        "source_url": "https://www.aljazeera.com/news/2026/3/19/wrap-iran-ratchets-up-pressure-on-gulf-states"
-    },
-    {
-        "date": "Mar 19, 2026",
-        "action": "Netanyahu: Israel helping reopen Hormuz — 'war may end sooner than people think'",
-        "interpretation": "Brent briefly hit $119 then fell back to $108 on this headline. Two things to note: first, Netanyahu provided no mechanism or timeline for how Israel helps reopen Hormuz. Second, Iran's IRGC simultaneously said retaliation is not finished. The market's partial retreat shows it wants to believe this — but doesn't fully. Watch for any confirmed tanker passage as the real test.",
-        "impact": "🟡 Neutral",
-        "source_title": "Oil prices fall after Brent briefly touches $119 as Netanyahu says Israel helping to open Hormuz — CNBC",
-        "source_url": "https://www.cnbc.com/2026/03/19/oil-jumps-iran-strikes-qatar-lng-facility-supply-worries.html"
-    },
-    {
-        "date": "Mar 19, 2026",
-        "action": "Trump confirms $200bn war funding request — 'small price to pay'",
-        "interpretation": "Confirms the war is far from over financially. Hegseth said the number 'could move' higher. Senate opposition from Schumer signals domestic political friction ahead. No direct oil price impact, but confirms the administration's commitment to a prolonged campaign.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran war live updates — CBS News",
-        "source_url": "https://www.cbsnews.com/live-updates/iran-war-israel-strike-south-pars-gas-field-trump-threat-oil-gas-prices/"
+        "source_title": "US Energy Secretary: Iranian oil will reach ports within 3–4 days — Reuters",
+        "source_url": "https://www.reuters.com"
     },
     {
         "date": "Mar 18, 2026",
         "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — $20bn annual revenue loss",
-        "interpretation": "This permanently reframes the market. Previously the assumption was: war ends → Hormuz reopens → supply recovers. That assumption is now broken. Even if the war ends tomorrow, 17% of Qatar's LNG — nearly a fifth of global shipments — is gone for up to five years. ExxonMobil (34% stake in Train S4, 30% in Train S6) and Shell are directly impacted. Europe and Asia face a structural LNG supply deficit regardless of war outcome.",
+        "interpretation": "Permanently reframes the market. Even ceasefire tomorrow does not restore this supply. ExxonMobil and Shell directly impacted. Europe and Asia face structural LNG deficit regardless of war outcome.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
-    },
-    {
-        "date": "Mar 11, 2026",
-        "action": "IEA coordinates 400mb emergency reserve release — US SPR contributes 172mb",
-        "interpretation": "Bearish on paper, insufficient in practice. Release rate ~6.7 mb/d covers only 33% of the daily Hormuz gap. Has not moved prices — market has fully seen through it.",
-        "impact": "🔻 Bearish",
-        "source_title": "IEA agrees to release record 400 million barrels — Al Jazeera",
-        "source_url": "https://www.aljazeera.com/news/2026/3/11/iea-agrees-to-release-record-400-million-barrels"
     },
 ]
 
@@ -811,15 +811,27 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 19, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 20, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        The war has entered a new structural phase. Iran followed through on its threats — Ras Laffan, Saudi Eastern Province, UAE, Kuwait and Bahrain all hit overnight. Every major Gulf energy hub is now an active target, not a theoretical one.
+        Three weeks in, the war is accelerating — not winding down. Trump explicitly rejected ceasefire.
+        The IDF chief said the campaign is less than halfway complete. Iran downed an F-35 and warned it has
+        only used a fraction of its power. There is no off-ramp visible on either side.
         <br><br>
-        Two contradictory signals are emerging from Washington. Netanyahu says Israel is helping reopen Hormuz and the war may end sooner than expected — Brent briefly touched $119 then pulled back to $108 on that headline. Simultaneously, Bessent is considering releasing sanctioned Iranian oil at sea, framing it explicitly as a 10–14 day price fix. The combination tells you one thing clearly: the administration is feeling serious economic pain and is searching for an exit, but has no clear path yet.
+        The supply picture is deteriorating beyond what the headline price captures.
+        Iraq's force majeure cut Basra output by 72% — not from direct attack, but because
+        Hormuz closure filled storage to capacity. This is the cascade effect: the blockade
+        doesn't need to spread to new targets to cause new damage. It compounds automatically.
         <br><br>
-        The most important development is structural, not tactical: Qatar's 17% LNG capacity loss for up to five years means the pre-war supply baseline is gone permanently. Even a ceasefire tomorrow does not restore it. The market is only beginning to price this in.
+        Washington's policy toolkit is nearly exhausted. SPR is approaching its physical safety floor.
+        The 140mb Iranian crude release covers 7 days of the Hormuz gap.
+        Russia sanctions easing faces G7 pushback. None of these have moved prices.
+        The Georgia gas tax suspension and $3.912 national average signal that domestic political
+        pressure is building — historically, this is what forces presidents toward negotiation.
+        But Trump's actions point the opposite direction: more warships, more Marines, more spending.
         <br><br>
-        Watch two things: confirmed tanker passage through Hormuz as the clearest bearish reversal signal, and whether Iran's IRGC follows through on its warning that retaliation is "not yet finished."
+        Watch two things above all else: any confirmed F-35 operational status update
+        (signals whether air campaign can continue at current tempo), and whether Marines
+        move toward Kharg Island (would mark ground phase escalation with permanent supply implications).
     </div>
 </div>
 """, unsafe_allow_html=True)
