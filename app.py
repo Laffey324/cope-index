@@ -240,12 +240,12 @@ st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6fa
 @st.cache_data(ttl=3600)
 def load_dxy_data():
     try:
-        ticker = yf.Ticker("DX=F")
-        df = ticker.history(start="2000-01-01")[["Close"]].reset_index()
+        raw = yf.download("DX=F", start="2000-01-01", auto_adjust=True, progress=False)
+        df = raw[["Close"]].copy().reset_index()
         df.columns = ["date", "dxy"]
-        df["date"] = df["date"].apply(lambda x: x.replace(tzinfo=None) if hasattr(x, 'tzinfo') else x)
+        df["date"] = pd.to_datetime(df["date"]).dt.tz_localize(None)
         df["dxy"] = pd.to_numeric(df["dxy"], errors="coerce")
-        df = df.dropna()
+        df = df.dropna().reset_index(drop=True)
         return df
     except:
         return pd.DataFrame({"date": [], "dxy": []})
