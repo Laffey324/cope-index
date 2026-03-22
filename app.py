@@ -500,7 +500,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Escalation Accelerating — No Exit Visible on Either Side"
+    war_signal = "🔴 48-Hour Ultimatum — Trump Threatens Power Plants, Iran Threatens Desalination & Energy Grids"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -654,49 +654,49 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 20, 2026",
-        "action": "US Marines mobilize toward Middle East — possible seizure of Kharg Island or Hormuz straits islands",
-        "interpretation": "2,200 Marines aboard amphibious assault ships en route from Japan. Former CENTCOM commander McKenzie stated two options explicitly: destroy Kharg Island's oil infrastructure permanently, or occupy it as a bargaining chip. Either outcome is deeply bearish for supply — Kharg handles 85–95% of Iran's crude exports. Seizure would also mark a major ground escalation. Strongly bullish for prices.",
+        "date": "Mar 22, 2026",
+        "action": "Trump 48-hour ultimatum: open Hormuz or US hits Iran power plants — Iran threatens desalination and energy grids",
+        "interpretation": "The most direct ultimatum of the war. Trump demanded Hormuz open 'fully, without threat' within 48 hours or the US will 'obliterate' Iran's power plants starting with the largest. Iran's military command responded immediately: if energy infrastructure is hit, all US and allied energy infrastructure, IT systems, and desalination facilities in the region are legitimate targets. Desalination is the water supply for Saudi Arabia, UAE, and Qatar — this threat goes beyond oil. The 48-hour window is now expiring with no sign of compliance. Strongly bullish.",
         "impact": "🔺 Bullish",
-        "source_title": "More Marines headed to Middle East as Iran war reaches 3-week mark — NPR",
-        "source_url": "https://www.npr.org/2026/03/20/nx-s1-5754550/israel-strikes-tehran-iran-attacks-gulf"
+        "source_title": "Trump 48-hour ultimatum — TrueSocial / Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768068"
+    },
+    {
+        "date": "Mar 22, 2026",
+        "action": "Goldman Sachs: market has only priced 'inflation shock' — 'recession is the second shoe to drop'",
+        "interpretation": "The most important analytical framework of the war so far. Goldman warns global assets have fully priced the inflationary impact of high oil prices, but completely ignored the growth destruction. Hormuz flow has collapsed 97% from 20 mb/d to 0.6 mb/d. Military escorts can restore at most 20% of normal flow. Goldman cuts US and Eurozone 2026 growth forecasts, pushes Fed rate cut from June to September. Key quote: 'Once this optimism is proven wrong, growth downside will be the second shoe to drop' — triggering a violent repricing of global equities, copper, AUD, and a flight to JPY.",
+        "impact": "🔺 Bullish",
+        "source_title": "Goldman Sachs Top of Mind — Mar 20, 2026 via Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768093"
+    },
+    {
+        "date": "Mar 21, 2026",
+        "action": "Iran strikes Dimona nuclear research center vicinity — first nuclear-adjacent attack of the war",
+        "interpretation": "A major psychological escalation. Iran targeted Arad and Dimona — the area surrounding Israel's nuclear research center — injuring over 100 people. This is the first time Israel's nuclear facilities have been targeted in this war. The signal is clear: Iran is willing to escalate to nuclear-adjacent targets if pushed. Strongly bullish — any Israeli retaliation against Iranian nuclear facilities risks crossing a line that could internationalise the conflict further.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran war live updates — CBS News",
+        "source_url": "https://www.cbsnews.com/live-updates/iran-war-us-israel-gas-and-oil-prices-trump-netanyahu-strait-hormuz/"
     },
     {
         "date": "Mar 20, 2026",
-        "action": "F-35 hit by Iranian air defense over Iran — emergency landing at US base",
-        "interpretation": "The most significant military signal of the war. Iran's new advanced air defense system downed a $100M+ stealth fighter — the backbone of US-Israeli air superiority. If Iran can reliably threaten F-35s, the cost and risk of the air campaign rises materially. This extends the conflict timeline and reduces the probability of a quick military resolution. Bullish.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran war live — Al Jazeera / Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3767953"
-    },
-    {
-        "date": "Mar 20, 2026",
-        "action": "Trump: 'I don't want a ceasefire' — IDF chief: operation 'not even halfway done'",
-        "interpretation": "Two statements that eliminate any near-term exit. Trump explicitly rejected ceasefire while 'obliterating the other side.' IDF chief Zamiri said in an internal briefing the campaign is less than halfway complete. Bloomberg simultaneously confirmed Iran has stopped discussing Hormuz reopening. Both sides locked in with no diplomatic off-ramp visible.",
-        "impact": "🔺 Bullish",
-        "source_title": "Trump Says He Doesn't Want Cease-Fire With Iran — WSJ",
-        "source_url": "https://www.wsj.com/livecoverage/iran-us-israel-war-news-2026"
-    },
-    {
-        "date": "Mar 20, 2026",
-        "action": "Iraq force majeure: Basra output cut from 3.3 mb/d to 900,000 bpd — storage full, exports halted",
-        "interpretation": "A 72% production cut at OPEC's second largest producer — not from direct attack, but because Hormuz closure filled storage to capacity. This is the cascade effect: you don't need to be bombed to stop producing. Iraq's finances depend 90%+ on oil exports. Citi targets Brent $120 near-term, $150 bull case. Saudi officials privately see $180+ if disruptions last through April.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iraq declares force majeure on foreign-operated oilfields — Reuters",
-        "source_url": "https://www.cnbc.com/2026/03/20/oil-wti-brent-us-weighs-releasing-sanctioned-iranian-crude.html"
-    },
-    {
-        "date": "Mar 20, 2026",
-        "action": "Bessent considers releasing 140mb sanctioned Iranian crude — but SPR near physical limits",
-        "interpretation": "Symbolic gesture, not a supply solution. 140mb covers ~7 days of the Hormuz gap. More critically, SPR is now at its physical floor: after the announced 172mb release, reserves drop to ~244mb — already below the 252mb legal minimum. JPMorgan estimates the physical safety floor at 150–160mb. Actual remaining headroom: 80–90mb maximum, requiring emergency declaration. Market has already seen through this — oil did not fall on the announcement.",
+        "action": "US Treasury formally lifts sanctions on ~140mb Iranian crude at sea — valid until April 19",
+        "interpretation": "Symbolic gesture, not a supply solution. Goldman Sachs confirms: Hormuz flow is down 97%, military escorts can restore at most 20% of normal volume. 140mb covers roughly 7 days of the supply gap. SPR is below its legal minimum. The administration is running out of tools — and the market knows it. Brent hit $113 despite the announcement.",
         "impact": "🔻 Bearish",
-        "source_title": "US Energy Secretary: Iranian oil will reach ports within 3–4 days — Reuters",
-        "source_url": "https://www.reuters.com"
+        "source_title": "US Treasury allows sale of Iranian oil stranded on vessels — Bloomberg",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-03-20/us-treasury-allows-sale-of-some-iranian-oil-stranded-on-vessels"
+    },
+    {
+        "date": "Mar 20, 2026",
+        "action": "US Marines mobilize — possible seizure of Kharg Island or Hormuz straits islands",
+        "interpretation": "2,200 Marines from Japan + USS Boxer group from California en route. Former CENTCOM commander McKenzie: two options — destroy Kharg's infrastructure permanently, or occupy as bargaining chip. Either outcome removes 85–95% of Iran's export capacity. Goldman Sachs notes military superiority cannot translate to war termination while Iran controls Hormuz.",
+        "impact": "🔺 Bullish",
+        "source_title": "More Marines headed to Middle East — NPR",
+        "source_url": "https://www.npr.org/2026/03/20/nx-s1-5754550/israel-strikes-tehran-iran-attacks-gulf"
     },
     {
         "date": "Mar 18, 2026",
         "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — $20bn annual revenue loss",
-        "interpretation": "Permanently reframes the market. Even ceasefire tomorrow does not restore this supply. ExxonMobil and Shell directly impacted. Europe and Asia face structural LNG deficit regardless of war outcome.",
+        "interpretation": "Permanently reframes the market. Goldman Sachs warns if Qatar LNG outage extends beyond 2 months, TTF could approach €100/MWh. Even ceasefire tomorrow does not restore this supply. ExxonMobil and Shell directly impacted.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
@@ -823,27 +823,29 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 20, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 22, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Three weeks in, the war is accelerating — not winding down. Trump explicitly rejected ceasefire.
-        The IDF chief said the campaign is less than halfway complete. Iran downed an F-35 and warned it has
-        only used a fraction of its power. There is no off-ramp visible on either side.
+        Trump issued a 48-hour ultimatum Saturday: open Hormuz or lose your power plants.
+        Iran responded within hours: hit our energy infrastructure, and we hit your desalination facilities.
+        The 48-hour window is expiring with no compliance — Brent is at $113, the highest since July 2022.
         <br><br>
-        The supply picture is deteriorating beyond what the headline price captures.
-        Iraq's force majeure cut Basra output by 72% — not from direct attack, but because
-        Hormuz closure filled storage to capacity. This is the cascade effect: the blockade
-        doesn't need to spread to new targets to cause new damage. It compounds automatically.
+        Goldman Sachs has put the most important analytical frame on this war:
+        the market has only priced the inflation shock, not the growth shock.
+        Hormuz flow has collapsed 97% — from 20 mb/d to 0.6 mb/d.
+        Military escorts can restore at most 20% of normal volume.
+        Goldman's base case pushes the Fed rate cut from June to September and cuts global growth forecasts.
+        The warning is stark: once the market's assumption of a quick resolution is proven wrong,
+        equities, copper, and cyclical assets face a violent repricing. The second shoe — recession — has not yet dropped.
         <br><br>
-        Washington's policy toolkit is nearly exhausted. SPR is approaching its physical safety floor.
-        The 140mb Iranian crude release covers 7 days of the Hormuz gap.
-        Russia sanctions easing faces G7 pushback. None of these have moved prices.
-        The Georgia gas tax suspension and $3.912 national average signal that domestic political
-        pressure is building — historically, this is what forces presidents toward negotiation.
-        But Trump's actions point the opposite direction: more warships, more Marines, more spending.
+        Iran striking near Dimona added a new dimension: nuclear-adjacent targeting.
+        The war is no longer constrained to conventional military and energy infrastructure.
+        Any Israeli retaliation against Iranian nuclear sites risks internationalizing the conflict beyond its current boundaries.
         <br><br>
-        Watch two things above all else: any confirmed F-35 operational status update
-        (signals whether air campaign can continue at current tempo), and whether Marines
-        move toward Kharg Island (would mark ground phase escalation with permanent supply implications).
+        The structural picture from Goldman is unambiguous:
+        even in the most optimistic scenario of full flow restoration within one month,
+        Brent settles at $71 by Q4. In the 60-day scenario, $93.
+        With permanent infrastructure damage, $110 in 2027 — approaching the 2008 all-time high.
+        The pre-war supply baseline is not coming back regardless of when the war ends.
     </div>
 </div>
 """, unsafe_allow_html=True)
