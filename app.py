@@ -32,7 +32,7 @@ except:
     wti_chg_str = ""
     wti_color = "#888"
 
-total_score = round((10 + 10 + 6 + 4) / 4, 1)
+total_score = round((10 + 10 + 6 + 5) / 4, 1)
 risk_label = "CRITICAL" if total_score >= 8 else "ELEVATED" if total_score >= 6 else "MODERATE"
 risk_color = "#f87171" if total_score >= 8 else "#fbbf24" if total_score >= 6 else "#4ade80"
 
@@ -96,16 +96,16 @@ risk_factors = {
     },
     "Middle East Conflict Risk": {
         "score": 10, "trend": "↑",
-        "note": "South Pars struck Mar 18 — first attack on Gulf energy infrastructure. Iran lists Saudi, Qatari and Emirati assets as retaliation targets. Infrastructure war has begun."
+        "note": "Iran struck Dimona nuclear vicinity Mar 22 — first nuclear-adjacent attack. Trump 48-hr ultimatum: open Hormuz or lose power plants. Iran threatens desalination facilities across Gulf."
     },
     "Russia Supply Disruption": {
         "score": 6, "trend": "→",
         "note": "Ukraine conflict continues. Russian exports rerouted to Asia but volumes stable."
     },
     "US Energy Policy Uncertainty": {
-        "score": 4, "trend": "→",
-        "note": "IEA 400mb stockpile release underway"
-    }
+        "score": 5, "trend": "↑",
+        "note": "All policy tools exhausted — SPR below legal floor, Iranian sanctions lifted, Russia waivers issued. Trump ultimatums now the primary price driver. Policy uncertainty at war-high."
+    },
 }
 
 total_score = round(sum(v["score"] for v in risk_factors.values()) / len(risk_factors), 1)
@@ -405,21 +405,24 @@ with col2:
     """, unsafe_allow_html=True)
 
     st.metric(label="Total Pledged (Mar 11, 2026)", value="400 mb", delta="Largest release in IEA history")
-    st.metric(label="US SPR Contribution", value="172 mb", delta="~120 days to fully deliver")
-    st.caption("Source: IEA press release Mar 11, 2026 · Bloomberg")
+    st.metric(label="US SPR Contribution", value="172 mb", delta="SPR now below legal minimum of 252mb")
+    st.caption("Source: IEA press release Mar 11, 2026 · Goldman Sachs · Bloomberg")
 
     st.markdown("""
     <div style="background:rgba(239,68,68,0.06); border-left:3px solid #ef4444; border-radius:6px; padding:16px 18px; margin-top:16px;">
-        <div style="font-size:15px; font-weight:700; color:#ef4444; margin-bottom:10px;">⚠️ Why oil prices haven't fallen</div>
+        <div style="font-size:15px; font-weight:700; color:#ef4444; margin-bottom:10px;">⚠️ Policy toolkit is nearly exhausted</div>
         <div style="font-size:14px; color:#555; line-height:1.8;">
             IEA release rate: <strong>~6.7 mb/d</strong><br>
             Hormuz closure impact: <strong>~20 mb/d</strong><br>
-            Unmet gap: <strong>~13 mb/d per day</strong>
+            Unmet gap: <strong>~13 mb/d per day</strong><br>
+            SPR after release: <strong>~244mb — below 252mb legal floor</strong><br>
+            Physical safety floor (JPMorgan): <strong>~150–160mb</strong><br>
+            Remaining headroom: <strong>~80–90mb maximum</strong>
         </div>
         <div style="font-size:13px; color:#888; margin-top:10px; line-height:1.6;">
-            The release covers only ~33% of the daily supply loss.
-            Physical barrels cannot reach markets while Hormuz remains closed —
-            the buffer exists on paper, but not in the pipeline.
+            SPR release, Russian sanctions easing, Iranian crude unsanctioning — none have moved prices.
+            Goldman Sachs: SPR projected to fall to 33% capacity by mid-year.
+            Further releases require emergency declaration. The buffer is nearly gone.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -797,11 +800,11 @@ with col1:
     <div style="background:rgba(239,68,68,0.08); border-left:3px solid #ef4444; border-radius:6px; padding:16px 18px;">
         <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:12px;">🔺 Key Upside Risks</div>
         <div style="font-size:14px; color:#444; line-height:2.0;">
-            • Hormuz closure compounds — every week adds to the structural supply deficit<br>
+            • Hormuz closure compounds — Goldman estimates 97% flow reduction, escorts restore at most 20%<br>
+            • Recession is the second shoe — market has only priced inflation, not growth destruction<br>
+            • Trump power plant ultimatum escalates — Iran retaliates against desalination across Gulf<br>
             • Marines seize Kharg Island — permanent loss of 85–95% of Iran's export capacity<br>
-            • Iran follows through on "zero restraint" — Saudi/UAE infrastructure hit at scale<br>
-            • Iraq force majeure extends — cascade effect spreads to other Gulf producers<br>
-            • Stagflation trap — central banks paralyzed between inflation and recession
+            • Nuclear escalation — Iran struck Dimona vicinity; Israeli retaliation could internationalise conflict
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -811,12 +814,12 @@ with col2:
     <div style="background:rgba(34,197,94,0.08); border-left:3px solid #22c55e; border-radius:6px; padding:16px 18px;">
         <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:12px;">🔻 Key Downside Risks</div>
         <div style="font-size:14px; color:#444; line-height:2.0;">
-            • Ceasefire or negotiated Hormuz reopening — prices could drop $20–30/bbl within days<br>
-            • 140mb Iranian crude unsanctioning — short-term 7–10 day price suppression<br>
-            • Demand destruction accelerating — $112 Brent already slowing global economy<br>
+            • Ceasefire or Hormuz reopening — Goldman base case: Brent falls to $71 by Q4 if restored within 30 days<br>
+            • Demand destruction accelerating — $113 Brent already triggering recession risk in Europe and Asia<br>
+            • Goldman 60-day scenario: Brent $93 Q4 — market reprices toward growth shock, not inflation<br>
             • US shale response — rig count rising, non-OPEC supply increasing<br>
             • China demand weakness — PMI below 50 for 6 months, imports softening<br>
-            • Fed forced rate hikes — combating oil-driven inflation suppresses demand
+            • Fed forced rate hikes — Goldman pushes first cut to September; hikes possible if inflation persists
         </div>
     </div>
     """, unsafe_allow_html=True)
