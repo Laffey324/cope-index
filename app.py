@@ -655,7 +655,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("How White House policy decisions are affecting crude oil markets — analyst interpretation of each action.")
 
-ppolicy_actions = [
+policy_actions = [
     {
         "date": "Mar 24, 2026",
         "action": "Iranian source confirms US 'outreach' — but not negotiations. Iran willing to listen to viable proposals",
