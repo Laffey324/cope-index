@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Fragile Diplomatic Window — Outreach Confirmed, But No Deal, Fighting Continues"
+    war_signal = "🔴 15-Point Plan Delivered — Iran Demands Hormuz Sovereignty, Gap Remains Wide"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -657,41 +657,41 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 24, 2026",
-        "action": "Iranian source confirms US 'outreach' — but not negotiations. Iran willing to listen to viable proposals",
-        "interpretation": "The most important clarification since Trump's ceasefire claim. An Iranian source told CNN: Washington has initiated outreach through intermediaries, but it has not reached the level of formal negotiations. Iran is 'willing to listen' but is not seeking direct talks. Iran's conditions remain unchanged: sanctions relief, guarantees against future attacks, and preservation of national interests. Meanwhile oil prices reversed Monday's 7% drop and rose again Tuesday — the market correctly identified that 'outreach' is not a deal. The 5-day window expires Saturday.",
+        "date": "Mar 25, 2026",
+        "action": "US delivers 15-point ceasefire plan to Iran via Pakistan — Iran issues 5-point counteroffer demanding Hormuz sovereignty",
+        "interpretation": "The first concrete diplomatic exchange of the war. The US 15-point plan covers sanctions relief, nuclear rollback, IAEA monitoring, missile limits, and Hormuz reopening. Iran's counter: complete halt to aggression, security guarantees, war reparations, and — critically — recognition of Iranian sovereignty over the Strait of Hormuz. That last condition is a near-certain nonstarter for Washington. Brent fell 5–7% to below $100 on ceasefire optimism, but Iran continued attacks on Kuwait airport and Gulf states simultaneously. The gap between the two positions remains very wide.",
         "impact": "🟡 Neutral",
-        "source_title": "Iranian source says US initiated outreach to end war — CNN",
+        "source_title": "Iran receives US ceasefire plan, issues own counteroffer — AP / CNBC",
+        "source_url": "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html"
+    },
+    {
+        "date": "Mar 25, 2026",
+        "action": "Citrini Research: Fed will 'look through' oil shock and cut rates within 12 months — full position established",
+        "interpretation": "A direct counter to Goldman's 'rate hike risk' thesis. Citrini argues: 2022 was zero rates + 5% CPI; today rates are near neutral. High oil prices themselves are tightening financial conditions — the Fed doesn't need to add more. 'Rate hikes can't create more oil supply.' With unemployment rising, the Fed won't tighten. Citrini is all-in long SOFR March 2027 futures with equity shorts as hedge. Two scenarios: war ends → consumer still stressed → recession → Fed cuts; war continues → equities fall → short hedge pays. Important counter-signal to the market's current 50% rate hike pricing.",
+        "impact": "🔻 Bearish",
+        "source_title": "Citrini: Fed will look through oil shock, all-in on rate cuts — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768372"
+    },
+    {
+        "date": "Mar 24, 2026",
+        "action": "Iranian source confirms US 'outreach' through intermediaries — Iran willing to listen, not negotiate directly",
+        "interpretation": "Iran confirmed Washington-initiated outreach through back channels but not formal talks. Iran's conditions: sanctions relief, guarantees against future attacks, preservation of national interests. Oil prices rose again after Monday's 7% drop — market correctly identified that 'outreach' is not a deal.",
+        "impact": "🟡 Neutral",
+        "source_title": "Iranian source says US initiated outreach — CNN",
         "source_url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-24-26"
     },
     {
         "date": "Mar 23, 2026",
-        "action": "Trump claims 'productive talks', postpones power plant strikes 5 days — Iran calls it fake news to manipulate markets",
-        "interpretation": "Trump claimed 'major points of agreement' and postponed strikes for 5 days. Brent fell 7% then reversed. Iran's parliament speaker called it 'fake news to manipulate financial and oil markets.' Iran's foreign ministry said Trump backed down due to Iranian deterrence, not diplomacy. Israel confirmed military operations are continuing regardless. The 5-day window is a fragile diplomatic test with no verified substance behind it.",
-        "impact": "🟡 Neutral",
-        "source_title": "Trump postpones Iran power plant strikes for 5 days — NBC News",
-        "source_url": "https://www.nbcnews.com/world/middle-east/live-blog/live-updates-iran-war-trump-hormuz-deadline-energy-crisis-gulf-power-rcna264685"
-    },
-    {
-        "date": "Mar 23, 2026",
         "action": "Multi-asset selloff: Korea circuit breaker, gold wipes 2026 gains, Fed rate hike now 50% priced",
-        "interpretation": "Goldman Sachs's 'second shoe' beginning to drop. Korean KOSPI fell 6.5% triggering circuit breaker. Gold fell 4-5% erasing all 2026 gains — safe haven failing as rate hike fears dominate. US 2-year yield at 3.94%, 10-year at 4.41%. Markets now pricing 50% probability of Fed rate hike. This is the multi-asset correlation breakdown Goldman warned about: single geopolitical shock repricing all assets simultaneously, making diversification ineffective.",
+        "interpretation": "Goldman Sachs's 'second shoe' beginning to drop. Korean KOSPI fell 6.5% triggering circuit breaker. Gold fell 4-5% erasing all 2026 gains. Markets pricing 50% Fed rate hike probability — all cut expectations wiped out. Single geopolitical shock repricing all assets simultaneously, making diversification ineffective.",
         "impact": "🔺 Bullish",
         "source_title": "Global markets selloff — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768110"
     },
     {
-        "date": "Mar 23, 2026",
-        "action": "IEA: 40+ energy assets severely damaged across 9 countries — worse than 1973, 1979, and Russia-Ukraine combined",
-        "interpretation": "IEA Executive Director Birol's most sweeping assessment yet. Damage worse than all previous energy crises combined. Shipping analyst: Hormuz transit 'completely off the charts for rest of 2026.' Even after ceasefire, ~2,000 vessels trapped in Persian Gulf need to clear, production facilities need weeks to restart — oil prices won't recover like flipping a switch.",
-        "impact": "🔺 Bullish",
-        "source_title": "More than 40 Middle East energy assets severely damaged — CNBC",
-        "source_url": "https://www.cnbc.com/2026/03/23/iran-war-energy-oil-gas-middle-east-iea-us-uae-qatar.html"
-    },
-    {
         "date": "Mar 22, 2026",
         "action": "Goldman Sachs: market has only priced inflation shock — recession is the second shoe to drop",
-        "interpretation": "Hormuz flow collapsed 97% — from 20 mb/d to 0.6 mb/d. Military escorts restore at most 20% of normal flow. Goldman cuts global growth forecasts, pushes Fed cut to September. Key warning: once the assumption of quick resolution is proven wrong, equities, copper, and AUD face violent repricing. JPY replaces USD as ultimate safe haven.",
+        "interpretation": "Hormuz flow collapsed 97% — from 20 mb/d to 0.6 mb/d. Military escorts restore at most 20% of normal flow. Three scenarios: Hormuz reopens in 30 days → Brent Q4 $71; 60-day closure → $93; permanent damage → $110 in 2027. Goldman warns equities, copper, AUD face violent repricing once growth shock is priced.",
         "impact": "🔺 Bullish",
         "source_title": "Goldman Sachs Top of Mind — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768093"
@@ -699,7 +699,7 @@ policy_actions = [
     {
         "date": "Mar 18, 2026",
         "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — $20bn annual revenue loss",
-        "interpretation": "Permanently reframes the market. Even ceasefire tomorrow does not restore this supply. Goldman warns if Qatar LNG outage extends beyond 2 months, TTF approaches €100/MWh. US LNG exporters (Venture Global, Cheniere) filling the gap at premium prices — structural supply shift already underway.",
+        "interpretation": "Permanently reframes the market. Cheniere CEO confirmed at CERAWeek (Mar 25): last QatarEnergy LNG cargoes have arrived in Asia — the supply gap is now real and immediate. Cheniere is already at full capacity; Train 5 expansion may start Friday but adds limited volume. Even ceasefire tomorrow does not restore Qatar's supply. US LNG exporters filling the gap at premium prices — but physical capacity is now maxed out. Structural supply shift will not reverse with a ceasefire.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
@@ -827,33 +827,32 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 24, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 25, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        The diplomatic picture clarified today. An Iranian source confirmed to CNN that US outreach
-        has occurred through intermediaries — but explicitly not at the level of formal negotiations.
-        Iran is willing to listen, not to talk. The distinction matters enormously:
-        listening to proposals through back channels is a far cry from the 'major points of agreement'
-        Trump claimed Monday. Oil prices reversed yesterday's 7% drop and rose again today —
-        the market reached the same conclusion.
+        Today marks the first concrete diplomatic exchange of the war.
+        The US delivered a 15-point plan via Pakistan; Iran responded with a 5-point counteroffer.
+        Brent fell below $100 for the first time since the war began.
+        But Iran simultaneously attacked Kuwait's airport and continued strikes across the Gulf —
+        the gap between the two positions is wide, and Iran's demand for Hormuz sovereignty
+        is a near-certain nonstarter for Washington.
         <br><br>
-        The 5-day window expires Saturday. Three scenarios matter:
-        First, a concrete proposal emerges that Iran views as preserving its national interests —
-        unlikely given the trust deficit after being struck twice during active negotiations.
-        Second, the window passes quietly and Trump extends again —
-        ambiguity continues, prices remain volatile.
-        Third, Trump executes the power plant threat —
-        Iran follows through on desalination targeting, escalation resumes.
+        Two institutional frameworks now stand in direct opposition on the most important
+        downstream question — what happens to interest rates.
+        Goldman Sachs warns the market has only priced the inflation shock,
+        and that recession is the second shoe to drop, implying rate hikes or prolonged holds.
+        Citrini Research takes the opposite view: the Fed will look through the oil shock entirely,
+        because high oil prices are themselves tightening financial conditions,
+        rate hikes can't create more oil supply, and rising unemployment makes hikes politically impossible.
+        Both frameworks are internally coherent. The resolution depends entirely on
+        how long Hormuz stays closed.
         <br><br>
-        Meanwhile the structural damage accumulates regardless of diplomacy.
-        40+ energy facilities across 9 countries severely damaged.
-        ~2,000 vessels trapped in the Persian Gulf.
-        Even a ceasefire tomorrow means weeks before production restarts
-        and months before shipping insurance normalizes.
-        The IEA's assessment stands: this is worse than 1973, 1979, and Russia-Ukraine combined.
-        US LNG exporters are already filling the Qatar gap at premium prices —
-        the structural supply shift is underway and will not reverse with a ceasefire.
+        The supply picture clarified further today. Cheniere's CEO confirmed at CERAWeek:
+        the last QatarEnergy LNG cargoes have arrived in Asia — the gap is now real and immediate.
+        Cheniere is already at full capacity. US LNG physical headroom is maxed out.
+        The structural supply shift is underway and will not reverse with a ceasefire.
         <br><br>
-        Watch Saturday's deadline as the single most important near-term catalyst.
+        Watch whether Iran's Hormuz sovereignty demand is a negotiating position or a genuine red line.
+        That single question determines whether the 15-point plan goes anywhere.
     </div>
 </div>
 """, unsafe_allow_html=True)
