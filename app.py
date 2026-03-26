@@ -32,7 +32,7 @@ except:
     wti_chg_str = ""
     wti_color = "#888"
 
-total_score = round((10 + 10 + 6 + 5) / 4, 1)
+total_score = round((10 + 10 + 7 + 5) / 4, 1)
 risk_label = "CRITICAL" if total_score >= 8 else "ELEVATED" if total_score >= 6 else "MODERATE"
 risk_color = "#f87171" if total_score >= 8 else "#fbbf24" if total_score >= 6 else "#4ade80"
 
@@ -92,19 +92,19 @@ st.markdown("Current assessment of key geopolitical risk factors affecting crude
 risk_factors = {
     "Iran War & Hormuz Risk": {
         "score": 10, "trend": "↑",
-        "note": "US-Israel strikes began Feb 28. Khamenei assassinated. Kharg Island — Iran's main oil export hub handling 90% of exports — struck by US forces. Hormuz near standstill."
+        "note": "US-Israel strikes began Feb 28. Khamenei assassinated. Hormuz dual-track: open to China, Russia, India (with fees in Yuan); closed to US, Israel and allies. Iran formalizing Hormuz toll system."
     },
     "Middle East Conflict Risk": {
         "score": 10, "trend": "↑",
-        "note": "Iran struck Dimona nuclear vicinity Mar 22 — first nuclear-adjacent attack. Trump 48-hr ultimatum: open Hormuz or lose power plants. Iran threatens desalination facilities across Gulf."
+        "note": "Iran struck Dimona nuclear vicinity Mar 22. 15-point US plan rejected. Iran counter-demands Hormuz sovereignty and war reparations. Israel accelerating strikes before ceasefire. IRGC navy commander killed Mar 26."
     },
     "Russia Supply Disruption": {
-        "score": 6, "trend": "→",
-        "note": "Ukraine conflict continues. Russian exports rerouted to Asia but volumes stable."
+        "score": 7, "trend": "↑",
+        "note": "Ukraine drone strike hit Ust-Luga terminal Mar 26 — threatens 400,000 bpd refinery output. Kirishi refinery also struck. Russia supply disruption now active, not just background risk."
     },
     "US Energy Policy Uncertainty": {
         "score": 5, "trend": "↑",
-        "note": "All policy tools exhausted — SPR below legal floor, Iranian sanctions lifted, Russia waivers issued. Trump ultimatums now the primary price driver. Policy uncertainty at war-high."
+        "note": "All policy tools exhausted — SPR below legal floor, Iranian sanctions lifted, Russia waivers issued. Trump considering fuel tax suspension. 5-day window expires today."
     },
 }
 
@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 15-Point Plan Delivered — Iran Demands Hormuz Sovereignty, Gap Remains Wide"
+    war_signal = "🔴 Dual-Track Hormuz — Iran Charges Tolls in Yuan, Rejects US Plan, 5-Day Window Expires"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -657,49 +657,49 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 25, 2026",
-        "action": "US delivers 15-point ceasefire plan to Iran via Pakistan — Iran issues 5-point counteroffer demanding Hormuz sovereignty",
-        "interpretation": "The first concrete diplomatic exchange of the war. The US 15-point plan covers sanctions relief, nuclear rollback, IAEA monitoring, missile limits, and Hormuz reopening. Iran's counter: complete halt to aggression, security guarantees, war reparations, and — critically — recognition of Iranian sovereignty over the Strait of Hormuz. That last condition is a near-certain nonstarter for Washington. Brent fell 5–7% to below $100 on ceasefire optimism, but Iran continued attacks on Kuwait airport and Gulf states simultaneously. The gap between the two positions remains very wide.",
-        "impact": "🟡 Neutral",
-        "source_title": "Iran receives US ceasefire plan, issues own counteroffer — AP / CNBC",
-        "source_url": "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html"
-    },
-    {
-        "date": "Mar 25, 2026",
-        "action": "Citrini Research: Fed will 'look through' oil shock and cut rates within 12 months — full position established",
-        "interpretation": "A direct counter to Goldman's 'rate hike risk' thesis. Citrini argues: 2022 was zero rates + 5% CPI; today rates are near neutral. High oil prices themselves are tightening financial conditions — the Fed doesn't need to add more. 'Rate hikes can't create more oil supply.' With unemployment rising, the Fed won't tighten. Citrini is all-in long SOFR March 2027 futures with equity shorts as hedge. Two scenarios: war ends → consumer still stressed → recession → Fed cuts; war continues → equities fall → short hedge pays. Important counter-signal to the market's current 50% rate hike pricing.",
-        "impact": "🔻 Bearish",
-        "source_title": "Citrini: Fed will look through oil shock, all-in on rate cuts — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768372"
-    },
-    {
-        "date": "Mar 24, 2026",
-        "action": "Iranian source confirms US 'outreach' through intermediaries — Iran willing to listen, not negotiate directly",
-        "interpretation": "Iran confirmed Washington-initiated outreach through back channels but not formal talks. Iran's conditions: sanctions relief, guarantees against future attacks, preservation of national interests. Oil prices rose again after Monday's 7% drop — market correctly identified that 'outreach' is not a deal.",
-        "impact": "🟡 Neutral",
-        "source_title": "Iranian source says US initiated outreach — CNN",
-        "source_url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-24-26"
-    },
-    {
-        "date": "Mar 23, 2026",
-        "action": "Multi-asset selloff: Korea circuit breaker, gold wipes 2026 gains, Fed rate hike now 50% priced",
-        "interpretation": "Goldman Sachs's 'second shoe' beginning to drop. Korean KOSPI fell 6.5% triggering circuit breaker. Gold fell 4-5% erasing all 2026 gains. Markets pricing 50% Fed rate hike probability — all cut expectations wiped out. Single geopolitical shock repricing all assets simultaneously, making diversification ineffective.",
+        "date": "Mar 26, 2026",
+        "action": "Iran establishes dual-track Hormuz system — charges Yuan tolls to friendly nations, blocks US and allies",
+        "interpretation": "The most strategically significant development since Hormuz closed. Iran is not 'reopening' the strait — it is institutionalizing a two-tier access system: China, Russia, India, Pakistan, Iraq, Bangladesh can transit (with fees paid in Yuan); US, Israel and allies cannot. Iran's parliament is formalizing the toll structure modeled on Egypt's Suez Canal fees. This is simultaneously a revenue source, a geopolitical weapon, and a de-dollarization move. It directly enacts Iran's ceasefire demand for 'Hormuz sovereignty' before any deal is signed. For oil markets: partial supply relief for Asia via friendly-nation flows, but structural denial of access for Western buyers remains. Brent-WTI spread likely to widen further.",
         "impact": "🔺 Bullish",
-        "source_title": "Global markets selloff — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768110"
+        "source_title": "Iran charges Hormuz toll in Yuan, friendly nations transiting — CCTV / Fortune",
+        "source_url": "https://fortune.com/2026/03/26/iran-toll-strait-of-hormuz-oil-paid-in-yuan/"
+    },
+    {
+        "date": "Mar 26, 2026",
+        "action": "Ukraine drone strikes Russia's Ust-Luga terminal — threatens 400,000 bpd refinery output within days",
+        "interpretation": "A new supply shock layered on top of Hormuz. The Ust-Luga Baltic port handles 18 million tons of fuel oil annually. Four major Russian refineries — Kirishi, Yaroslavl, Moscow, Ryazan — may be forced to cut runs to minimum levels within days. Kirishi refinery was also separately struck the same day. This is not background noise — it is an active, immediate supply disruption. Combined with Hormuz, the global supply picture is deteriorating on two fronts simultaneously.",
+        "impact": "🔺 Bullish",
+        "source_title": "Damaged Ust-Luga terminal may force Russian refineries to cut runs — Reuters",
+        "source_url": "https://www.reuters.com"
+    },
+    {
+        "date": "Mar 26, 2026",
+        "action": "Petrochemical supply chain fractures — plastics and polymer prices at 4-year highs, naphtha margins up 270%",
+        "interpretation": "The Hormuz disruption has now propagated beyond oil into industrial supply chains. Asia naphtha refining margins surged from $108/ton to $400+/ton. PE and PP plastic prices at 4-year highs. Middle East accounts for 40%+ of global polyethylene exports. $20-25bn in annual petrochemical flows disrupted. North America is gaining competitive advantage (gas feedstock vs naphtha). Consumer goods inflation — from auto parts to bottled water — is now a secondary transmission channel of the oil shock.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran war chokes petrochemical supply, sends plastic prices soaring — Reuters",
+        "source_url": "https://www.reuters.com"
+    },
+    {
+        "date": "Mar 25, 2026",
+        "action": "US 15-point plan rejected — Iran counter-demands Hormuz sovereignty and war reparations",
+        "interpretation": "First concrete diplomatic exchange failed on first contact. Iran's conditions: halt to aggression, security guarantees, war reparations, and sovereignty over Hormuz. The sovereignty demand is already being implemented via the toll system — Iran is not waiting for a deal. Israel simultaneously accelerated strikes on Iranian weapons factories before any ceasefire could be declared. The 5-day window expires today with no agreement.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran rejects US ceasefire offer, demands Hormuz sovereignty — CNBC",
+        "source_url": "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html"
     },
     {
         "date": "Mar 22, 2026",
         "action": "Goldman Sachs: market has only priced inflation shock — recession is the second shoe to drop",
-        "interpretation": "Hormuz flow collapsed 97% — from 20 mb/d to 0.6 mb/d. Military escorts restore at most 20% of normal flow. Three scenarios: Hormuz reopens in 30 days → Brent Q4 $71; 60-day closure → $93; permanent damage → $110 in 2027. Goldman warns equities, copper, AUD face violent repricing once growth shock is priced.",
+        "interpretation": "Hormuz flow collapsed 97%. Military escorts restore at most 20% of normal flow. Three scenarios: reopens in 30 days → Brent Q4 $71; 60-day closure → $93; permanent damage → $110 in 2027. Goldman warns equities, copper, AUD face violent repricing once growth shock is priced. Citrini counters: Fed will look through oil shock and cut rates — 'rate hikes can't create more oil supply.'",
         "impact": "🔺 Bullish",
         "source_title": "Goldman Sachs Top of Mind — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768093"
     },
     {
         "date": "Mar 18, 2026",
-        "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — $20bn annual revenue loss",
-        "interpretation": "Permanently reframes the market. Cheniere CEO confirmed at CERAWeek (Mar 25): last QatarEnergy LNG cargoes have arrived in Asia — the supply gap is now real and immediate. Cheniere is already at full capacity; Train 5 expansion may start Friday but adds limited volume. Even ceasefire tomorrow does not restore Qatar's supply. US LNG exporters filling the gap at premium prices — but physical capacity is now maxed out. Structural supply shift will not reverse with a ceasefire.",
+        "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — last cargoes arrived in Asia Mar 25",
+        "interpretation": "Cheniere CEO confirmed at CERAWeek: last QatarEnergy LNG cargoes arrived in Asia — gap is now real and immediate. Cheniere at full capacity. US LNG physical headroom maxed out. Structural supply shift will not reverse with a ceasefire.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
@@ -827,32 +827,34 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 25, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 26, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Today marks the first concrete diplomatic exchange of the war.
-        The US delivered a 15-point plan via Pakistan; Iran responded with a 5-point counteroffer.
-        Brent fell below $100 for the first time since the war began.
-        But Iran simultaneously attacked Kuwait's airport and continued strikes across the Gulf —
-        the gap between the two positions is wide, and Iran's demand for Hormuz sovereignty
-        is a near-certain nonstarter for Washington.
+        Iran has moved from threatening to institutionalizing. The dual-track Hormuz toll system —
+        open to China, Russia, India in Yuan; closed to the US and allies —
+        is not a negotiating position. It is a fait accompli being formalized into law
+        while ceasefire talks remain deadlocked. Iran's parliament is legislating
+        the very 'Hormuz sovereignty' it demands as a ceasefire condition.
+        This is strategically brilliant: Iran extracts economic value from the strait
+        while maintaining leverage, regardless of whether a deal is ever reached.
         <br><br>
-        Two institutional frameworks now stand in direct opposition on the most important
-        downstream question — what happens to interest rates.
-        Goldman Sachs warns the market has only priced the inflation shock,
-        and that recession is the second shoe to drop, implying rate hikes or prolonged holds.
-        Citrini Research takes the opposite view: the Fed will look through the oil shock entirely,
-        because high oil prices are themselves tightening financial conditions,
-        rate hikes can't create more oil supply, and rising unemployment makes hikes politically impossible.
-        Both frameworks are internally coherent. The resolution depends entirely on
-        how long Hormuz stays closed.
+        The supply picture deteriorated on a second front today.
+        Ukraine struck Russia's Ust-Luga Baltic terminal,
+        threatening 400,000 bpd of refinery output within days.
+        Two simultaneous supply disruptions — Hormuz and now Russia — are compounding.
+        This is the scenario Goldman warned about: cascading shocks that the market
+        has not yet fully priced.
         <br><br>
-        The supply picture clarified further today. Cheniere's CEO confirmed at CERAWeek:
-        the last QatarEnergy LNG cargoes have arrived in Asia — the gap is now real and immediate.
-        Cheniere is already at full capacity. US LNG physical headroom is maxed out.
-        The structural supply shift is underway and will not reverse with a ceasefire.
+        The damage is now propagating beyond energy markets into industrial supply chains.
+        Plastics and petrochemicals at four-year highs. Naphtha margins up 270%.
+        Consumer goods inflation — from auto parts to bottled water — is a second-order
+        transmission channel that will keep pressure on inflation data for months,
+        regardless of what happens to oil prices.
         <br><br>
-        Watch whether Iran's Hormuz sovereignty demand is a negotiating position or a genuine red line.
-        That single question determines whether the 15-point plan goes anywhere.
+        The 5-day window expires today. Three outcomes remain:
+        Trump extends again, executes the power plant threat, or accepts Iran's
+        Hormuz sovereignty condition as a starting point for negotiation.
+        The third option — which would represent a fundamental shift in US Middle East policy —
+        is the one the market has not yet priced at all.
     </div>
 </div>
 """, unsafe_allow_html=True)
