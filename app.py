@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Dual-Track Hormuz — Iran Charges Tolls in Yuan, Rejects US Plan, 5-Day Window Expires"
+    war_signal = "🔴 Hormuz Still Closed — IRGC Turns Back Ships, Trump's 'Open' Claim Contradicted by Facts"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -657,41 +657,41 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 26, 2026",
-        "action": "Iran establishes dual-track Hormuz system — charges Yuan tolls to friendly nations, blocks US and allies",
-        "interpretation": "The most strategically significant development since Hormuz closed. Iran is not 'reopening' the strait — it is institutionalizing a two-tier access system: China, Russia, India, Pakistan, Iraq, Bangladesh can transit (with fees paid in Yuan); US, Israel and allies cannot. Iran's parliament is formalizing the toll structure modeled on Egypt's Suez Canal fees. This is simultaneously a revenue source, a geopolitical weapon, and a de-dollarization move. It directly enacts Iran's ceasefire demand for 'Hormuz sovereignty' before any deal is signed. For oil markets: partial supply relief for Asia via friendly-nation flows, but structural denial of access for Western buyers remains. Brent-WTI spread likely to widen further.",
+        "date": "Mar 27, 2026",
+        "action": "Trump extends pause to April 6, claims talks 'going very well' — IRGC turns back 3 ships, calls Trump's 'open' claim a lie",
+        "interpretation": "Trump unilaterally extended the power plant strike pause by 10 days to April 6, claiming it was 'at Iran's request' and talks are 'going very well.' Iran denied all of this. The IRGC simultaneously turned back 3 container ships trying to transit Hormuz and publicly called Trump's statement that the strait is open 'a lie.' Ships are now faking their identities — displaying Chinese ownership signals to get IRGC clearance. US naval escorts are 'physically impossible' in the 21-mile strait. The extension is a pattern of unilateral postponements with no verified Iranian reciprocity.",
         "impact": "🔺 Bullish",
-        "source_title": "Iran charges Hormuz toll in Yuan, friendly nations transiting — CCTV / Fortune",
+        "source_title": "IRGC turns back 3 ships, calls Trump's open claim a lie — Xinhua / Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768582"
+    },
+    {
+        "date": "Mar 27, 2026",
+        "action": "Capital Alpha: 35% probability war extends into 2027 — 75% probability US ground troops seize Iranian territory",
+        "interpretation": "The most important institutional probability assessment of the war's duration. Capital Alpha Partners: 25% chance war ends by May, 45% settles in fall 2026, 35% extends into 2027. Separately, 75% probability US deploys ground forces to seize Kharg Island or Hormuz-area islands. Goldman Sachs estimates war is costing US economy 10,000 jobs per month. Dow CEO warns petrochemical shortage will fuel inflation for the rest of the year. The market is still pricing a quick resolution — these probabilities say otherwise.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran war could drag into 2027, analyst warns — Fortune",
+        "source_url": "https://fortune.com/2026/03/27/iran-war-timeline-fall-2027-us-ground-troops-kharg-island-seizure/"
+    },
+    {
+        "date": "Mar 27, 2026",
+        "action": "Central banks selling gold to pay energy bills — Turkey dumps $8bn, 'permanent buyer' narrative breaks down",
+        "interpretation": "A new transmission channel from oil shock to financial markets. Turkey sold 60 tons of gold ($8bn+) in March to cover surging energy import costs. Energy-importing nations are liquidating gold reserves for dollars to pay oil bills. Gulf states facing reduced petrodollar inflows. Goldman warns gold has no 'lender of last resort' — if EM central banks collectively sell, a self-reinforcing downward spiral becomes hard to stop. Gold has fallen ~18% from its $5,000 peak. The oil shock is now distorting the safe-haven function of gold itself.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran war shocks gold market, central bank 'permanent buyer' myth breaks — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768596"
+    },
+    {
+        "date": "Mar 26, 2026",
+        "action": "Iran establishes dual-track Hormuz system — Yuan tolls for friendly nations, total closure for US and allies",
+        "interpretation": "Iran is institutionalizing a two-tier access system: China, Russia, India, Pakistan can transit (fees in Yuan); US, Israel and allies cannot. Parliament formalizing toll structure. This is simultaneously revenue, geopolitical weapon, and de-dollarization. Iran is enacting its ceasefire demand for 'Hormuz sovereignty' before any deal is signed. Even 'friendly' passage is unreliable — ships fake identities to signal IRGC clearance.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran charges Hormuz toll in Yuan — CCTV / Fortune",
         "source_url": "https://fortune.com/2026/03/26/iran-toll-strait-of-hormuz-oil-paid-in-yuan/"
-    },
-    {
-        "date": "Mar 26, 2026",
-        "action": "Ukraine drone strikes Russia's Ust-Luga terminal — threatens 400,000 bpd refinery output within days",
-        "interpretation": "A new supply shock layered on top of Hormuz. The Ust-Luga Baltic port handles 18 million tons of fuel oil annually. Four major Russian refineries — Kirishi, Yaroslavl, Moscow, Ryazan — may be forced to cut runs to minimum levels within days. Kirishi refinery was also separately struck the same day. This is not background noise — it is an active, immediate supply disruption. Combined with Hormuz, the global supply picture is deteriorating on two fronts simultaneously.",
-        "impact": "🔺 Bullish",
-        "source_title": "Damaged Ust-Luga terminal may force Russian refineries to cut runs — Reuters",
-        "source_url": "https://www.reuters.com"
-    },
-    {
-        "date": "Mar 26, 2026",
-        "action": "Petrochemical supply chain fractures — plastics and polymer prices at 4-year highs, naphtha margins up 270%",
-        "interpretation": "The Hormuz disruption has now propagated beyond oil into industrial supply chains. Asia naphtha refining margins surged from $108/ton to $400+/ton. PE and PP plastic prices at 4-year highs. Middle East accounts for 40%+ of global polyethylene exports. $20-25bn in annual petrochemical flows disrupted. North America is gaining competitive advantage (gas feedstock vs naphtha). Consumer goods inflation — from auto parts to bottled water — is now a secondary transmission channel of the oil shock.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran war chokes petrochemical supply, sends plastic prices soaring — Reuters",
-        "source_url": "https://www.reuters.com"
-    },
-    {
-        "date": "Mar 25, 2026",
-        "action": "US 15-point plan rejected — Iran counter-demands Hormuz sovereignty and war reparations",
-        "interpretation": "First concrete diplomatic exchange failed on first contact. Iran's conditions: halt to aggression, security guarantees, war reparations, and sovereignty over Hormuz. The sovereignty demand is already being implemented via the toll system — Iran is not waiting for a deal. Israel simultaneously accelerated strikes on Iranian weapons factories before any ceasefire could be declared. The 5-day window expires today with no agreement.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran rejects US ceasefire offer, demands Hormuz sovereignty — CNBC",
-        "source_url": "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html"
     },
     {
         "date": "Mar 22, 2026",
         "action": "Goldman Sachs: market has only priced inflation shock — recession is the second shoe to drop",
-        "interpretation": "Hormuz flow collapsed 97%. Military escorts restore at most 20% of normal flow. Three scenarios: reopens in 30 days → Brent Q4 $71; 60-day closure → $93; permanent damage → $110 in 2027. Goldman warns equities, copper, AUD face violent repricing once growth shock is priced. Citrini counters: Fed will look through oil shock and cut rates — 'rate hikes can't create more oil supply.'",
+        "interpretation": "Hormuz flow collapsed 97%. Three scenarios: reopens in 30 days → Brent Q4 $71; 60-day closure → $93; permanent damage → $110 in 2027. Citrini counters: Fed will look through oil shock and cut — 'rate hikes can't create more oil supply.' Resolution depends on Hormuz timeline that neither institution can predict.",
         "impact": "🔺 Bullish",
         "source_title": "Goldman Sachs Top of Mind — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768093"
@@ -699,7 +699,7 @@ policy_actions = [
     {
         "date": "Mar 18, 2026",
         "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — last cargoes arrived in Asia Mar 25",
-        "interpretation": "Cheniere CEO confirmed at CERAWeek: last QatarEnergy LNG cargoes arrived in Asia — gap is now real and immediate. Cheniere at full capacity. US LNG physical headroom maxed out. Structural supply shift will not reverse with a ceasefire.",
+        "interpretation": "Gap is now real and immediate. Cheniere at full capacity. US LNG physical headroom maxed out. Structural supply shift will not reverse with a ceasefire. Goldman: if Qatar LNG outage extends beyond 2 months, TTF approaches €100/MWh.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
@@ -827,34 +827,32 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 26, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 27, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Iran has moved from threatening to institutionalizing. The dual-track Hormuz toll system —
-        open to China, Russia, India in Yuan; closed to the US and allies —
-        is not a negotiating position. It is a fait accompli being formalized into law
-        while ceasefire talks remain deadlocked. Iran's parliament is legislating
-        the very 'Hormuz sovereignty' it demands as a ceasefire condition.
-        This is strategically brilliant: Iran extracts economic value from the strait
-        while maintaining leverage, regardless of whether a deal is ever reached.
+        Trump extended the power plant pause to April 6, claimed it was at Iran's request,
+        and said talks are going very well. Iran's IRGC simultaneously turned back 3 ships
+        trying to transit Hormuz and publicly called Trump's statement that the strait is open
+        'a lie.' This is the pattern: Trump announces progress, Iran denies it and escalates.
+        The market should not price Trump's unilateral announcements as verified diplomatic progress
+        until Iran takes a concrete reciprocal action — which has not happened.
         <br><br>
-        The supply picture deteriorated on a second front today.
-        Ukraine struck Russia's Ust-Luga Baltic terminal,
-        threatening 400,000 bpd of refinery output within days.
-        Two simultaneous supply disruptions — Hormuz and now Russia — are compounding.
-        This is the scenario Goldman warned about: cascading shocks that the market
-        has not yet fully priced.
+        Capital Alpha's probability framework is the most useful lens today:
+        25% chance the war ends by May, 45% in fall 2026, 35% into 2027.
+        The market is still pricing a quick resolution.
+        These probabilities suggest the structural supply disruption
+        has a high probability of lasting well beyond what is currently priced.
         <br><br>
-        The damage is now propagating beyond energy markets into industrial supply chains.
-        Plastics and petrochemicals at four-year highs. Naphtha margins up 270%.
-        Consumer goods inflation — from auto parts to bottled water — is a second-order
-        transmission channel that will keep pressure on inflation data for months,
-        regardless of what happens to oil prices.
+        The oil shock is now propagating into asset classes far beyond energy.
+        Central banks — long assumed to be permanent gold buyers — are selling
+        to pay energy import bills. Turkey dumped $8bn in gold this month.
+        The 'safe haven' function of gold is being distorted by the same shock
+        driving oil prices higher. When oil-driven inflation forces central banks
+        to sell reserve assets for dollars, traditional portfolio hedges stop working.
+        This is the financial system stress Goldman warned about — and it is now visible.
         <br><br>
-        The 5-day window expires today. Three outcomes remain:
-        Trump extends again, executes the power plant threat, or accepts Iran's
-        Hormuz sovereignty condition as a starting point for negotiation.
-        The third option — which would represent a fundamental shift in US Middle East policy —
-        is the one the market has not yet priced at all.
+        The single most important near-term variable: whether the April 6 deadline
+        produces any verified Iranian reciprocity, or becomes the third consecutive
+        unilateral extension with no substantive movement.
     </div>
 </div>
 """, unsafe_allow_html=True)
