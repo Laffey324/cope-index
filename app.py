@@ -92,19 +92,19 @@ st.markdown("Current assessment of key geopolitical risk factors affecting crude
 risk_factors = {
     "Iran War & Hormuz Risk": {
         "score": 10, "trend": "↑",
-        "note": "US-Israel strikes began Feb 28. Khamenei assassinated. Hormuz dual-track: open to China, Russia, India (with fees in Yuan); closed to US, Israel and allies. Iran formalizing Hormuz toll system."
+        "note": "Hormuz still closed — IRGC turned back 3 ships Mar 27, called Trump's 'open' claim a lie. Dual-track toll system in Yuan institutionalized. ~500mb cumulative supply lost. Brent $115, up 60% since war began."
     },
     "Middle East Conflict Risk": {
         "score": 10, "trend": "↑",
-        "note": "Iran struck Dimona nuclear vicinity Mar 22. 15-point US plan rejected. Iran counter-demands Hormuz sovereignty and war reparations. Israel accelerating strikes before ceasefire. IRGC navy commander killed Mar 26."
+        "note": "Houthis formally entered war Mar 28 — firing ballistic missiles at Israel, threatening Yanbu port and Bab al-Mandab Strait. Saudi's only Hormuz bypass now in missile range. Last buffer route at risk."
     },
     "Russia Supply Disruption": {
         "score": 7, "trend": "↑",
-        "note": "Ukraine drone strike hit Ust-Luga terminal Mar 26 — threatens 400,000 bpd refinery output. Kirishi refinery also struck. Russia supply disruption now active, not just background risk."
+        "note": "Ukraine drone strike hit Ust-Luga terminal Mar 26 — threatens 400,000 bpd refinery output. Kirishi refinery also struck. Two simultaneous supply shocks now active."
     },
     "US Energy Policy Uncertainty": {
         "score": 5, "trend": "↑",
-        "note": "All policy tools exhausted — SPR below legal floor, Iranian sanctions lifted, Russia waivers issued. Trump considering fuel tax suspension. 5-day window expires today."
+        "note": "All policy tools exhausted. SPR below legal floor. April 6 deadline extended unilaterally — Iran denied requesting extension. Trump's verbal interventions no longer moving markets durably."
     },
 }
 
@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Hormuz Still Closed — IRGC Turns Back Ships, Trump's 'Open' Claim Contradicted by Facts"
+    war_signal = "🔴 War Widens — Houthis Enter, Bab al-Mandab Now at Risk, Brent $115"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -584,14 +584,14 @@ try:
     """, unsafe_allow_html=True)
 
     for s in [
-        {"title": "🟢 Scenario A: Hormuz Reopens within 30 Days", "direction": "Sharply Bearish",
-         "driver": "Geopolitical risk premium collapses as tanker traffic resumes. IEA emergency reserves wind down. Pre-war demand fundamentals reassert. Demand destruction from elevated prices adds further downward pressure. Expect a rapid, significant price correction.",
+        {"title": "🟢 Scenario A: Deal reached before April 6 — Hormuz reopens within 30 days", "direction": "Bearish — But L-Shaped, Not V-Shaped",
+         "driver": "Goldman base case: Brent falls to $71 by Q4 if flows restored within 30 days. BUT: structural damage means no V-shaped recovery. SPR must be refilled — governments become massive price-insensitive buyers in late 2026/2027. Qatar LNG offline for 5 years. Engineering cold-start: production facilities take weeks to restart, insurance months to normalize. L-shaped price plateau, not a crash.",
          "bg": "rgba(34,197,94,0.06)", "border": "#22c55e", "color": "#166534", "dir_color": "#22c55e"},
-        {"title": "🟡 Scenario B: Partial Resolution — 60 to 90 Days", "direction": "Neutral with High Volatility",
-         "driver": "Ceasefire negotiations begin but Hormuz only partially reopens. IEA reserve release (~6.7 mb/d) provides partial buffer against the ~20 mb/d supply gap. Market remains caught between supply disruption and demand destruction. High volatility, no clear directional trend.",
+        {"title": "🟡 Scenario B: Partial resolution — 60 to 90 days, Hormuz partially reopens", "direction": "Neutral with High Volatility",
+         "driver": "Goldman 60-day scenario: Brent Q4 $93. Capital Alpha: 45% probability this is the outcome (fall 2026 resolution). Bab al-Mandab status becomes critical — if Houthis block Yanbu port, Saudi's bypass route fails even after Hormuz deal. Market reprices toward growth shock rather than inflation shock. Bond market already beginning this transition.",
          "bg": "rgba(245,158,11,0.06)", "border": "#f59e0b", "color": "#92400e", "dir_color": "#f59e0b"},
-        {"title": "🔴 Scenario C: Closure Extends Beyond 90 Days", "direction": "Bullish — Upside Risk Dominant",
-         "driver": "Supply deficit compounds week over week. IEA reserves insufficient to close ~13 mb/d daily gap. Demand destruction accelerates as recession risk rises in Europe and Asia. Iranian political vacuum after Khamenei assassination prolongs conflict. Upside risk remains the dominant force.",
+        {"title": "🔴 Scenario C: Closure extends beyond 90 days or into 2027", "direction": "Bullish — $200 scenario modeled by US government",
+         "driver": "Capital Alpha: 35% probability war extends into 2027. US government actively modeling $200/bbl scenario. Houthis blocking Bab al-Mandab eliminates Saudi bypass — both chokepoints simultaneously disrupted. Goldman: Brent exceeds 2008 $147 record if Hormuz stays at 5% flow for 10 weeks. Demand destruction accelerates. Recession becomes base case, not tail risk.",
          "bg": "rgba(239,68,68,0.06)", "border": "#ef4444", "color": "#991b1b", "dir_color": "#ef4444"},
     ]:
         st.markdown(
@@ -657,49 +657,49 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 27, 2026",
-        "action": "Trump extends pause to April 6, claims talks 'going very well' — IRGC turns back 3 ships, calls Trump's 'open' claim a lie",
-        "interpretation": "Trump unilaterally extended the power plant strike pause by 10 days to April 6, claiming it was 'at Iran's request' and talks are 'going very well.' Iran denied all of this. The IRGC simultaneously turned back 3 container ships trying to transit Hormuz and publicly called Trump's statement that the strait is open 'a lie.' Ships are now faking their identities — displaying Chinese ownership signals to get IRGC clearance. US naval escorts are 'physically impossible' in the 21-mile strait. The extension is a pattern of unilateral postponements with no verified Iranian reciprocity.",
+        "date": "Mar 28, 2026",
+        "action": "Houthis formally enter war — fire ballistic missiles at Israel, threaten Yanbu port and Bab al-Mandab Strait",
+        "interpretation": "The most significant escalation since the war began. Saudi Arabia's only bypass for Hormuz-blocked oil runs through Yanbu port and the Bab al-Mandab Strait — both now within Houthi missile range. Yanbu was handling 340 mb/d daily (peak 500 mb/d this week) as the last viable alternative to Hormuz. If Yanbu is struck, Saudi oil has no exit route. Brent already at $115. This is the scenario where both major global energy chokepoints are simultaneously threatened.",
         "impact": "🔺 Bullish",
-        "source_title": "IRGC turns back 3 ships, calls Trump's open claim a lie — Xinhua / Wall Street CN",
+        "source_title": "Houthis enter war, Bab al-Mandab Strait at risk — Xinhua / Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768648"
+    },
+    {
+        "date": "Mar 28, 2026",
+        "action": "Bond market decouples from oil — US 2-year yield falls as recession fear overtakes inflation fear",
+        "interpretation": "The clearest market signal yet that Goldman's 'second shoe' is dropping. Oil +5%, stocks at 7-month lows, but US 2-year Treasury yield FELL to 3.90% on Friday. Normal logic: oil up → inflation fear → yields up. What actually happened: oil up → growth fear → yields down. BMO rates chief: 'Bond front-end is no longer tracking oil as inflation risk — it's focused on growth and risk asset downside.' The market has begun pricing recession, not just inflation. Goldman's framework is being validated in real time.",
+        "impact": "🔺 Bullish",
+        "source_title": "Oil surges, stocks fall, bonds decouple — recession pricing begins — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768635"
+    },
+    {
+        "date": "Mar 27, 2026",
+        "action": "Trump extends pause to April 6 — Iran denied requesting it, IRGC simultaneously turned back 3 ships",
+        "interpretation": "Trump's unilateral extension pattern continues. He claimed it was 'at Iran's request' — Iran denied this. IRGC simultaneously turned back 3 container ships and publicly called Trump's claim the strait is open 'a lie.' Ships are now faking identities to get IRGC clearance. US naval escorts 'physically impossible' in the 21-mile strait. Goldman: 'You can't jawbone molecules.' The market no longer reacts durably to Trump's verbal interventions.",
+        "impact": "🔺 Bullish",
+        "source_title": "IRGC turns back 3 ships, calls Trump's claim a lie — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768582"
     },
     {
         "date": "Mar 27, 2026",
-        "action": "Capital Alpha: 35% probability war extends into 2027 — 75% probability US ground troops seize Iranian territory",
-        "interpretation": "The most important institutional probability assessment of the war's duration. Capital Alpha Partners: 25% chance war ends by May, 45% settles in fall 2026, 35% extends into 2027. Separately, 75% probability US deploys ground forces to seize Kharg Island or Hormuz-area islands. Goldman Sachs estimates war is costing US economy 10,000 jobs per month. Dow CEO warns petrochemical shortage will fuel inflation for the rest of the year. The market is still pricing a quick resolution — these probabilities say otherwise.",
+        "action": "Capital Alpha: 35% war extends to 2027, 75% US ground troops deploy — US government models $200/bbl scenario",
+        "interpretation": "The most important probability framework: 25% war ends by May, 45% fall 2026, 35% into 2027. Bloomberg: US government actively modeling $200/bbl impact on economy. Rystad: ~500mb cumulative supply lost, 17.8 mb/d disrupted daily. Goldman: 10,000 US jobs lost per month. Dow CEO: petrochemical shortage fuels inflation all year. The market is still pricing a quick resolution — these numbers say otherwise.",
         "impact": "🔺 Bullish",
-        "source_title": "Iran war could drag into 2027, analyst warns — Fortune",
+        "source_title": "Iran war could drag into 2027 — Fortune / Bloomberg",
         "source_url": "https://fortune.com/2026/03/27/iran-war-timeline-fall-2027-us-ground-troops-kharg-island-seizure/"
     },
     {
-        "date": "Mar 27, 2026",
-        "action": "Central banks selling gold to pay energy bills — Turkey dumps $8bn, 'permanent buyer' narrative breaks down",
-        "interpretation": "A new transmission channel from oil shock to financial markets. Turkey sold 60 tons of gold ($8bn+) in March to cover surging energy import costs. Energy-importing nations are liquidating gold reserves for dollars to pay oil bills. Gulf states facing reduced petrodollar inflows. Goldman warns gold has no 'lender of last resort' — if EM central banks collectively sell, a self-reinforcing downward spiral becomes hard to stop. Gold has fallen ~18% from its $5,000 peak. The oil shock is now distorting the safe-haven function of gold itself.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran war shocks gold market, central bank 'permanent buyer' myth breaks — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768596"
-    },
-    {
         "date": "Mar 26, 2026",
-        "action": "Iran establishes dual-track Hormuz system — Yuan tolls for friendly nations, total closure for US and allies",
-        "interpretation": "Iran is institutionalizing a two-tier access system: China, Russia, India, Pakistan can transit (fees in Yuan); US, Israel and allies cannot. Parliament formalizing toll structure. This is simultaneously revenue, geopolitical weapon, and de-dollarization. Iran is enacting its ceasefire demand for 'Hormuz sovereignty' before any deal is signed. Even 'friendly' passage is unreliable — ships fake identities to signal IRGC clearance.",
+        "action": "Iran's Hormuz toll system institutionalized — Yuan fees, friendly nations only, parliament formalizing",
+        "interpretation": "Iran is enacting its ceasefire demand for Hormuz sovereignty before any deal is signed. Ships fake identities to signal IRGC clearance. Even 'friendly' passage unreliable — Chinese COSCO ships turned back. This is simultaneously revenue, geopolitical weapon, and de-dollarization. The pre-war Hormuz order will not return regardless of war outcome.",
         "impact": "🔺 Bullish",
         "source_title": "Iran charges Hormuz toll in Yuan — CCTV / Fortune",
         "source_url": "https://fortune.com/2026/03/26/iran-toll-strait-of-hormuz-oil-paid-in-yuan/"
     },
     {
-        "date": "Mar 22, 2026",
-        "action": "Goldman Sachs: market has only priced inflation shock — recession is the second shoe to drop",
-        "interpretation": "Hormuz flow collapsed 97%. Three scenarios: reopens in 30 days → Brent Q4 $71; 60-day closure → $93; permanent damage → $110 in 2027. Citrini counters: Fed will look through oil shock and cut — 'rate hikes can't create more oil supply.' Resolution depends on Hormuz timeline that neither institution can predict.",
-        "impact": "🔺 Bullish",
-        "source_title": "Goldman Sachs Top of Mind — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768093"
-    },
-    {
         "date": "Mar 18, 2026",
         "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — last cargoes arrived in Asia Mar 25",
-        "interpretation": "Gap is now real and immediate. Cheniere at full capacity. US LNG physical headroom maxed out. Structural supply shift will not reverse with a ceasefire. Goldman: if Qatar LNG outage extends beyond 2 months, TTF approaches €100/MWh.",
+        "interpretation": "Cheniere at full capacity. US LNG physical headroom maxed out. Structural supply shift will not reverse with a ceasefire. L-shaped price plateau: SPR refill obligations create hard price floor post-war.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
@@ -827,32 +827,31 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 27, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 28, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Trump extended the power plant pause to April 6, claimed it was at Iran's request,
-        and said talks are going very well. Iran's IRGC simultaneously turned back 3 ships
-        trying to transit Hormuz and publicly called Trump's statement that the strait is open
-        'a lie.' This is the pattern: Trump announces progress, Iran denies it and escalates.
-        The market should not price Trump's unilateral announcements as verified diplomatic progress
-        until Iran takes a concrete reciprocal action — which has not happened.
+        Brent closed at $115 Friday — up 60% since the war began. The Houthis formally entered
+        the conflict Saturday, threatening the Bab al-Mandab Strait and Yanbu port,
+        which has been handling 340–500 mb/d as Saudi Arabia's only Hormuz bypass.
+        If both chokepoints are simultaneously disrupted, there is no remaining bypass.
+        The US government is already modeling a $200/bbl scenario.
         <br><br>
-        Capital Alpha's probability framework is the most useful lens today:
-        25% chance the war ends by May, 45% in fall 2026, 35% into 2027.
-        The market is still pricing a quick resolution.
-        These probabilities suggest the structural supply disruption
-        has a high probability of lasting well beyond what is currently priced.
+        The bond market sent a decisive signal Friday: US 2-year yields fell even as oil surged.
+        This is the textbook transition Goldman warned about — from 'inflation shock' to 'recession shock.'
+        When oil rises and bonds rally simultaneously, the market is saying:
+        growth destruction will outpace inflation, and the Fed will eventually cut, not hike.
+        Goldman's 'second shoe' is no longer a prediction — it is happening in bond markets now.
         <br><br>
-        The oil shock is now propagating into asset classes far beyond energy.
-        Central banks — long assumed to be permanent gold buyers — are selling
-        to pay energy import bills. Turkey dumped $8bn in gold this month.
-        The 'safe haven' function of gold is being distorted by the same shock
-        driving oil prices higher. When oil-driven inflation forces central banks
-        to sell reserve assets for dollars, traditional portfolio hedges stop working.
-        This is the financial system stress Goldman warned about — and it is now visible.
+        The price recovery framework has also shifted. Fortune's 'L-shaped plateau' analysis
+        is the most accurate frame: even if Hormuz reopens, prices will not V-shape back down.
+        SPR refill obligations create a hard floor — governments will buy back hundreds of millions
+        of barrels as price-insensitive buyers in late 2026 and 2027.
+        Qatar's LNG is gone for five years. Production facilities take weeks to cold-start.
+        The pre-war energy baseline will not return regardless of when the war ends.
         <br><br>
-        The single most important near-term variable: whether the April 6 deadline
-        produces any verified Iranian reciprocity, or becomes the third consecutive
-        unilateral extension with no substantive movement.
+        April 6 is the next hard deadline. Watch whether Trump executes, extends again,
+        or whether the Houthi entry into the war forces a recalculation of the entire negotiating framework.
+        A deal that reopens Hormuz but leaves Bab al-Mandab under Houthi threat
+        solves only half the problem.
     </div>
 </div>
 """, unsafe_allow_html=True)
