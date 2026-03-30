@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 War Widens — Houthis Enter, Bab al-Mandab Now at Risk, Brent $115"
+    war_signal = "🔴 Escalation Spiral — Trump Threatens Kharg Island, Iran Threatens Regional Blackout, April 6 Deadline"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"  
@@ -657,41 +657,41 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 28, 2026",
-        "action": "Houthis formally enter war — fire ballistic missiles at Israel, threaten Yanbu port and Bab al-Mandab Strait",
-        "interpretation": "The most significant escalation since the war began. Saudi Arabia's only bypass for Hormuz-blocked oil runs through Yanbu port and the Bab al-Mandab Strait — both now within Houthi missile range. Yanbu was handling 340 mb/d daily (peak 500 mb/d this week) as the last viable alternative to Hormuz. If Yanbu is struck, Saudi oil has no exit route. Brent already at $115. This is the scenario where both major global energy chokepoints are simultaneously threatened.",
+        "date": "Mar 30, 2026",
+        "action": "Trump threatens to obliterate Kharg Island and all oil wells — Iran counter-threatens regional power blackout",
+        "interpretation": "The sharpest escalation in threat language since the war began. Trump explicitly named targets 'intentionally left untouched until now': all power plants, oil wells, Kharg Island (85-95% of Iran's oil export capacity), and desalination plants. Iran responded: if power facilities are struck, Iran will cut electricity to the entire region. Gulf states hosting US bases — Saudi Arabia, UAE, Kuwait, Bahrain — are now in the direct threat envelope. Separately, the US is discussing a special forces operation to extract 450kg of highly enriched uranium from inside Iran. April 6 remains the hard deadline.",
         "impact": "🔺 Bullish",
-        "source_title": "Houthis enter war, Bab al-Mandab Strait at risk — Xinhua / Wall Street CN",
+        "source_title": "Trump threatens Kharg Island, Iran threatens regional blackout — Xinhua / CCTV",
+        "source_url": "https://wallstreetcn.com/articles/3768769"
+    },
+    {
+        "date": "Mar 30, 2026",
+        "action": "Citadel Securities: war enters Phase 2 — growth destruction now the dominant risk, Oman crude spot at $160/bbl",
+        "interpretation": "The most important institutional framework today. Citadel argues the market is systematically underpricing physical shortages — Oman crude spot is already at $160/bbl vs Brent futures ~$112, reflecting acute Asian shortages. Shortage has spread beyond oil to LNG, helium (chip manufacturing risk), and fertilizer. Two scenarios both lead to demand destruction: either the supply shock directly kills demand, or central banks tighten to fight inflation. Unlike 2022, there are no buffers — no excess savings, no tight labor markets, no fiscal stimulus. Financial condition tightening is now self-reinforcing.",
+        "impact": "🔺 Bullish",
+        "source_title": "Citadel: war enters Phase 2, growth destruction is the bigger risk — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3768788"
+    },
+    {
+        "date": "Mar 30, 2026",
+        "action": "Houthis enter war, fire at Israel — Bab al-Mandab and Yanbu now threatened, Brent heads for record monthly surge",
+        "interpretation": "Saudi Arabia's only Hormuz bypass — Yanbu port via East-West pipeline — is now within Houthi missile range. Yanbu was handling 340-500 mb/d as the last viable alternative route. If struck, Saudi oil has no exit. Brent on track for largest single-month rise on record (~55% in March). Disruption of Bab al-Mandab would remove additional 4-5 mb/d from global markets.",
+        "impact": "🔺 Bullish",
+        "source_title": "Houthis enter war, Bab al-Mandab at risk — Axios / Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768648"
     },
     {
-        "date": "Mar 28, 2026",
-        "action": "Bond market decouples from oil — US 2-year yield falls as recession fear overtakes inflation fear",
-        "interpretation": "The clearest market signal yet that Goldman's 'second shoe' is dropping. Oil +5%, stocks at 7-month lows, but US 2-year Treasury yield FELL to 3.90% on Friday. Normal logic: oil up → inflation fear → yields up. What actually happened: oil up → growth fear → yields down. BMO rates chief: 'Bond front-end is no longer tracking oil as inflation risk — it's focused on growth and risk asset downside.' The market has begun pricing recession, not just inflation. Goldman's framework is being validated in real time.",
-        "impact": "🔺 Bullish",
-        "source_title": "Oil surges, stocks fall, bonds decouple — recession pricing begins — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768635"
-    },
-    {
         "date": "Mar 27, 2026",
-        "action": "Trump extends pause to April 6 — Iran denied requesting it, IRGC simultaneously turned back 3 ships",
-        "interpretation": "Trump's unilateral extension pattern continues. He claimed it was 'at Iran's request' — Iran denied this. IRGC simultaneously turned back 3 container ships and publicly called Trump's claim the strait is open 'a lie.' Ships are now faking identities to get IRGC clearance. US naval escorts 'physically impossible' in the 21-mile strait. Goldman: 'You can't jawbone molecules.' The market no longer reacts durably to Trump's verbal interventions.",
+        "action": "Capital Alpha: 35% war extends to 2027, 75% US ground troops deploy — US government models $200/bbl",
+        "interpretation": "25% war ends by May, 45% fall 2026, 35% into 2027. Bloomberg: US government actively modeling $200/bbl. Rystad: ~500mb cumulative supply lost, 17.8 mb/d disrupted daily. The market is still pricing a quick resolution. These probabilities say otherwise.",
         "impact": "🔺 Bullish",
-        "source_title": "IRGC turns back 3 ships, calls Trump's claim a lie — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768582"
-    },
-    {
-        "date": "Mar 27, 2026",
-        "action": "Capital Alpha: 35% war extends to 2027, 75% US ground troops deploy — US government models $200/bbl scenario",
-        "interpretation": "The most important probability framework: 25% war ends by May, 45% fall 2026, 35% into 2027. Bloomberg: US government actively modeling $200/bbl impact on economy. Rystad: ~500mb cumulative supply lost, 17.8 mb/d disrupted daily. Goldman: 10,000 US jobs lost per month. Dow CEO: petrochemical shortage fuels inflation all year. The market is still pricing a quick resolution — these numbers say otherwise.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran war could drag into 2027 — Fortune / Bloomberg",
+        "source_title": "Iran war could drag into 2027 — Fortune",
         "source_url": "https://fortune.com/2026/03/27/iran-war-timeline-fall-2027-us-ground-troops-kharg-island-seizure/"
     },
     {
         "date": "Mar 26, 2026",
-        "action": "Iran's Hormuz toll system institutionalized — Yuan fees, friendly nations only, parliament formalizing",
-        "interpretation": "Iran is enacting its ceasefire demand for Hormuz sovereignty before any deal is signed. Ships fake identities to signal IRGC clearance. Even 'friendly' passage unreliable — Chinese COSCO ships turned back. This is simultaneously revenue, geopolitical weapon, and de-dollarization. The pre-war Hormuz order will not return regardless of war outcome.",
+        "action": "Iran's Hormuz toll system institutionalized in Yuan — parliament formalizing, even 'friendly' ships turned back",
+        "interpretation": "Iran enacting Hormuz sovereignty before any deal. Ships fake identities to get IRGC clearance. Even Chinese COSCO ships turned back. The pre-war Hormuz order will not return regardless of war outcome.",
         "impact": "🔺 Bullish",
         "source_title": "Iran charges Hormuz toll in Yuan — CCTV / Fortune",
         "source_url": "https://fortune.com/2026/03/26/iran-toll-strait-of-hormuz-oil-paid-in-yuan/"
@@ -699,7 +699,7 @@ policy_actions = [
     {
         "date": "Mar 18, 2026",
         "action": "QatarEnergy: 17% of LNG capacity offline for up to 5 years — last cargoes arrived in Asia Mar 25",
-        "interpretation": "Cheniere at full capacity. US LNG physical headroom maxed out. Structural supply shift will not reverse with a ceasefire. L-shaped price plateau: SPR refill obligations create hard price floor post-war.",
+        "interpretation": "Cheniere at full capacity. US LNG physical headroom maxed out. L-shaped plateau: SPR refill obligations create hard price floor post-war. Structural supply shift will not reverse with a ceasefire.",
         "impact": "🔺 Bullish",
         "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
         "source_url": "https://www.reuters.com"
@@ -827,31 +827,37 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 28, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 30, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Brent closed at $115 Friday — up 60% since the war began. The Houthis formally entered
-        the conflict Saturday, threatening the Bab al-Mandab Strait and Yanbu port,
-        which has been handling 340–500 mb/d as Saudi Arabia's only Hormuz bypass.
-        If both chokepoints are simultaneously disrupted, there is no remaining bypass.
-        The US government is already modeling a $200/bbl scenario.
+        The war has entered what Citadel Securities calls Phase 2 — the transition from
+        inflation shock to growth destruction. The clearest evidence: Oman crude spot
+        is trading at $160/bbl while Brent futures sit at $112. That $48 gap is the market
+        telling you that physical oil in Asia cannot be sourced at any price near
+        what the paper market implies. Futures are still anchored to ceasefire optionality.
+        Physical markets have already priced the shortage as structural.
         <br><br>
-        The bond market sent a decisive signal Friday: US 2-year yields fell even as oil surged.
-        This is the textbook transition Goldman warned about — from 'inflation shock' to 'recession shock.'
-        When oil rises and bonds rally simultaneously, the market is saying:
-        growth destruction will outpace inflation, and the Fed will eventually cut, not hike.
-        Goldman's 'second shoe' is no longer a prediction — it is happening in bond markets now.
+        Trump today named targets 'intentionally left untouched until now' —
+        Kharg Island, all oil wells, all power plants, all desalination facilities.
+        Iran responded that striking power infrastructure would trigger a regional blackout
+        across Gulf states. If either threat is executed, the war moves from
+        disruption to destruction — and the L-shaped plateau becomes a permanent step change.
+        April 6 is the hard deadline. The pattern of unilateral extensions is established,
+        but each extension comes with escalating threats on both sides.
         <br><br>
-        The price recovery framework has also shifted. Fortune's 'L-shaped plateau' analysis
-        is the most accurate frame: even if Hormuz reopens, prices will not V-shape back down.
-        SPR refill obligations create a hard floor — governments will buy back hundreds of millions
-        of barrels as price-insensitive buyers in late 2026 and 2027.
-        Qatar's LNG is gone for five years. Production facilities take weeks to cold-start.
-        The pre-war energy baseline will not return regardless of when the war ends.
+        Citadel identifies the critical asymmetry in the current setup:
+        unlike 2022, there are no shock absorbers. No excess savings. No tight labor markets.
+        No fiscal stimulus headroom. The same oil shock that in 2022 produced inflation
+        now produces stagflation — because the demand base is already weakened.
+        Two paths, same destination: supply shock kills demand directly,
+        or central banks tighten to fight inflation and kill it indirectly.
+        The bond market already voted on this Friday — 2-year yields fell
+        as oil surged, pricing recession not inflation.
         <br><br>
-        April 6 is the next hard deadline. Watch whether Trump executes, extends again,
-        or whether the Houthi entry into the war forces a recalculation of the entire negotiating framework.
-        A deal that reopens Hormuz but leaves Bab al-Mandab under Houthi threat
-        solves only half the problem.
+        Brent is on track for its largest single-month gain on record.
+        The Houthis have entered the war threatening Saudi's last bypass route.
+        The US is discussing extracting 450kg of enriched uranium from inside Iran.
+        April 6 will either produce a deal or the next escalation.
+        There is no third option that leaves the supply picture unchanged.
     </div>
 </div>
 """, unsafe_allow_html=True)
