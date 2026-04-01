@@ -503,10 +503,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 $119 Brent, $4 US Gas — Tanker Hit Off Dubai, Desalination Plant Struck, April 6 Deadline"
-    war_color = "#ef4444"
-    war_bg = "rgba(239,68,68,0.06)"
-    war_border = "#ef4444"  
+    war_signal = "🟡 Trump Claims Iran Ceasefire Request — Iran Denies, April 6 Deadline, Tonight's Speech Watched"
+    war_color = "#f59e0b"
+    war_bg = "rgba(245,158,11,0.06)"
+    war_border = "#f59e0b"  
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
@@ -657,44 +657,44 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Mar 31, 2026",
-        "action": "Brent hits $119 intraday — record monthly surge of 60%+. US gas passes $4/gallon. Kuwaiti tanker struck off Dubai. Iran desalination plant destroyed.",
-        "interpretation": "March 2026 will be recorded as the largest single-month oil price surge in history. Brent May contract touched $119 before expiry; June contract ~$108. US average gasoline broke $4 for the first time since 2022. A fully-loaded Kuwaiti tanker (Al-Salmi) was struck by Iranian drone off Dubai waters — the first confirmed tanker hit in UAE waters. Separately, Iran's Qeshm Island desalination plant was taken offline in an airstrike — the first confirmed destruction of a desalination facility, crossing a red line both sides had threatened. The physical destruction of civilian infrastructure is now happening, not just being threatened.",
+        "date": "Apr 1, 2026",
+        "action": "IEA: April oil losses will be DOUBLE March — 'There is nothing in April.' Supply shock exceeds 1973, 1979, and 2022 Russia combined",
+        "interpretation": "The most important supply warning of the war. IEA chief Birol: March deliveries were pre-war ships already in transit before Feb 28 — that buffer disappears completely in April. Supply loss already exceeds 12 mb/d, greater than 1973 and 1979 oil crises combined. Jet fuel and diesel shortages already hitting Asia, will reach Europe by April-May. Energy rationing becoming realistic in multiple countries. A second SPR release is being evaluated but Birol was explicit: 'This can only reduce pain, not solve the problem. The solution is reopening Hormuz. We are only buying time.'",
         "impact": "🔺 Bullish",
-        "source_title": "Brent $119, US gas $4, tanker hit off Dubai — Bloomberg / NBC News",
-        "source_url": "https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-gas-prices-trump-hormuz-tanker-isfahan-rcna265972"
+        "source_title": "IEA: April oil losses double March, shock exceeds three crises combined — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3769009"
     },
     {
-        "date": "Mar 30, 2026",
-        "action": "Trump threatens to obliterate Kharg Island and all oil wells — Iran counter-threatens regional power blackout",
-        "interpretation": "Trump named targets 'intentionally left untouched until now': all power plants, oil wells, Kharg Island (85-95% of Iran's export capacity), and desalination plants. Iran responded: striking power facilities will trigger a regional blackout across Gulf states. US also discussing special forces operation to extract 450kg of highly enriched uranium from inside Iran. April 6 remains the hard deadline.",
+        "date": "Apr 1, 2026",
+        "action": "Trump claims Iran's president asked for ceasefire — Iran denies. UK hosts 35-nation Hormuz summit. Trump to address nation tonight.",
+        "interpretation": "Trump wrote on Truth Social that Iran's 'New Regime President' requested a ceasefire — he will consider it only when Hormuz is 'open, free and clear.' Iran's foreign ministry called this 'false and baseless.' This is the same pattern established Mar 23, Mar 25, Mar 27: Trump announces progress, Iran denies. However, today is different in one respect — UK PM Starmer announced a virtual summit of 35 nations this week to coordinate Hormuz reopening, the first real multilateral diplomatic framework. Trump will address the nation tonight at 9pm ET — the White House called it an 'important update on the war.' Markets watching closely.",
+        "impact": "🟡 Neutral",
+        "source_title": "Trump claims Iran ceasefire request, Iran denies — CNN / CNBC",
+        "source_url": "https://www.cnbc.com/2026/04/01/trump-iran-war-ceasefire.html"
+    },
+    {
+        "date": "Mar 31, 2026",
+        "action": "Brent hits $119 intraday — record monthly surge of 60%+. US gas passes $4/gallon. Kuwaiti tanker struck off Dubai. Qatari tanker struck Apr 1.",
+        "interpretation": "March 2026: largest single-month oil price surge in recorded history. Brent touched $119, June contract ~$108. US average gasoline broke $4 for first time since 2022. Al-Salmi Kuwaiti tanker struck off Dubai. A QatarEnergy-contracted tanker was struck by Iranian cruise missile Apr 1. Physical destruction of civilian infrastructure and commercial shipping accelerating into April.",
         "impact": "🔺 Bullish",
-        "source_title": "Trump threatens Kharg Island, Iran threatens regional blackout — Xinhua / CCTV",
-        "source_url": "https://wallstreetcn.com/articles/3768769"
+        "source_title": "Brent $119, record monthly surge, tankers struck — Bloomberg",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-03-30/latest-oil-market-news-and-analysis-for-march-31"
     },
     {
         "date": "Mar 30, 2026",
         "action": "Citadel Securities: war enters Phase 2 — growth destruction now dominant, Oman crude spot at $160/bbl vs Brent futures $112",
-        "interpretation": "Futures are systematically underpricing physical shortage. Oman spot at $160 reflects acute Asian shortages. Shortage has spread to LNG, helium (chip manufacturing risk), fertilizer. Unlike 2022, no shock absorbers exist — no excess savings, no tight labor markets. Two scenarios both end in demand destruction. Financial condition tightening becoming self-reinforcing, especially in EM energy importers.",
+        "interpretation": "Futures systematically underpricing physical shortage. Oman spot $160 reflects acute Asian shortages. Shortage spread to LNG, helium, fertilizer. Unlike 2022, no shock absorbers — no excess savings, no tight labor markets. Both scenarios end in demand destruction. Financial condition tightening becoming self-reinforcing.",
         "impact": "🔺 Bullish",
-        "source_title": "Citadel: war enters Phase 2, growth destruction is the bigger risk — Wall Street CN",
+        "source_title": "Citadel: war enters Phase 2, growth destruction is bigger risk — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768788"
     },
     {
         "date": "Mar 28, 2026",
-        "action": "Houthis formally enter war — Bab al-Mandab and Yanbu now threatened, both chokepoints at risk",
-        "interpretation": "Saudi's only Hormuz bypass — Yanbu port via East-West pipeline — is now within Houthi missile range. Yanbu was handling 340-500 mb/d as the last viable alternative. If struck, Saudi oil has no exit. Disruption of Bab al-Mandab would remove additional 4-5 mb/d globally.",
+        "action": "Houthis formally enter war — Bab al-Mandab and Yanbu threatened, both chokepoints at risk",
+        "interpretation": "Saudi's only Hormuz bypass — Yanbu port via East-West pipeline — now within Houthi missile range. Yanbu handling 340-500 mb/d as last viable alternative. Disruption of Bab al-Mandab would remove additional 4-5 mb/d globally.",
         "impact": "🔺 Bullish",
         "source_title": "Houthis enter war, Bab al-Mandab at risk — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768648"
-    },
-    {
-        "date": "Mar 27, 2026",
-        "action": "Capital Alpha: 35% war extends to 2027, 75% US ground troops deploy — US government models $200/bbl",
-        "interpretation": "25% war ends by May, 45% fall 2026, 35% into 2027. US government actively modeling $200/bbl. Rystad: ~500mb cumulative supply lost, 17.8 mb/d disrupted daily. The market is still pricing a quick resolution — these probabilities say otherwise.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran war could drag into 2027 — Fortune",
-        "source_url": "https://fortune.com/2026/03/27/iran-war-timeline-fall-2027-us-ground-troops-kharg-island-seizure/"
     },
     {
         "date": "Mar 18, 2026",
@@ -827,35 +827,39 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — March 31, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 1, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        March 2026 ends as the worst month for global energy markets in recorded history.
-        Brent touched $119 intraday — a 60%+ monthly surge that exceeds every prior record.
-        US gasoline broke $4 for the first time since 2022.
-        A Kuwaiti tanker was struck off Dubai. Iran's Qeshm Island desalination plant
-        was taken offline in an airstrike — the first confirmed civilian infrastructure
-        destruction of the war, crossing a red line both sides had only threatened until today.
+        The most important statement today did not come from Trump or Iran —
+        it came from IEA chief Birol: "There is nothing in April."
+        March deliveries were pre-war ships already past Hormuz before February 28.
+        That buffer is gone. April supply losses will be double March.
+        Even if a ceasefire is announced tomorrow, the April physical shortage is already locked in.
+        The jets that need fuel in May are already grounded in the plan.
+        No diplomatic announcement changes this timeline.
         <br><br>
-        The Citadel framework is the right lens for April: the war has entered Phase 2.
-        Phase 1 was the inflation shock — oil up, yields up, rate hike fears.
-        Phase 2 is growth destruction — the supply shock kills demand directly,
-        or central banks tighten and kill it indirectly.
-        The critical difference from 2022: there are no buffers.
-        No excess savings, no fiscal headroom, no tight labor markets to absorb the hit.
-        Oman crude spot at $160/bbl vs Brent futures at $108-115 tells you
-        the physical market has already moved to Phase 2 pricing.
-        Paper markets are catching up.
+        Trump today claimed Iran's president requested a ceasefire.
+        Iran denied it within hours. This is the fourth time this pattern has played out —
+        March 23, March 25, March 27, and now April 1.
+        The war signal has been moved to yellow not because the claim is credible,
+        but because tonight's national address at 9pm ET is a genuine wildcard.
+        Trump has signaled the war could end in "two to three weeks" without a deal —
+        meaning a unilateral US withdrawal remains possible.
+        Watch what he actually says tonight, not what he claimed on Truth Social this morning.
         <br><br>
-        China's March PMI rebounded to 50.4 — a genuine surprise to the upside.
-        But this is largely pre-war order backfill. Energy cost transmission is lagged
-        by 4-8 weeks; the real impact on Chinese manufacturing margins will
-        show up in April and May data. Do not read the PMI rebound as demand resilience —
-        read it as the last quarter before the full energy shock lands.
+        The UK's 35-nation Hormuz summit is the first real multilateral diplomatic
+        framework of the war. The fact that 35 countries signed a joint statement
+        reflects how broadly the economic pain has spread. But Russia has already
+        said any Hormuz solution requires Iran's consent — which is exactly the
+        problem that has blocked every proposal for five weeks.
         <br><br>
-        April 6 is the last hard deadline before Trump must choose:
-        execute the Kharg Island threat, extend again, or accept Iran's terms.
-        There is no extension without Iranian reciprocity that hasn't already been
-        denied three times. The market is watching whether the pattern breaks.
+        The structural picture from Birol is unambiguous:
+        12+ mb/d lost, exceeding 1973 and 1979 combined.
+        Jet fuel and diesel shortages hitting Asia now, Europe by May.
+        Energy rationing becoming realistic.
+        A second SPR release would buy weeks, not months.
+        The only solution is Hormuz — and Hormuz will not open
+        until Iran's core demands are addressed or US forces physically seize it.
+        April 6 remains the next hard deadline.
     </div>
 </div>
 """, unsafe_allow_html=True)
