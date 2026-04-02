@@ -503,10 +503,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🟡 Trump Claims Iran Ceasefire Request — Iran Denies, April 6 Deadline, Tonight's Speech Watched"
-    war_color = "#f59e0b"
-    war_bg = "rgba(245,158,11,0.06)"
-    war_border = "#f59e0b"  
+    war_signal = "🔴 Trump Speech: 'Nearing Completion' but 2-3 More Weeks of Strikes — Oil +4% on No-Deal Signal"
+    war_color = "#ef4444"
+    war_bg = "rgba(239,68,68,0.06)"
+    war_border = "#ef4444"
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
