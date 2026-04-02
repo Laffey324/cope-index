@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Trump Speech: 'Nearing Completion' but 2-3 More Weeks of Strikes — Oil +4% on No-Deal Signal"
+    war_signal = "🔴 WTI +11% Post-Speech — 40-Nation Summit Without US, Iran-Oman Transit Protocol Discussed, April 6 Deadline"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"
@@ -657,28 +657,28 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
+        "date": "Apr 2, 2026",
+        "action": "WTI +11%, Brent +8% post-Trump speech — market votes: war continues. 40-nation Hormuz summit without US. Iran-Oman discussing transit protocol.",
+        "interpretation": "The market delivered its verdict on Trump's speech: WTI closed at $111.54 (+11%), the largest single-day surge in months. Brent settled at $109. Trump's 'nearing completion but 2-3 more weeks of strikes' left zero clarity on Hormuz. The UK hosted 40+ nations on Hormuz reopening — but the US did not attend, after Trump said it's 'not our responsibility.' Most significant new signal: Iranian state media reported Iran is working with Oman to draft a protocol for monitoring transit through Hormuz. This is the first concrete framework discussion — not a ceasefire, but a possible managed reopening under Iranian oversight. GCC formally called on the UN Security Council to authorize force to protect Hormuz. Nobel economist Krugman: '$150/bbl is extremely plausible, $200 is not crazy.'",
+        "impact": "🔺 Bullish",
+        "source_title": "WTI +11%, 40-nation summit, Iran-Oman transit protocol — CNBC / Washington Post",
+        "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
+    },
+    {
         "date": "Apr 1, 2026",
-        "action": "IEA: April oil losses will be DOUBLE March — 'There is nothing in April.' Supply shock exceeds 1973, 1979, and 2022 Russia combined",
-        "interpretation": "The most important supply warning of the war. IEA chief Birol: March deliveries were pre-war ships already in transit before Feb 28 — that buffer disappears completely in April. Supply loss already exceeds 12 mb/d, greater than 1973 and 1979 oil crises combined. Jet fuel and diesel shortages already hitting Asia, will reach Europe by April-May. Energy rationing becoming realistic in multiple countries. A second SPR release is being evaluated but Birol was explicit: 'This can only reduce pain, not solve the problem. The solution is reopening Hormuz. We are only buying time.'",
+        "action": "IEA: April oil losses will be DOUBLE March — 'There is nothing in April.' Supply shock exceeds 1973, 1979, and 2022 Russia combined.",
+        "interpretation": "IEA chief Birol: March deliveries were pre-war ships already past Hormuz before Feb 28 — that buffer disappears completely in April. Supply loss exceeds 12 mb/d, greater than 1973 and 1979 oil crises combined. Jet fuel and diesel shortages already hitting Asia, will reach Europe by April-May. Energy rationing becoming realistic. A second SPR release is being evaluated but Birol was explicit: 'This can only reduce pain, not solve the problem. The solution is reopening Hormuz.'",
         "impact": "🔺 Bullish",
         "source_title": "IEA: April oil losses double March, shock exceeds three crises combined — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3769009"
     },
     {
         "date": "Apr 1, 2026",
-        "action": "Trump claims Iran's president asked for ceasefire — Iran denies. UK hosts 35-nation Hormuz summit. Trump to address nation tonight.",
-        "interpretation": "Trump wrote on Truth Social that Iran's 'New Regime President' requested a ceasefire — he will consider it only when Hormuz is 'open, free and clear.' Iran's foreign ministry called this 'false and baseless.' This is the same pattern established Mar 23, Mar 25, Mar 27: Trump announces progress, Iran denies. However, today is different in one respect — UK PM Starmer announced a virtual summit of 35 nations this week to coordinate Hormuz reopening, the first real multilateral diplomatic framework. Trump will address the nation tonight at 9pm ET — the White House called it an 'important update on the war.' Markets watching closely.",
-        "impact": "🟡 Neutral",
-        "source_title": "Trump claims Iran ceasefire request, Iran denies — CNN / CNBC",
-        "source_url": "https://www.cnbc.com/2026/04/01/trump-iran-war-ceasefire.html"
-    },
-    {
-        "date": "Mar 31, 2026",
-        "action": "Brent hits $119 intraday — record monthly surge of 60%+. US gas passes $4/gallon. Kuwaiti tanker struck off Dubai. Qatari tanker struck Apr 1.",
-        "interpretation": "March 2026: largest single-month oil price surge in recorded history. Brent touched $119, June contract ~$108. US average gasoline broke $4 for first time since 2022. Al-Salmi Kuwaiti tanker struck off Dubai. A QatarEnergy-contracted tanker was struck by Iranian cruise missile Apr 1. Physical destruction of civilian infrastructure and commercial shipping accelerating into April.",
+        "action": "Trump prime-time address: 'Nearing completion' — 2-3 more weeks of intense strikes, Hormuz 'will open naturally', no concrete plan",
+        "interpretation": "Trump's first national address since the war began. Said objectives 'nearing completion' but vowed more intense strikes for 2-3 weeks. On Hormuz said it 'will just open up naturally' when the conflict ends — zero concrete plan, zero timeline. Told allies to 'go get your own oil.' No exit framework. Market interpreted correctly: oil +4% immediately after speech, then +11% next day. 60% of Americans now say the war has gone too far.",
         "impact": "🔺 Bullish",
-        "source_title": "Brent $119, record monthly surge, tankers struck — Bloomberg",
-        "source_url": "https://www.bloomberg.com/news/articles/2026-03-30/latest-oil-market-news-and-analysis-for-march-31"
+        "source_title": "Trump Iran war address — no concrete Hormuz plan — Reuters / CNBC",
+        "source_url": "https://www.usnews.com/news/world/articles/2026-04-02/hopes-dim-for-swift-end-to-iran-war-after-trump-speech-oil-prices-surge-anew"
     },
     {
         "date": "Mar 30, 2026",
@@ -827,39 +827,39 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 1, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 2, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        The most important statement today did not come from Trump or Iran —
-        it came from IEA chief Birol: "There is nothing in April."
-        March deliveries were pre-war ships already past Hormuz before February 28.
-        That buffer is gone. April supply losses will be double March.
-        Even if a ceasefire is announced tomorrow, the April physical shortage is already locked in.
-        The jets that need fuel in May are already grounded in the plan.
-        No diplomatic announcement changes this timeline.
+        The market delivered its verdict on Trump's speech: WTI +11%, the largest
+        single-day surge in weeks. When a president addresses the nation and oil
+        surges double digits the next morning, the message is unambiguous —
+        the market sees no exit. Trump's phrase that Hormuz will 'open naturally'
+        when the conflict ends is not a plan. It is an abdication.
+        The US is not attending the 40-nation summit it effectively forced into existence.
         <br><br>
-        Trump today claimed Iran's president requested a ceasefire.
-        Iran denied it within hours. This is the fourth time this pattern has played out —
-        March 23, March 25, March 27, and now April 1.
-        The war signal has been moved to yellow not because the claim is credible,
-        but because tonight's national address at 9pm ET is a genuine wildcard.
-        Trump has signaled the war could end in "two to three weeks" without a deal —
-        meaning a unilateral US withdrawal remains possible.
-        Watch what he actually says tonight, not what he claimed on Truth Social this morning.
+        The most significant new signal today is the Iran-Oman transit protocol discussion.
+        This is not a ceasefire. It is Iran potentially agreeing to a managed,
+        supervised reopening under Iranian oversight — which is exactly the
+        'Hormuz sovereignty' condition Iran has demanded since day one.
+        If this framework materializes, Hormuz could partially reopen
+        without a formal ceasefire, under terms that lock in Iranian control.
+        That is the L-shaped plateau scenario made concrete:
+        oil flows resume partially, but at a permanently higher baseline cost
+        with Iran as the gatekeeper.
         <br><br>
-        The UK's 35-nation Hormuz summit is the first real multilateral diplomatic
-        framework of the war. The fact that 35 countries signed a joint statement
-        reflects how broadly the economic pain has spread. But Russia has already
-        said any Hormuz solution requires Iran's consent — which is exactly the
-        problem that has blocked every proposal for five weeks.
+        IEA's warning stands: April physical supply losses will be double March.
+        The pre-war ships that cushioned March deliveries are gone.
+        Jet fuel and diesel shortages are arriving in Asia now and Europe by May.
+        Even if the Iran-Oman protocol is agreed this week,
+        the April supply gap is already locked in —
+        there are no ships in transit to fill it.
         <br><br>
-        The structural picture from Birol is unambiguous:
-        12+ mb/d lost, exceeding 1973 and 1979 combined.
-        Jet fuel and diesel shortages hitting Asia now, Europe by May.
-        Energy rationing becoming realistic.
-        A second SPR release would buy weeks, not months.
-        The only solution is Hormuz — and Hormuz will not open
-        until Iran's core demands are addressed or US forces physically seize it.
-        April 6 remains the next hard deadline.
+        April 6 remains the deadline. Three paths:
+        Trump executes the Kharg Island threat,
+        the Iran-Oman protocol produces a managed partial reopening,
+        or Trump extends again with no Iranian reciprocity.
+        The third option is now the least credible —
+        60% of Americans say the war has gone too far,
+        and WTI at $111 is a domestic political crisis.
     </div>
 </div>
 """, unsafe_allow_html=True)
