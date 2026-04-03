@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 WTI +11% Post-Speech — 40-Nation Summit Without US, Iran-Oman Transit Protocol Discussed, April 6 Deadline"
+    war_signal = "🔴 'Take The Oil' — Trump Threatens Bridges & Power Plants, UN Veto Blocks Hormuz Resolution, April 6 T-3 Days"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"
@@ -657,52 +657,52 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Apr 2, 2026",
-        "action": "WTI +11%, Brent +8% post-Trump speech — market votes: war continues. 40-nation Hormuz summit without US. Iran-Oman discussing transit protocol.",
-        "interpretation": "The market delivered its verdict on Trump's speech: WTI closed at $111.54 (+11%), the largest single-day surge in months. Brent settled at $109. Trump's 'nearing completion but 2-3 more weeks of strikes' left zero clarity on Hormuz. The UK hosted 40+ nations on Hormuz reopening — but the US did not attend, after Trump said it's 'not our responsibility.' Most significant new signal: Iranian state media reported Iran is working with Oman to draft a protocol for monitoring transit through Hormuz. This is the first concrete framework discussion — not a ceasefire, but a possible managed reopening under Iranian oversight. GCC formally called on the UN Security Council to authorize force to protect Hormuz. Nobel economist Krugman: '$150/bbl is extremely plausible, $200 is not crazy.'",
+        "date": "Apr 3, 2026",
+        "action": "Iran's Hormuz toll booth fully operational — 5-tier system, $1/bbl starting price, Yuan/stablecoin payment, IRGC escort",
+        "interpretation": "The most detailed confirmation yet of Iran's Hormuz monetization. Ships must contact IRGC-linked intermediaries, submit full vessel data for background checks, negotiate fees ($1/bbl starting price), then receive a transit code and designated route with Iranian naval escort. Five-tier pricing based on 'friendliness' to Iran. Pakistan is actively recruiting supertankers (2 million bbl capacity) from major commodity traders to transit under Pakistani flag. At least two large oil trading firms have been approached. This system is not a threat — it is running. For Western buyers: using this system risks violating sanctions and anti-money laundering laws, making Hormuz a de facto non-Western-only channel regardless of any ceasefire.",
         "impact": "🔺 Bullish",
-        "source_title": "WTI +11%, 40-nation summit, Iran-Oman transit protocol — CNBC / Washington Post",
+        "source_title": "Iran's Hormuz toll system fully operational, 5-tier pricing — Bloomberg / Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3769193"
+    },
+    {
+        "date": "Apr 3, 2026",
+        "action": "Trump: 'Take the oil, make a fortune' — threatens bridges and power plants. UN Security Council Hormuz resolution blocked by China, Russia, France.",
+        "interpretation": "Trump's most explicit statement of resource seizure intent: 'With a little more time, we can easily OPEN THE HORMUZ STRAIT, TAKE THE OIL, & MAKE A FORTUNE.' Also threatened bridges next, then power plants — B1 bridge near Tehran already destroyed, 8 killed. Separately, Bahrain's UN Security Council draft resolution authorizing force to protect Hormuz was vetoed by China, Russia, and France. The multilateral legal path to reopening Hormuz is now closed. Only options remaining: US military seizure, Iran-negotiated managed reopening under toll system, or ceasefire deal.",
+        "impact": "🔺 Bullish",
+        "source_title": "Trump 'take the oil', UN veto blocks Hormuz resolution — CNBC",
+        "source_url": "https://www.cnbc.com/2026/04/03/trump-iran-threats-un-resolution-blocked-strait-of-hormuz-f35-shot-down.html"
+    },
+    {
+        "date": "Apr 3, 2026",
+        "action": "Satellite imagery confirms US E-3 AWACS destroyed at Prince Sultan Air Base — most significant single US military asset loss of the war",
+        "interpretation": "Airbus satellite imagery shows Iran's March 27 strike on Prince Sultan Air Base destroyed one E-3 Sentry AWACS aircraft — the backbone of US airborne surveillance. Five refueling tankers and another E-3 are visible sitting unprotected in the open. AWACS provides 120,000 sq mile battlefield monitoring capability. This loss degrades US situational awareness over Iran and the Gulf significantly. The fact that remaining aircraft are still exposed two days later suggests the base is under sustained threat.",
+        "impact": "🔺 Bullish",
+        "source_title": "Satellite imagery confirms AWACS destroyed at Prince Sultan Air Base — CNN",
+        "source_url": "https://www.cnn.com/2026/04/02/world/live-news/iran-war-us-trump-oil-intl-hnk"
+    },
+    {
+        "date": "Apr 2, 2026",
+        "action": "WTI +11%, Brent +8% post-Trump speech — market verdict: war continues. WTI briefly inverts above Brent.",
+        "interpretation": "The market delivered its verdict on Trump's speech: WTI closed at $111.54 (+11%), largest single-day surge in months. Brent settled at $109. WTI briefly traded above Brent — a rare inversion signaling US domestic physical shortage exceeding global geopolitical premium. Nobel economist Krugman: '$150/bbl extremely plausible, $200 not crazy.' Iran-Oman transit protocol discussions ongoing but no agreement yet.",
+        "impact": "🔺 Bullish",
+        "source_title": "WTI +11%, Brent inversion — CNBC",
         "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
     },
     {
         "date": "Apr 1, 2026",
         "action": "IEA: April oil losses will be DOUBLE March — 'There is nothing in April.' Supply shock exceeds 1973, 1979, and 2022 Russia combined.",
-        "interpretation": "IEA chief Birol: March deliveries were pre-war ships already past Hormuz before Feb 28 — that buffer disappears completely in April. Supply loss exceeds 12 mb/d, greater than 1973 and 1979 oil crises combined. Jet fuel and diesel shortages already hitting Asia, will reach Europe by April-May. Energy rationing becoming realistic. A second SPR release is being evaluated but Birol was explicit: 'This can only reduce pain, not solve the problem. The solution is reopening Hormuz.'",
+        "interpretation": "March deliveries were pre-war ships already past Hormuz before Feb 28 — buffer disappears completely in April. Supply loss exceeds 12 mb/d. Jet fuel and diesel shortages hitting Asia now, Europe by May. Energy rationing becoming realistic in multiple countries. 'The solution is reopening Hormuz. We are only buying time.'",
         "impact": "🔺 Bullish",
-        "source_title": "IEA: April oil losses double March, shock exceeds three crises combined — Wall Street CN",
+        "source_title": "IEA: April losses double March, shock exceeds three crises combined — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3769009"
-    },
-    {
-        "date": "Apr 1, 2026",
-        "action": "Trump prime-time address: 'Nearing completion' — 2-3 more weeks of intense strikes, Hormuz 'will open naturally', no concrete plan",
-        "interpretation": "Trump's first national address since the war began. Said objectives 'nearing completion' but vowed more intense strikes for 2-3 weeks. On Hormuz said it 'will just open up naturally' when the conflict ends — zero concrete plan, zero timeline. Told allies to 'go get your own oil.' No exit framework. Market interpreted correctly: oil +4% immediately after speech, then +11% next day. 60% of Americans now say the war has gone too far.",
-        "impact": "🔺 Bullish",
-        "source_title": "Trump Iran war address — no concrete Hormuz plan — Reuters / CNBC",
-        "source_url": "https://www.usnews.com/news/world/articles/2026-04-02/hopes-dim-for-swift-end-to-iran-war-after-trump-speech-oil-prices-surge-anew"
-    },
-    {
-        "date": "Mar 30, 2026",
-        "action": "Citadel Securities: war enters Phase 2 — growth destruction now dominant, Oman crude spot at $160/bbl vs Brent futures $112",
-        "interpretation": "Futures systematically underpricing physical shortage. Oman spot $160 reflects acute Asian shortages. Shortage spread to LNG, helium, fertilizer. Unlike 2022, no shock absorbers — no excess savings, no tight labor markets. Both scenarios end in demand destruction. Financial condition tightening becoming self-reinforcing.",
-        "impact": "🔺 Bullish",
-        "source_title": "Citadel: war enters Phase 2, growth destruction is bigger risk — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3768788"
     },
     {
         "date": "Mar 28, 2026",
         "action": "Houthis formally enter war — Bab al-Mandab and Yanbu threatened, both chokepoints at risk",
-        "interpretation": "Saudi's only Hormuz bypass — Yanbu port via East-West pipeline — now within Houthi missile range. Yanbu handling 340-500 mb/d as last viable alternative. Disruption of Bab al-Mandab would remove additional 4-5 mb/d globally.",
+        "interpretation": "Saudi's only Hormuz bypass — Yanbu port — now within Houthi missile range. Yanbu handling 340-500 mb/d as last viable alternative. Disruption of Bab al-Mandab would remove additional 4-5 mb/d globally.",
         "impact": "🔺 Bullish",
         "source_title": "Houthis enter war, Bab al-Mandab at risk — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768648"
-    },
-    {
-        "date": "Mar 18, 2026",
-        "action": "QatarEnergy: 17% of LNG offline for up to 5 years — last cargoes arrived Asia Mar 25. Cheniere at full capacity.",
-        "interpretation": "US LNG physical headroom maxed out. L-shaped plateau: SPR refill obligations create hard price floor post-war. Structural supply shift will not reverse with a ceasefire.",
-        "impact": "🔺 Bullish",
-        "source_title": "Exclusive: Iran attacks wipe out 17% of Qatar's LNG capacity — Reuters",
-        "source_url": "https://www.reuters.com"
     },
 ]
 
@@ -827,39 +827,39 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 2, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 3, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        The market delivered its verdict on Trump's speech: WTI +11%, the largest
-        single-day surge in weeks. When a president addresses the nation and oil
-        surges double digits the next morning, the message is unambiguous —
-        the market sees no exit. Trump's phrase that Hormuz will 'open naturally'
-        when the conflict ends is not a plan. It is an abdication.
-        The US is not attending the 40-nation summit it effectively forced into existence.
+        Three days to April 6. The diplomatic and legal paths to reopening Hormuz
+        have both closed this week. The UN Security Council resolution was vetoed
+        by China, Russia, and France. The 40-nation summit produced no operational plan.
+        Trump has said reopening Hormuz is "not America's responsibility."
+        What remains are three options: US military seizure of Hormuz or Kharg Island,
+        Iran's managed toll-booth reopening under its own sovereignty framework,
+        or a negotiated ceasefire that gives Iran most of what it wants.
         <br><br>
-        The most significant new signal today is the Iran-Oman transit protocol discussion.
-        This is not a ceasefire. It is Iran potentially agreeing to a managed,
-        supervised reopening under Iranian oversight — which is exactly the
-        'Hormuz sovereignty' condition Iran has demanded since day one.
-        If this framework materializes, Hormuz could partially reopen
-        without a formal ceasefire, under terms that lock in Iranian control.
-        That is the L-shaped plateau scenario made concrete:
-        oil flows resume partially, but at a permanently higher baseline cost
-        with Iran as the gatekeeper.
+        Iran's toll system is now fully operational — not a threat, a running business.
+        Five pricing tiers, $1/bbl starting price, Yuan and stablecoin payment,
+        IRGC naval escort, transit codes. Pakistan is recruiting supertankers
+        from major commodity traders. The pre-war Hormuz — free, open, international —
+        is gone regardless of how this war ends. The question now is
+        whether the managed toll system expands to cover enough volume
+        to partially relieve Asian shortages, or whether the Western compliance
+        risk (sanctions, anti-money laundering) keeps it effectively closed
+        to the buyers who need it most.
         <br><br>
-        IEA's warning stands: April physical supply losses will be double March.
-        The pre-war ships that cushioned March deliveries are gone.
-        Jet fuel and diesel shortages are arriving in Asia now and Europe by May.
-        Even if the Iran-Oman protocol is agreed this week,
-        the April supply gap is already locked in —
-        there are no ships in transit to fill it.
+        Trump's 'take the oil, make a fortune' statement is the most explicit
+        articulation yet of resource seizure as war objective.
+        Combined with the destruction of the B1 bridge near Tehran today,
+        the escalation trajectory into April 6 is upward, not downward.
+        The destroyed AWACS at Prince Sultan confirms Iran's strike capability
+        against hardened US military infrastructure — this war is
+        not as one-sided as Trump's speeches suggest.
         <br><br>
-        April 6 remains the deadline. Three paths:
-        Trump executes the Kharg Island threat,
-        the Iran-Oman protocol produces a managed partial reopening,
-        or Trump extends again with no Iranian reciprocity.
-        The third option is now the least credible —
-        60% of Americans say the war has gone too far,
-        and WTI at $111 is a domestic political crisis.
+        April 6 at 8pm ET: Trump must choose.
+        Execute Kharg Island strikes, extend the deadline a fourth time,
+        or accept a framework that leaves Iran as Hormuz gatekeeper.
+        Each option has a different price implication —
+        but none of them returns oil to $70.
     </div>
 </div>
 """, unsafe_allow_html=True)
