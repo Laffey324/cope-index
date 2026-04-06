@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Trump 48hr Ultimatum — White House Admits 'Losing Control', Half Iran Missiles Intact, April 6 Tomorrow"
+    war_signal = "🔴 April 6 8PM Deadline — Iran Rejects All Proposals, Trump: 'Entire Country Can Be Taken Out Tonight'"
     war_color = "#ef4444"
     war_bg = "rgba(239,68,68,0.06)"
     war_border = "#ef4444"
@@ -657,33 +657,33 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Apr 4, 2026",
-        "action": "Time Magazine: White House chief of staff believes situation 'may be losing control' — Hegseth 'blindsided' by Iran's scale of retaliation",
-        "interpretation": "The most important internal disclosure of the war. Time Magazine citing multiple senior White House officials: Chief of Staff Susie Wiles told colleagues the situation 'may be losing control' and that Trump was being fed victory highlight reels every morning rather than the full picture. Defense Secretary Hegseth was 'blindsided' by Iran's regional retaliation scale — his pre-war assumption was that Iran would respond as it did during Trump's first term with restraint. Vance was the strongest internal opponent of the war and was excluded from the decision circle on opening night. Most critically: US intelligence now assesses Iran retains approximately half of its missile launchers intact — directly contradicting Trump's claim that Iran has been 'obliterated'. The White House is actively seeking an exit strategy but the core problem is 'how to exit without appearing to have gained too little.'",
+        "date": "Apr 6, 2026",
+        "action": "Iran formally rejects all ceasefire proposals — Trump: 'Entire country can be taken out tonight.' April 6 8pm ET deadline. Israel destroys 85% of Iran's petrochemical exports.",
+        "interpretation": "The sharpest escalation point of the war. Iran through Pakistan officially rejected the 45-day 'Islamabad Accord' ceasefire framework — saying temporary ceasefire 'allows adversaries to pause and prepare.' Iran's only acceptable outcome: permanent end to war with guarantees against future attacks. Trump at 1pm press conference: 'The entire country can be taken out in one night, and that night might be tomorrow night.' Israel separately struck South Pars petrochemical complex, destroying Jam and Damavand facilities — approximately 85% of Iran's petrochemical exports rendered inoperative, tens of billions in lost revenue. The 8pm ET deadline is hours away with no deal in sight. Three outcomes: Trump executes power plant and bridge strikes, Trump extends again (fourth time), or a last-minute framework emerges.",
+        "impact": "🔺 Bullish",
+        "source_title": "Iran rejects ceasefire, Trump threatens to take out Iran tonight — Times of Israel / CNN",
+        "source_url": "https://www.timesofisrael.com/liveblog-april-6-2026/"
+    },
+    {
+        "date": "Apr 6, 2026",
+        "action": "Citrini field report: AIS data underreports Hormuz traffic by ~50% — strait is 'dynamic enforcement', not binary open/closed",
+        "interpretation": "Citrini's analyst physically traveled to Oman's Musandam peninsula with $15k cash, Leica camera, and EPIRB beacon to count ships. Key finding: public AIS data misses ~50% of actual transits — ships use 'dark AIS' or Iran's permitted coastal corridor near Iranian shoreline. Hormuz is not a simple on/off switch but a dynamic enforcement zone controlled by IRGC patrol boats and Shahed drones. Implications: market may be slightly overpricing total supply disruption (some flow is happening), but IRGC can tighten or loosen at any moment — unpredictability is itself a risk premium driver. The pre-war Hormuz order of free international navigation is permanently gone regardless of any deal.",
         "impact": "🟡 Neutral",
-        "source_title": "White House 'losing control' — Time Magazine / Wall Street CN",
+        "source_title": "Citrini field report: AIS underreports Hormuz traffic by 50% — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3769308"
+    },
+    {
+        "date": "Apr 4, 2026",
+        "action": "Time Magazine: White House chief of staff believes situation 'may be losing control' — Hegseth 'blindsided', Vance was strongest war opponent",
+        "interpretation": "Chief of Staff Susie Wiles told colleagues situation 'may be losing control.' Trump fed victory highlight reels every morning. Hegseth blindsided by Iran's regional retaliation scale. Vance excluded from opening night decision circle. US intelligence: Iran retains ~50% of missile launchers intact — directly contradicting Trump's 'obliterated' narrative. White House actively seeking exit strategy: core problem is 'how to exit without appearing to have gained too little.'",
+        "impact": "🟡 Neutral",
+        "source_title": "White House 'losing control' — Time Magazine",
         "source_url": "https://wallstreetcn.com/articles/3769247"
     },
     {
-        "date": "Apr 4, 2026",
-        "action": "Trump issues new 48-hour ultimatum — open Hormuz or 'all hell' will rain down. Fed's Goolsbee: rate cuts now in doubt.",
-        "interpretation": "Trump gave Iran a new 48-hour deadline to open Hormuz or face escalation. Chicago Fed President Goolsbee said the Iran war now threatens the Fed's ability to cut rates in 2026 — before the war he was confident of cuts this year. US intelligence assessment that half of Iran's missile launchers remain intact undermines the military victory narrative. Iran's foreign minister said Iran has 'never refused to go to Islamabad' — but this is a conditional, vague statement, not a genuine negotiating signal. Iran has made zero concrete reciprocal moves.",
-        "impact": "🔺 Bullish",
-        "source_title": "Trump 48hr ultimatum, Fed rate cuts in doubt — CBS News",
-        "source_url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-warns-more-coming-oil-gas-strait-hormuz/"
-    },
-    {
-        "date": "Apr 3, 2026",
-        "action": "Iran's Hormuz toll booth fully operational — 5-tier system, $1/bbl starting price, Yuan/stablecoin, IRGC naval escort",
-        "interpretation": "Ships must contact IRGC-linked intermediaries, submit full vessel data, negotiate fees, receive transit code and IRGC naval escort. Five-tier pricing based on 'friendliness' to Iran. Pakistan recruiting supertankers from major commodity traders. For Western buyers: using this system risks violating sanctions and anti-money laundering laws — Hormuz is de facto a non-Western-only channel regardless of any ceasefire.",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran Hormuz toll system fully operational — Bloomberg / Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3769193"
-    },
-    {
         "date": "Apr 2, 2026",
-        "action": "WTI +11%, Brent +8% post-Trump speech — market votes: war continues. Goldman: physical shortage just beginning to hit.",
-        "interpretation": "Largest single-day oil surge in months. Goldman's Tony Kim: the last ships through Hormuz before Feb 28 have now arrived at their destinations — physical shortage starts compounding from here. Nobel economist Krugman: '$150/bbl extremely plausible, $200 not crazy.' Goldman hedge fund chief Pasquariello: 'biggest oil supply disruption in history but just one headline away from a violent short squeeze' — preserving capital is the priority.",
+        "action": "WTI +11%, Brent +8% post-Trump speech — Goldman: physical shortage just beginning. Hormuz traffic still 95% below pre-war levels.",
+        "interpretation": "Largest single-day oil surge in months. Goldman's Tony Kim: last pre-war ships have arrived — physical shortage compounds from here. Analyst consensus: 'Even if Hormuz reopens, things don't just snap back to normal.' L-shaped plateau confirmed by multiple institutions.",
         "impact": "🔺 Bullish",
         "source_title": "WTI +11% — CNBC / Goldman Sachs",
         "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
@@ -691,7 +691,7 @@ policy_actions = [
     {
         "date": "Apr 1, 2026",
         "action": "IEA: April oil losses will be DOUBLE March — 'There is nothing in April.' Supply shock exceeds 1973, 1979, and 2022 Russia combined.",
-        "interpretation": "March deliveries were pre-war ships past Hormuz before Feb 28 — buffer disappears in April. Supply loss exceeds 12 mb/d. Jet fuel and diesel shortages hitting Asia now, Europe by May. Energy rationing becoming realistic. 'The solution is reopening Hormuz. We are only buying time.'",
+        "interpretation": "March deliveries were pre-war ships past Hormuz before Feb 28 — buffer gone in April. Supply loss exceeds 12 mb/d. Jet fuel and diesel shortages hitting Asia, Europe by May. Energy rationing becoming realistic in multiple countries.",
         "impact": "🔺 Bullish",
         "source_title": "IEA: April losses double March — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3769009"
@@ -699,7 +699,7 @@ policy_actions = [
     {
         "date": "Mar 28, 2026",
         "action": "Houthis formally enter war — Bab al-Mandab and Yanbu threatened, Saudi's last bypass at risk",
-        "interpretation": "Yanbu port handling 340-500 mb/d as last viable Hormuz bypass now within Houthi missile range. Disruption of Bab al-Mandab would remove additional 4-5 mb/d globally. Both major chokepoints simultaneously threatened.",
+        "interpretation": "Yanbu port handling 340-500 mb/d as last viable Hormuz bypass now within Houthi missile range. Disruption of Bab al-Mandab removes additional 4-5 mb/d globally. Both chokepoints simultaneously threatened.",
         "impact": "🔺 Bullish",
         "source_title": "Houthis enter war — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3768648"
@@ -827,38 +827,43 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 4, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 6, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        The most important development today did not come from the battlefield —
-        it came from inside the White House. Time Magazine's disclosure that
-        Chief of Staff Susie Wiles believes the situation 'may be losing control,'
-        that Trump is watching victory highlight reels every morning instead of
-        the full picture, and that Hegseth was blindsided by Iran's retaliation scale —
-        this is the internal reality behind five weeks of 'we're winning' messaging.
+        The April 6 8pm ET deadline is hours away. Iran has formally rejected
+        every proposal on the table — the 45-day Islamabad Accord, the 15-point US plan,
+        and any temporary ceasefire. Iran's position is unchanged:
+        permanent end to war with guarantees, not a pause.
+        Trump at his 1pm press conference said the entire country
+        could be taken out in one night — and that night might be tonight.
+        Israel simultaneously destroyed approximately 85% of Iran's
+        petrochemical export capacity at South Pars.
         <br><br>
-        The US intelligence assessment that Iran retains approximately half
-        of its missile launchers intact is the single most important data point
-        of the week. Trump has claimed Iran has been 'obliterated' and 'decimated.'
-        Half of the launchers being intact means Iran can continue striking
-        Gulf states, Israel, and US bases for months. The military victory
-        narrative is disconnected from the physical reality on the ground.
+        Three paths remain as of this writing.
+        First, Trump executes the power plant and bridge strikes —
+        Iran retaliates against Gulf desalination plants and electricity grids,
+        escalation resumes at a higher intensity.
+        Second, Trump extends the deadline a fourth time —
+        the pattern is established, but each extension with no Iranian reciprocity
+        further erodes US credibility and market confidence in any future deadline.
+        Third, a last-minute framework emerges in the next few hours —
+        possible but Iran's formal rejection through Pakistan this morning
+        makes this the least likely path.
         <br><br>
-        April 6 is tomorrow. Trump has issued a new 48-hour ultimatum.
-        The pattern for five weeks has been: ultimatum → extension → repeat.
-        But the White House's own internal assessment says the exit window
-        is 'very narrow.' The political pressure from midterm elections,
-        $4+ gasoline, and stock market declines is now acute.
-        Three options remain: execute Kharg Island strikes, accept Iran's
-        managed toll-booth Hormuz framework, or declare a unilateral
-        'mission accomplished' and withdraw — leaving Hormuz question
-        to allies to sort out.
+        One new piece of evidence changes the supply picture at the margins:
+        Citrini's field report finds AIS data underreports Hormuz traffic by ~50%.
+        Some flow is happening through dark corridors near Iran's coast.
+        This explains why Brent has not continued from $115 to $140 —
+        a trickle of supply is getting through under IRGC escort.
+        But this is not a market signal of recovery.
+        IRGC can close that corridor at any moment.
+        The unpredictability is itself the risk premium.
         <br><br>
-        Goldman's physical supply warning stands: the last pre-war ships
-        have arrived. April shortages are real, not theoretical.
-        Even if a deal is struck tomorrow, the L-shaped plateau means
-        oil prices will not V-shape back down. The structural damage —
-        Qatar LNG gone five years, SPR depleted, insurance markets
-        still pricing war risk — outlasts any ceasefire announcement.
+        The L-shaped plateau framework remains intact regardless of tonight's outcome.
+        Qatar LNG offline for five years. SPR depleted.
+        South Pars petrochemical capacity gone.
+        Insurance markets still pricing war risk.
+        Even a ceasefire announcement does not change
+        the physical reality that will take months to unwind.
     </div>
 </div>
 """, unsafe_allow_html=True)
