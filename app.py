@@ -503,7 +503,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🟡 2-Week Ceasefire — Hormuz Reopening Under IRGC Coordination, Islamabad Talks Apr 10, Oil -6%"
+    war_signal = "🟡 Ceasefire Day 1 — First Ships Through Hormuz, 426 Tankers Backlogged, Islamabad Talks Friday, Oil -17%"
     war_color = "#f59e0b"
     war_bg = "rgba(245,158,11,0.06)"
     war_border = "#f59e0b"
@@ -657,52 +657,52 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
+        "date": "Apr 8, 2026",
+        "action": "Ceasefire Day 1: first ships transit Hormuz under IRGC coordination — but 426 tankers still backlogged, Lloyd's List warns system unchanged",
+        "interpretation": "Two vessels transited Hormuz this morning via IRGC-controlled Larak Island checkpoint: Greek bulk carrier NJ Earth and Liberia-flagged Daytona Beach. But Lloyd's List Editor-in-Chief Richard Meade warned: 'Shippers don't have the details from Iran and they believe the system that was in place at midnight has not changed despite the ceasefire announcement.' IRGC screening — ownership, management, insurance, financing, charter history checked for US/Israel affiliation — remains fully intact. 426 tankers, 34 LPG carriers, and 19 LNG vessels remain backlogged in the Persian Gulf. The Hormuz toll-booth system built over the past six weeks has not been dismantled — it has been rebranded as 'coordination.' Euronews reports the plan allows both Iran and Oman to charge fees on transiting ships, with Iran using revenue for reconstruction.",
+        "impact": "🟡 Neutral",
+        "source_title": "First ships transit Hormuz, 426 tankers backlogged — CNN / Lloyd's List",
+        "source_url": "https://edition.cnn.com/2026/04/08/world/live-news/iran-war-trump-us-ceasefire"
+    },
+    {
+        "date": "Apr 8, 2026",
+        "action": "Hegseth: Iran's enriched uranium handover is 'non-negotiable' — nuclear issue remains the core fault line going into Islamabad talks",
+        "interpretation": "Pentagon briefing today: Hegseth said Iran's enriched uranium 'will either be given to us voluntarily or we'll take it.' Iran's 10-point plan Persian version includes 'acceptance of enrichment' — English version omits this phrase. The two sides have not agreed on the nuclear question at all. US insists zero enrichment; Iran insists enrichment is a sovereign right. This is the same gap that caused the war in the first place. Islamabad talks on Friday will determine whether the 2-week ceasefire leads anywhere or becomes the fifth extension of an unresolved standoff.",
+        "impact": "🟡 Neutral",
+        "source_title": "Hegseth: uranium handover non-negotiable — Euronews / ABC7",
+        "source_url": "https://www.euronews.com/2026/04/08/us-and-iran-agree-to-two-week-truce-after-trump-pulls-back-on-threats"
+    },
+    {
         "date": "Apr 7, 2026",
-        "action": "2-week ceasefire agreed — Hormuz reopens under IRGC coordination. Islamabad peace talks April 10. Oil -6%, S&P futures +1%.",
-        "interpretation": "The war's largest single diplomatic breakthrough. Trump announced 90 minutes before his 8pm deadline: US suspends bombing for two weeks, conditional on Iran reopening Hormuz. Iran's FM Araghchi confirmed: IRGC will coordinate safe passage through Hormuz during the two-week window. Iran's supreme leader ordered all units to cease fire. Iran internally claims victory — says it forced US to accept its 10-point framework including sanctions lifting and nuclear enrichment recognition. US-Iran face-to-face talks scheduled Friday April 10 in Islamabad, Vance likely to lead US delegation. Netanyahu confirmed Israel joins ceasefire in Iran only — denied Lebanon ceasefire. Critical caveat: this is a 2-week pause, not a peace deal. Iran's 10-point demands remain maximalist. The structural damage to Hormuz supply chains, insurance markets, and energy infrastructure does not reverse on a ceasefire announcement.",
+        "action": "2-week ceasefire agreed — Hormuz reopens under IRGC coordination. Oil -17%. Islamabad talks April 10, Vance leads US delegation.",
+        "interpretation": "Trump announced 90 minutes before 8pm deadline. Iran's FM confirmed IRGC will coordinate Hormuz passage. Iran internally claims victory — forced US to accept 10-point framework. Both sides claim they won. Iran's demands remain: sanctions lifting, US troop withdrawal from region, nuclear enrichment recognition, reparations. Trump called it 'workable basis.' Netanyahu confirmed Israel joins ceasefire in Iran only — Lebanon war continues. The structural supply chain damage does not reverse on a ceasefire announcement: Eurasia Group says 2+ months minimum for shipping to resume normal operations.",
         "impact": "🔻 Bearish",
-        "source_title": "US-Iran 2-week ceasefire, Hormuz reopening — Axios / NBC News",
+        "source_title": "US-Iran 2-week ceasefire — Axios / NBC News",
         "source_url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan"
     },
     {
         "date": "Apr 7, 2026",
-        "action": "US strikes Kharg Island hours before ceasefire — Iran closes then reopens diplomatic channel within 24 hours",
-        "interpretation": "In the same day: US struck Kharg Island (85-95% of Iran's crude exports) in the morning, Iran told Pakistan ceasefire talks are over midday, then both sides agreed to a ceasefire by evening. The whiplash pace confirms Pasquariello's 'strategic ambiguity' framework — this market will continue to move violently on single headlines. The ceasefire does not undo Kharg Island damage or restore pre-war Hormuz infrastructure trust.",
-        "impact": "🟡 Neutral",
-        "source_title": "Kharg Island struck, then ceasefire — NPR",
+        "action": "US strikes Kharg Island and South Pars petrochemicals hours before ceasefire — economic warfare executed before pause",
+        "interpretation": "In the final hours before ceasefire: US struck Kharg Island (85-95% of Iran crude exports), Israel destroyed Mahshahr and Assaluyeh petrochemical hubs. These strikes were described by US officials as 'sending a clear message of what would come' — a deliberate final escalation to strengthen negotiating position. The physical damage to Iran's export infrastructure will take months to repair regardless of any political agreement.",
+        "impact": "🔺 Bullish",
+        "source_title": "Kharg Island struck before ceasefire — NPR / PBS",
         "source_url": "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
     },
     {
         "date": "Apr 6, 2026",
-        "action": "Iran's 10-point maximalist counter-proposal: reparations, sanctions lifting, nuclear enrichment recognition, permanent war end guarantee",
-        "interpretation": "Iran's formal counter includes: permanent end to war with no-attack guarantees, Hormuz safe passage protocol, reconstruction reparations, lifting all sanctions, end to conflicts in Lebanon, and recognition of nuclear enrichment rights. US official called it 'maximalist.' Trump called it 'significant but not good enough' on April 6 — then accepted it as 'workable basis' on April 7. The gap between the two sides on the substantive issues has not closed. The 2-week window is to determine if it can.",
-        "impact": "🟡 Neutral",
-        "source_title": "Iran 10-point proposal — Axios / CNN",
-        "source_url": "https://www.axios.com/2026/04/06/iran-trump-peace-plan-ceasefire"
-    },
-    {
-        "date": "Apr 6, 2026",
-        "action": "Citrini field report: AIS underreports Hormuz traffic by ~50% — 'dynamic enforcement', not binary open/closed",
-        "interpretation": "Analyst physically traveled to Oman's Musandam with $15k cash to count ships. AIS misses ~50% of actual transits via dark corridors near Iranian coast. Now with ceasefire: IRGC will 'coordinate' passage — this replaces dark corridor system with a formal but still IRGC-controlled mechanism. The pre-war free navigation order is gone permanently. Hormuz is now an Iranian-managed waterway regardless of ceasefire status.",
+        "action": "Citrini field report: AIS underreports Hormuz traffic by ~50% — IRGC 'coordination' replaces dark corridor system",
+        "interpretation": "With ceasefire in effect, the dark AIS corridor system Citrini documented is now being formalized as 'IRGC coordination.' Ships must still submit full ownership, insurance, and charter data for screening. Iran and Oman will charge transit fees. Pre-war free international navigation order is permanently replaced by an Iranian-managed regime — the question is only the price and the rules.",
         "impact": "🟡 Neutral",
         "source_title": "Citrini field report — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3769308"
     },
     {
         "date": "Apr 2, 2026",
-        "action": "Goldman: physical shortage just beginning as last pre-war ships arrive. IEA: April losses double March.",
-        "interpretation": "Goldman's Tony Kim: last pre-war ships have arrived — physical shortage compounds from here. IEA: supply loss exceeds 12 mb/d, shock exceeds 1973+1979+2022 combined. Even with ceasefire: Eurasia Group says shipping companies need 2+ months to resume operations. Infrastructure repair takes months. Insurance markets won't normalize for weeks. L-shaped plateau framework holds — oil will not V-shape back to $70.",
+        "action": "Goldman: physical shortage compounding. IEA: April losses double March. Eurasia Group: 2+ months to normalize even after ceasefire.",
+        "interpretation": "Even with Hormuz technically reopening: Eurasia Group's Henning Gloystein says shipping companies need 2+ months minimum to resume operations. Infrastructure repair months more. Insurance normalization weeks. The L-shaped plateau is structural — oil will not V-shape to $70 on a ceasefire announcement. Goldman: 'You can't jawbone molecules.'",
         "impact": "🔺 Bullish",
-        "source_title": "Goldman / IEA supply warning — CNBC / Wall Street CN",
+        "source_title": "Goldman / IEA / Eurasia Group — CNBC / Wall Street CN",
         "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
-    },
-    {
-        "date": "Apr 4, 2026",
-        "action": "Time Magazine: White House 'may be losing control' — half Iran missiles intact, Vance was strongest war opponent",
-        "interpretation": "Chief of Staff Wiles told colleagues situation 'may be losing control.' US intelligence: Iran retains ~50% missile launchers intact. Vance was strongest internal war opponent — now leads Islamabad delegation, signaling the exit-strategy faction has won internally. The ceasefire confirms the Time Magazine read was correct: the White House needed an out.",
-        "impact": "🟡 Neutral",
-        "source_title": "White House 'losing control' — Time Magazine",
-        "source_url": "https://wallstreetcn.com/articles/3769247"
     },
 ]
 
@@ -827,45 +827,45 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 7, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 8, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Tonight's ceasefire is real — but the oil market's response
-        tells only half the story. Yes, oil fell 6% on the announcement.
-        Yes, Hormuz will reopen under IRGC coordination.
-        Yes, Vance flies to Islamabad on Friday.
-        But none of this reverses the structural damage of the past six weeks.
+        Oil fell 17% yesterday. Two ships transited Hormuz this morning.
+        Markets are pricing a near-complete resolution.
+        That pricing is wrong — or at minimum, premature.
         <br><br>
-        The L-shaped plateau framework remains the base case.
-        Eurasia Group: shipping companies need two months minimum
-        to resume operations even after a ceasefire.
-        Qatar LNG is offline for years, not weeks.
-        South Pars petrochemical capacity — 85% of Iran's exports —
-        was destroyed by Israel on April 6th, one day before the ceasefire.
-        Kharg Island was struck this morning.
-        Insurance war risk premiums will not normalize for weeks.
-        Goldman said it plainly: you can't jawbone molecules.
+        Here is what the ceasefire actually is:
+        a two-week pause during which Iran's IRGC
+        continues to screen every ship transiting Hormuz
+        for ownership, insurance, charter, and financing affiliations.
+        Lloyd's List confirmed this morning that
+        the midnight system has not changed.
+        The toll-booth that Citrini documented from a boat
+        eighteen miles off the Iranian coast
+        is now the official, acknowledged framework —
+        rebranded as 'coordination.'
+        Iran and Oman will charge fees. Iran uses the revenue for reconstruction.
+        This is not the pre-war Hormuz. It will never be the pre-war Hormuz.
         <br><br>
-        The more important question is what happens on April 21st
-        when the two-week window expires.
-        Iran's 10-point demands are maximalist —
-        sanctions lifting, nuclear enrichment recognition, reparations,
-        Lebanon ceasefire linkage.
-        Trump called it 'not good enough' on April 6th
-        and 'a workable basis' on April 7th.
-        That gap hasn't closed — it's been deferred.
-        Netanyahu has already signaled opposition to any deal
-        that leaves Iran's nuclear program intact.
-        The Vance delegation in Islamabad will determine
-        whether this ceasefire becomes a peace deal
-        or the fifth extension of a deadline that was never enforced.
+        The Islamabad talks on Friday are the real test.
+        The gap between the two sides on the nuclear question
+        is not a negotiating difference — it is a civilizational one.
+        Iran's 10-point plan in Persian includes 'acceptance of enrichment.'
+        The English version omits that phrase.
+        Hegseth said today uranium handover is 'non-negotiable.'
+        These two positions cannot both be true in the same agreement.
+        One side is misreading the other, or one side is lying.
+        Either scenario ends the ceasefire on April 21st.
         <br><br>
-        The signal to watch: does Hormuz traffic actually recover
-        toward pre-war levels over the next two weeks,
-        or does IRGC 'coordination' mean something closer
-        to the managed toll-booth system that was already running?
-        That distinction will determine whether the oil price
-        settles in the $90s or holds above $100
-        regardless of what happens in Islamabad.
+        The L-shaped plateau call stands.
+        426 tankers are backlogged in the Persian Gulf today.
+        Kharg Island was struck yesterday.
+        South Pars petrochemicals are gone.
+        Insurance markets are not normalizing in two weeks.
+        Eurasia Group: two months minimum for shipping to resume.
+        Goldman said it before the ceasefire and it is still true:
+        you cannot jawbone molecules.
+        The physical damage of six weeks does not reverse
+        because two men posted on social media.
     </div>
 </div>
 """, unsafe_allow_html=True)
