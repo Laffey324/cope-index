@@ -503,10 +503,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 US Strikes Kharg Island — Iran Tells Pakistan Ceasefire Talks Over, Bridges & Railways Hit, WTI $115"
-    war_color = "#ef4444"
-    war_bg = "rgba(239,68,68,0.06)"
-    war_border = "#ef4444"
+    war_signal = "🟡 2-Week Ceasefire — Hormuz Reopening Under IRGC Coordination, Islamabad Talks Apr 10, Oil -6%"
+    war_color = "#f59e0b"
+    war_bg = "rgba(245,158,11,0.06)"
+    war_border = "#f59e0b"
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
@@ -658,51 +658,51 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 policy_actions = [
     {
         "date": "Apr 7, 2026",
-        "action": "US strikes Kharg Island — Iran tells Pakistan ceasefire talks are over. Trump: 'Every bridge in Iran will be decimated.'",
-        "interpretation": "The most significant single-day escalation of the war. US struck Kharg Island — the terminal through which 85-95% of Iran's crude oil exports flow. Simultaneously, Iran told mediator Pakistan it will no longer pursue ceasefire negotiations — not rejecting a specific proposal, but closing the diplomatic channel entirely. Trump: 'Every bridge in Iran will be decimated by midnight. Every power plant burning and exploding, never to be used again. Complete demolition by 12 o'clock.' US-Israel also struck railways, highway bridges, and power transmission lines in Alborz Province causing blackouts in Karaj. Iran's supreme leader Khamenei: forces will not be deterred by commander assassinations. Singapore FM warning: 'Markets are certainly not pricing the worst-case scenario.'",
-        "impact": "🔺 Bullish",
-        "source_title": "US strikes Kharg Island, Iran ends ceasefire talks — NBC News / Wall Street CN",
-        "source_url": "https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-trump-deadline-hormuz-infrastructure-ceasefire-rcna267039"
+        "action": "2-week ceasefire agreed — Hormuz reopens under IRGC coordination. Islamabad peace talks April 10. Oil -6%, S&P futures +1%.",
+        "interpretation": "The war's largest single diplomatic breakthrough. Trump announced 90 minutes before his 8pm deadline: US suspends bombing for two weeks, conditional on Iran reopening Hormuz. Iran's FM Araghchi confirmed: IRGC will coordinate safe passage through Hormuz during the two-week window. Iran's supreme leader ordered all units to cease fire. Iran internally claims victory — says it forced US to accept its 10-point framework including sanctions lifting and nuclear enrichment recognition. US-Iran face-to-face talks scheduled Friday April 10 in Islamabad, Vance likely to lead US delegation. Netanyahu confirmed Israel joins ceasefire in Iran only — denied Lebanon ceasefire. Critical caveat: this is a 2-week pause, not a peace deal. Iran's 10-point demands remain maximalist. The structural damage to Hormuz supply chains, insurance markets, and energy infrastructure does not reverse on a ceasefire announcement.",
+        "impact": "🔻 Bearish",
+        "source_title": "US-Iran 2-week ceasefire, Hormuz reopening — Axios / NBC News",
+        "source_url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan"
+    },
+    {
+        "date": "Apr 7, 2026",
+        "action": "US strikes Kharg Island hours before ceasefire — Iran closes then reopens diplomatic channel within 24 hours",
+        "interpretation": "In the same day: US struck Kharg Island (85-95% of Iran's crude exports) in the morning, Iran told Pakistan ceasefire talks are over midday, then both sides agreed to a ceasefire by evening. The whiplash pace confirms Pasquariello's 'strategic ambiguity' framework — this market will continue to move violently on single headlines. The ceasefire does not undo Kharg Island damage or restore pre-war Hormuz infrastructure trust.",
+        "impact": "🟡 Neutral",
+        "source_title": "Kharg Island struck, then ceasefire — NPR",
+        "source_url": "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
     },
     {
         "date": "Apr 6, 2026",
-        "action": "Iran formally rejects all ceasefire proposals — 10-point maximalist counter-proposal includes reparations, sanctions lifting, permanent war end guarantee",
-        "interpretation": "Iran through Pakistan rejected the 45-day Islamabad Accord. Iran's counter-demands: permanent end to war with no-attack guarantees, Hormuz safe passage protocol, reconstruction reparations, lifting all sanctions, end to conflicts in Lebanon. US official called it 'maximalist.' Israel destroyed Jam and Damavand petrochemical facilities — 85% of Iran's petrochemical export capacity. Netanyahu called Trump to oppose ceasefire. Trump: proposal 'significant but not good enough,' called extension 'highly unlikely.'",
-        "impact": "🔺 Bullish",
-        "source_title": "Iran rejects ceasefire, Israel destroys South Pars petrochemicals — CNN / Axios",
-        "source_url": "https://www.cnn.com/2026/04/06/world/live-news/iran-war-us-trump-oil"
+        "action": "Iran's 10-point maximalist counter-proposal: reparations, sanctions lifting, nuclear enrichment recognition, permanent war end guarantee",
+        "interpretation": "Iran's formal counter includes: permanent end to war with no-attack guarantees, Hormuz safe passage protocol, reconstruction reparations, lifting all sanctions, end to conflicts in Lebanon, and recognition of nuclear enrichment rights. US official called it 'maximalist.' Trump called it 'significant but not good enough' on April 6 — then accepted it as 'workable basis' on April 7. The gap between the two sides on the substantive issues has not closed. The 2-week window is to determine if it can.",
+        "impact": "🟡 Neutral",
+        "source_title": "Iran 10-point proposal — Axios / CNN",
+        "source_url": "https://www.axios.com/2026/04/06/iran-trump-peace-plan-ceasefire"
     },
     {
         "date": "Apr 6, 2026",
         "action": "Citrini field report: AIS underreports Hormuz traffic by ~50% — 'dynamic enforcement', not binary open/closed",
-        "interpretation": "Analyst physically traveled to Oman's Musandam with $15k cash to count ships. AIS misses ~50% of actual transits — ships use dark AIS or Iran's permitted coastal corridor. Hormuz is a dynamic enforcement zone: IRGC can tighten or loosen at any moment. Market may slightly overestimate total supply disruption, but unpredictability itself is a structural risk premium. Pre-war free international navigation order is permanently gone.",
+        "interpretation": "Analyst physically traveled to Oman's Musandam with $15k cash to count ships. AIS misses ~50% of actual transits via dark corridors near Iranian coast. Now with ceasefire: IRGC will 'coordinate' passage — this replaces dark corridor system with a formal but still IRGC-controlled mechanism. The pre-war free navigation order is gone permanently. Hormuz is now an Iranian-managed waterway regardless of ceasefire status.",
         "impact": "🟡 Neutral",
-        "source_title": "Citrini field report: AIS underreports Hormuz 50% — Wall Street CN",
+        "source_title": "Citrini field report — Wall Street CN",
         "source_url": "https://wallstreetcn.com/articles/3769308"
     },
     {
-        "date": "Apr 4, 2026",
-        "action": "Time Magazine: White House 'may be losing control' — Hegseth blindsided, Vance strongest war opponent, half Iran missiles intact",
-        "interpretation": "Chief of Staff Susie Wiles told colleagues situation 'may be losing control.' Trump fed victory highlight reels daily. Hegseth blindsided by Iran's regional retaliation scale. US intelligence: Iran retains ~50% missile launchers intact — contradicting 'obliterated' narrative. White House seeking exit: core problem is 'how to exit without appearing to have gained too little.'",
-        "impact": "🟡 Neutral",
-        "source_title": "White House 'losing control' — Time Magazine",
-        "source_url": "https://wallstreetcn.com/articles/3769247"
-    },
-    {
         "date": "Apr 2, 2026",
-        "action": "WTI +11%, Brent +8% — Goldman: physical shortage just beginning. Hormuz traffic 95% below pre-war.",
-        "interpretation": "Largest single-day surge in months. Goldman's Tony Kim: last pre-war ships have arrived — physical shortage compounds from here. Analyst consensus: 'Even if Hormuz reopens, things don't just snap back to normal.' L-shaped plateau confirmed.",
+        "action": "Goldman: physical shortage just beginning as last pre-war ships arrive. IEA: April losses double March.",
+        "interpretation": "Goldman's Tony Kim: last pre-war ships have arrived — physical shortage compounds from here. IEA: supply loss exceeds 12 mb/d, shock exceeds 1973+1979+2022 combined. Even with ceasefire: Eurasia Group says shipping companies need 2+ months to resume operations. Infrastructure repair takes months. Insurance markets won't normalize for weeks. L-shaped plateau framework holds — oil will not V-shape back to $70.",
         "impact": "🔺 Bullish",
-        "source_title": "WTI +11% — CNBC / Goldman Sachs",
+        "source_title": "Goldman / IEA supply warning — CNBC / Wall Street CN",
         "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
     },
     {
-        "date": "Apr 1, 2026",
-        "action": "IEA: April losses double March — 'There is nothing in April.' Supply shock exceeds 1973, 1979, 2022 combined.",
-        "interpretation": "March deliveries were pre-war ships past Hormuz before Feb 28 — buffer gone in April. Supply loss exceeds 12 mb/d. Jet fuel and diesel shortages hitting Asia now, Europe by May. Energy rationing becoming realistic.",
-        "impact": "🔺 Bullish",
-        "source_title": "IEA April warning — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3769009"
+        "date": "Apr 4, 2026",
+        "action": "Time Magazine: White House 'may be losing control' — half Iran missiles intact, Vance was strongest war opponent",
+        "interpretation": "Chief of Staff Wiles told colleagues situation 'may be losing control.' US intelligence: Iran retains ~50% missile launchers intact. Vance was strongest internal war opponent — now leads Islamabad delegation, signaling the exit-strategy faction has won internally. The ceasefire confirms the Time Magazine read was correct: the White House needed an out.",
+        "impact": "🟡 Neutral",
+        "source_title": "White House 'losing control' — Time Magazine",
+        "source_url": "https://wallstreetcn.com/articles/3769247"
     },
 ]
 
@@ -825,41 +825,109 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-st.markdown("""
+pythonwar_signal = "🔴 US Strikes Kharg Island — Iran Tells Pakistan Ceasefire Talks Over, Bridges & Railways Hit, WTI $115"
+替换成：
+pythonwar_signal = "🟡 2-Week Ceasefire — Hormuz Reopening Under IRGC Coordination, Islamabad Talks Apr 10, Oil -6%"
+war_color = "#f59e0b"
+war_bg = "rgba(245,158,11,0.06)"
+war_border = "#f59e0b"
+
+第二步：policy_actions 整个列表
+找到 policy_actions = [ 整个列表替换成：
+pythonpolicy_actions = [
+    {
+        "date": "Apr 7, 2026",
+        "action": "2-week ceasefire agreed — Hormuz reopens under IRGC coordination. Islamabad peace talks April 10. Oil -6%, S&P futures +1%.",
+        "interpretation": "The war's largest single diplomatic breakthrough. Trump announced 90 minutes before his 8pm deadline: US suspends bombing for two weeks, conditional on Iran reopening Hormuz. Iran's FM Araghchi confirmed: IRGC will coordinate safe passage through Hormuz during the two-week window. Iran's supreme leader ordered all units to cease fire. Iran internally claims victory — says it forced US to accept its 10-point framework including sanctions lifting and nuclear enrichment recognition. US-Iran face-to-face talks scheduled Friday April 10 in Islamabad, Vance likely to lead US delegation. Netanyahu confirmed Israel joins ceasefire in Iran only — denied Lebanon ceasefire. Critical caveat: this is a 2-week pause, not a peace deal. Iran's 10-point demands remain maximalist. The structural damage to Hormuz supply chains, insurance markets, and energy infrastructure does not reverse on a ceasefire announcement.",
+        "impact": "🔻 Bearish",
+        "source_title": "US-Iran 2-week ceasefire, Hormuz reopening — Axios / NBC News",
+        "source_url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan"
+    },
+    {
+        "date": "Apr 7, 2026",
+        "action": "US strikes Kharg Island hours before ceasefire — Iran closes then reopens diplomatic channel within 24 hours",
+        "interpretation": "In the same day: US struck Kharg Island (85-95% of Iran's crude exports) in the morning, Iran told Pakistan ceasefire talks are over midday, then both sides agreed to a ceasefire by evening. The whiplash pace confirms Pasquariello's 'strategic ambiguity' framework — this market will continue to move violently on single headlines. The ceasefire does not undo Kharg Island damage or restore pre-war Hormuz infrastructure trust.",
+        "impact": "🟡 Neutral",
+        "source_title": "Kharg Island struck, then ceasefire — NPR",
+        "source_url": "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
+    },
+    {
+        "date": "Apr 6, 2026",
+        "action": "Iran's 10-point maximalist counter-proposal: reparations, sanctions lifting, nuclear enrichment recognition, permanent war end guarantee",
+        "interpretation": "Iran's formal counter includes: permanent end to war with no-attack guarantees, Hormuz safe passage protocol, reconstruction reparations, lifting all sanctions, end to conflicts in Lebanon, and recognition of nuclear enrichment rights. US official called it 'maximalist.' Trump called it 'significant but not good enough' on April 6 — then accepted it as 'workable basis' on April 7. The gap between the two sides on the substantive issues has not closed. The 2-week window is to determine if it can.",
+        "impact": "🟡 Neutral",
+        "source_title": "Iran 10-point proposal — Axios / CNN",
+        "source_url": "https://www.axios.com/2026/04/06/iran-trump-peace-plan-ceasefire"
+    },
+    {
+        "date": "Apr 6, 2026",
+        "action": "Citrini field report: AIS underreports Hormuz traffic by ~50% — 'dynamic enforcement', not binary open/closed",
+        "interpretation": "Analyst physically traveled to Oman's Musandam with $15k cash to count ships. AIS misses ~50% of actual transits via dark corridors near Iranian coast. Now with ceasefire: IRGC will 'coordinate' passage — this replaces dark corridor system with a formal but still IRGC-controlled mechanism. The pre-war free navigation order is gone permanently. Hormuz is now an Iranian-managed waterway regardless of ceasefire status.",
+        "impact": "🟡 Neutral",
+        "source_title": "Citrini field report — Wall Street CN",
+        "source_url": "https://wallstreetcn.com/articles/3769308"
+    },
+    {
+        "date": "Apr 2, 2026",
+        "action": "Goldman: physical shortage just beginning as last pre-war ships arrive. IEA: April losses double March.",
+        "interpretation": "Goldman's Tony Kim: last pre-war ships have arrived — physical shortage compounds from here. IEA: supply loss exceeds 12 mb/d, shock exceeds 1973+1979+2022 combined. Even with ceasefire: Eurasia Group says shipping companies need 2+ months to resume operations. Infrastructure repair takes months. Insurance markets won't normalize for weeks. L-shaped plateau framework holds — oil will not V-shape back to $70.",
+        "impact": "🔺 Bullish",
+        "source_title": "Goldman / IEA supply warning — CNBC / Wall Street CN",
+        "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
+    },
+    {
+        "date": "Apr 4, 2026",
+        "action": "Time Magazine: White House 'may be losing control' — half Iran missiles intact, Vance was strongest war opponent",
+        "interpretation": "Chief of Staff Wiles told colleagues situation 'may be losing control.' US intelligence: Iran retains ~50% missile launchers intact. Vance was strongest internal war opponent — now leads Islamabad delegation, signaling the exit-strategy faction has won internally. The ceasefire confirms the Time Magazine read was correct: the White House needed an out.",
+        "impact": "🟡 Neutral",
+        "source_title": "White House 'losing control' — Time Magazine",
+        "source_url": "https://wallstreetcn.com/articles/3769247"
+    },
+]
+
+第三步：Analyst View
+找到整个Analyst View的st.markdown块替换成：
+pythonst.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
     <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 7, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Today marks a structural shift. Iran has not merely rejected another proposal —
-        it has told Pakistan, its last functioning diplomatic channel, that
-        ceasefire talks are over. This is categorically different from the past five weeks
-        of conditional refusals. Combined with US strikes on Kharg Island,
-        the terminal through which nearly all of Iran's crude exports flow,
-        the war has entered a new phase: deliberate destruction of each other's
-        economic core infrastructure.
+        Tonight's ceasefire is real — but the oil market's response
+        tells only half the story. Yes, oil fell 6% on the announcement.
+        Yes, Hormuz will reopen under IRGC coordination.
+        Yes, Vance flies to Islamabad on Friday.
+        But none of this reverses the structural damage of the past six weeks.
         <br><br>
-        Trump's language today — "complete demolition by midnight,"
-        "every bridge decimated," "every power plant burning and exploding,
-        never to be used again" — has moved from threat to execution.
-        Power transmission lines in Alborz Province have already been struck,
-        causing blackouts in Karaj. Railways and highway bridges across Iran
-        are being systematically destroyed. The question is no longer
-        whether infrastructure will be targeted, but at what pace.
+        The L-shaped plateau framework remains the base case.
+        Eurasia Group: shipping companies need two months minimum
+        to resume operations even after a ceasefire.
+        Qatar LNG is offline for years, not weeks.
+        South Pars petrochemical capacity — 85% of Iran's exports —
+        was destroyed by Israel on April 6th, one day before the ceasefire.
+        Kharg Island was struck this morning.
+        Insurance war risk premiums will not normalize for weeks.
+        Goldman said it plainly: you can't jawbone molecules.
         <br><br>
-        Iran's Kharg Island strike is the oil market's most significant
-        single event since Hormuz closed. Even a partial degradation of
-        Kharg terminal capacity removes incremental supply that was
-        partially reaching markets through dark AIS corridors.
-        The Citrini field finding — that 50% of Hormuz traffic was
-        invisible to public data — now cuts the other way:
-        that hidden flow is now at direct risk.
+        The more important question is what happens on April 21st
+        when the two-week window expires.
+        Iran's 10-point demands are maximalist —
+        sanctions lifting, nuclear enrichment recognition, reparations,
+        Lebanon ceasefire linkage.
+        Trump called it 'not good enough' on April 6th
+        and 'a workable basis' on April 7th.
+        That gap hasn't closed — it's been deferred.
+        Netanyahu has already signaled opposition to any deal
+        that leaves Iran's nuclear program intact.
+        The Vance delegation in Islamabad will determine
+        whether this ceasefire becomes a peace deal
+        or the fifth extension of a deadline that was never enforced.
         <br><br>
-        Singapore's foreign minister said it plainly:
-        markets are not pricing the worst-case scenario.
-        With Iran closing diplomatic channels, Netanyahu opposing any deal,
-        and Trump executing rather than threatening infrastructure strikes,
-        the probability distribution has shifted decisively toward
-        prolonged conflict. The L-shaped plateau is no longer a tail risk —
-        it is the base case.
+        The signal to watch: does Hormuz traffic actually recover
+        toward pre-war levels over the next two weeks,
+        or does IRGC 'coordination' mean something closer
+        to the managed toll-booth system that was already running?
+        That distinction will determine whether the oil price
+        settles in the $90s or holds above $100
+        regardless of what happens in Islamabad.
     </div>
 </div>
 """, unsafe_allow_html=True)
