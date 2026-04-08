@@ -825,69 +825,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-pythonwar_signal = "🔴 US Strikes Kharg Island — Iran Tells Pakistan Ceasefire Talks Over, Bridges & Railways Hit, WTI $115"
-替换成：
-pythonwar_signal = "🟡 2-Week Ceasefire — Hormuz Reopening Under IRGC Coordination, Islamabad Talks Apr 10, Oil -6%"
-war_color = "#f59e0b"
-war_bg = "rgba(245,158,11,0.06)"
-war_border = "#f59e0b"
-
-第二步：policy_actions 整个列表
-找到 policy_actions = [ 整个列表替换成：
-pythonpolicy_actions = [
-    {
-        "date": "Apr 7, 2026",
-        "action": "2-week ceasefire agreed — Hormuz reopens under IRGC coordination. Islamabad peace talks April 10. Oil -6%, S&P futures +1%.",
-        "interpretation": "The war's largest single diplomatic breakthrough. Trump announced 90 minutes before his 8pm deadline: US suspends bombing for two weeks, conditional on Iran reopening Hormuz. Iran's FM Araghchi confirmed: IRGC will coordinate safe passage through Hormuz during the two-week window. Iran's supreme leader ordered all units to cease fire. Iran internally claims victory — says it forced US to accept its 10-point framework including sanctions lifting and nuclear enrichment recognition. US-Iran face-to-face talks scheduled Friday April 10 in Islamabad, Vance likely to lead US delegation. Netanyahu confirmed Israel joins ceasefire in Iran only — denied Lebanon ceasefire. Critical caveat: this is a 2-week pause, not a peace deal. Iran's 10-point demands remain maximalist. The structural damage to Hormuz supply chains, insurance markets, and energy infrastructure does not reverse on a ceasefire announcement.",
-        "impact": "🔻 Bearish",
-        "source_title": "US-Iran 2-week ceasefire, Hormuz reopening — Axios / NBC News",
-        "source_url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan"
-    },
-    {
-        "date": "Apr 7, 2026",
-        "action": "US strikes Kharg Island hours before ceasefire — Iran closes then reopens diplomatic channel within 24 hours",
-        "interpretation": "In the same day: US struck Kharg Island (85-95% of Iran's crude exports) in the morning, Iran told Pakistan ceasefire talks are over midday, then both sides agreed to a ceasefire by evening. The whiplash pace confirms Pasquariello's 'strategic ambiguity' framework — this market will continue to move violently on single headlines. The ceasefire does not undo Kharg Island damage or restore pre-war Hormuz infrastructure trust.",
-        "impact": "🟡 Neutral",
-        "source_title": "Kharg Island struck, then ceasefire — NPR",
-        "source_url": "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
-    },
-    {
-        "date": "Apr 6, 2026",
-        "action": "Iran's 10-point maximalist counter-proposal: reparations, sanctions lifting, nuclear enrichment recognition, permanent war end guarantee",
-        "interpretation": "Iran's formal counter includes: permanent end to war with no-attack guarantees, Hormuz safe passage protocol, reconstruction reparations, lifting all sanctions, end to conflicts in Lebanon, and recognition of nuclear enrichment rights. US official called it 'maximalist.' Trump called it 'significant but not good enough' on April 6 — then accepted it as 'workable basis' on April 7. The gap between the two sides on the substantive issues has not closed. The 2-week window is to determine if it can.",
-        "impact": "🟡 Neutral",
-        "source_title": "Iran 10-point proposal — Axios / CNN",
-        "source_url": "https://www.axios.com/2026/04/06/iran-trump-peace-plan-ceasefire"
-    },
-    {
-        "date": "Apr 6, 2026",
-        "action": "Citrini field report: AIS underreports Hormuz traffic by ~50% — 'dynamic enforcement', not binary open/closed",
-        "interpretation": "Analyst physically traveled to Oman's Musandam with $15k cash to count ships. AIS misses ~50% of actual transits via dark corridors near Iranian coast. Now with ceasefire: IRGC will 'coordinate' passage — this replaces dark corridor system with a formal but still IRGC-controlled mechanism. The pre-war free navigation order is gone permanently. Hormuz is now an Iranian-managed waterway regardless of ceasefire status.",
-        "impact": "🟡 Neutral",
-        "source_title": "Citrini field report — Wall Street CN",
-        "source_url": "https://wallstreetcn.com/articles/3769308"
-    },
-    {
-        "date": "Apr 2, 2026",
-        "action": "Goldman: physical shortage just beginning as last pre-war ships arrive. IEA: April losses double March.",
-        "interpretation": "Goldman's Tony Kim: last pre-war ships have arrived — physical shortage compounds from here. IEA: supply loss exceeds 12 mb/d, shock exceeds 1973+1979+2022 combined. Even with ceasefire: Eurasia Group says shipping companies need 2+ months to resume operations. Infrastructure repair takes months. Insurance markets won't normalize for weeks. L-shaped plateau framework holds — oil will not V-shape back to $70.",
-        "impact": "🔺 Bullish",
-        "source_title": "Goldman / IEA supply warning — CNBC / Wall Street CN",
-        "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
-    },
-    {
-        "date": "Apr 4, 2026",
-        "action": "Time Magazine: White House 'may be losing control' — half Iran missiles intact, Vance was strongest war opponent",
-        "interpretation": "Chief of Staff Wiles told colleagues situation 'may be losing control.' US intelligence: Iran retains ~50% missile launchers intact. Vance was strongest internal war opponent — now leads Islamabad delegation, signaling the exit-strategy faction has won internally. The ceasefire confirms the Time Magazine read was correct: the White House needed an out.",
-        "impact": "🟡 Neutral",
-        "source_title": "White House 'losing control' — Time Magazine",
-        "source_url": "https://wallstreetcn.com/articles/3769247"
-    },
-]
-
-第三步：Analyst View
-找到整个Analyst View的st.markdown块替换成：
-pythonst.markdown("""
+st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
     <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 7, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
