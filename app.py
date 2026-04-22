@@ -503,10 +503,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🟡 Ceasefire Cracking — Israel Strikes Lebanon, IRGC Halts Hormuz Again, WTI Rebounds +6% to $100"
-    war_color = "#f59e0b"
-    war_bg = "rgba(245,158,11,0.06)"
-    war_border = "#f59e0b"
+    war_signal = "🔴 Ceasefire In Name Only — IRGC Seizes 3 Ships, US Blockades Iran Ports, Talks Deadlocked on Nuclear"
+    war_color = "#ef4444"
+    war_bg = "rgba(239,68,68,0.06)"
+    war_border = "#ef4444"
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
@@ -657,51 +657,51 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Apr 9, 2026",
-        "action": "Ceasefire cracks on Day 2 — Israel strikes Lebanon, IRGC halts Hormuz traffic, WTI rebounds +6% to $100. L-shaped plateau confirmed.",
-        "interpretation": "Exactly as the Analyst View warned: the ceasefire is a political announcement, not a physical supply restoration. Israel launched its largest coordinated strike on Lebanon since the war began — 182 killed. IRGC immediately halted Hormuz tanker traffic, citing ceasefire violation. Iran's parliamentary speaker said three of Iran's 10 conditions have already been violated. WTI recovered from $94 back above $100 in a single session — the market realized overnight that Hormuz is still blocked. Iran's deputy FM confirmed the new reality: 'The Strait is open, but every vessel must coordinate with Iranian authorities.' The toll-booth is the ceasefire. Islamabad talks pushed to Saturday with Vance, Witkoff, Kushner leading US delegation.",
+        "date": "Apr 22, 2026",
+        "action": "IRGC seizes 2 ships, disables third in Hormuz — Trump extends ceasefire but maintains naval blockade of Iranian ports",
+        "interpretation": "Today: IRGC seized two vessels in Hormuz and transferred them to Iranian waters. A third vessel hit by gunfire is disabled off Iran's coast. A Greek-linked cargo ship also attacked. Iran's FM calls US port blockade 'an act of war and violation of ceasefire.' Trump extended ceasefire at Pakistan's request with no fixed end date — waiting for Iran to submit a 'unified proposal.' But US Navy blockade of Iranian ports continues simultaneously. Both sides are in active hostility while nominally in ceasefire. Iran's internal leadership is fractured — Trump's team believes Tehran lacks consensus to empower negotiators. Iran losing $500M/day per Trump's Truth Social post. Kharg Island storage approaching capacity — Iranian oil wells may be forced to shut in within days.",
         "impact": "🔺 Bullish",
-        "source_title": "Ceasefire cracks, Hormuz halted again, WTI +6% — CNBC / Bloomberg / CNN",
+        "source_title": "IRGC seizes ships, ceasefire extended — CNN / Al Jazeera / NPR",
+        "source_url": "https://www.cnn.com/2026/04/22/world/live-news/iran-war-us-trump-blockade-ceasefire"
+    },
+    {
+        "date": "Apr 21, 2026",
+        "action": "First Islamabad talks collapse — Iran refuses nuclear commitment, US launches naval blockade of Iranian ports, Vance trip cancelled",
+        "interpretation": "The first direct US-Iran talks since the war began ended without agreement. Core breakdown: Vance demanded Iran commit to forgoing nuclear weapons; Iran refused. US responded by blockading Iranian shipping ports — Navy has forced 28 ships to turn back. Treasury Secretary Bessent confirmed blockade is official policy. Iran briefly reopened Hormuz for less than one day, then reinstated control. Iran's key demands for progress: end US naval blockade, freeze Israel-Lebanon fighting, access to $6B in frozen assets. The nuclear question remains the unbridgeable gap — exactly as the April 8 Analyst View predicted.",
+        "impact": "🔺 Bullish",
+        "source_title": "Islamabad talks collapse, US naval blockade — NPR / Washington Post",
+        "source_url": "https://www.npr.org/2026/04/21/nx-s1-5793638/iran-middle-east-updates"
+    },
+    {
+        "date": "Apr 9, 2026",
+        "action": "Oil rebounds +6% to $100 within 24 hours of ceasefire — market realizes Hormuz still blocked, L-shaped plateau confirmed",
+        "interpretation": "The most important single data point of the post-ceasefire period: oil fell 16% on the ceasefire announcement, then recovered most of the move within one session when the market discovered IRGC screening was unchanged. Commodity Context analyst: even full Hormuz reopening would cause only $10-20 immediate price drop, with Brent then stabilizing in $80-90 range due to infrastructure damage, supply chain disruption, and SPR refill demand. The floor has permanently moved. Rystad Energy: $25B+ in regional energy infrastructure reconstruction costs.",
+        "impact": "🔺 Bullish",
+        "source_title": "Oil rebounds to $100, L-shaped plateau confirmed — CNBC / Bloomberg",
         "source_url": "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html"
     },
     {
         "date": "Apr 8, 2026",
-        "action": "Trump proposes US-Iran 'joint venture' to co-manage Hormuz — first US acknowledgment of Iranian sovereign role in the strait",
-        "interpretation": "Trump told ABC News the US may seek a 'joint project' with Iran to secure Hormuz, and signaled willingness to allow Iran to charge transit fees. This is the most significant strategic concession of the war: the pre-war 'free international navigation' framework has been abandoned by the US president himself. Combined with Iran's deputy FM confirming IRGC coordination is mandatory for all vessels, the new Hormuz order is now officially acknowledged by both sides. Separately Trump threatened 50% tariffs on any country supplying Iran with weapons — legal experts note this faces constitutional barriers after Supreme Court ruling on emergency tariff powers.",
+        "action": "Trump proposes US-Iran 'joint venture' to co-manage Hormuz — pre-war free navigation order officially abandoned",
+        "interpretation": "Trump told ABC News the US may seek a 'joint project' with Iran to secure Hormuz, signaling willingness to allow Iran to charge transit fees. The US president has now officially accepted Iranian co-management of the world's most critical energy chokepoint. Iran's deputy FM confirmed: every vessel must coordinate with IRGC to transit. 30+ countries meeting at RAF base in UK to plan multinational Hormuz security mission — but will only deploy after 'sustained ceasefire.' The pre-war Hormuz is gone permanently regardless of how this war ends.",
         "impact": "🟡 Neutral",
-        "source_title": "Trump 'joint venture' Hormuz proposal — Wall Street CN / ABC",
+        "source_title": "Trump 'joint venture' Hormuz — Wall Street CN / ABC",
         "source_url": "https://wallstreetcn.com/articles/3769503"
     },
     {
-        "date": "Apr 8, 2026",
-        "action": "Ceasefire Day 1: only handful of ships transit Hormuz — Lloyd's List confirms IRGC vetting system unchanged",
-        "interpretation": "Kpler data: ship traffic did not pick up above the handful of daily vessels seen throughout the war. Lloyd's List: 'The system in place at midnight has not changed.' 426 tankers, 34 LPG, 19 LNG vessels still backlogged. WTI fell 16% on ceasefire announcement — then rebounded 6% the next morning when market realized nothing had actually changed. Rystad Energy: total cost of rebuilding regional energy infrastructure could exceed $25 billion. Ras Laffan (20% of global LNG) export capacity reduced 17% from war damage.",
-        "impact": "🔺 Bullish",
-        "source_title": "Hormuz traffic unchanged after ceasefire — Lloyd's List / Kpler / CNBC",
-        "source_url": "https://edition.cnn.com/2026/04/08/world/live-news/iran-war-trump-us-ceasefire"
-    },
-    {
         "date": "Apr 7, 2026",
-        "action": "2-week ceasefire agreed — but Iran claims victory, demands sanctions lifting, uranium enrichment recognition, US troop withdrawal",
-        "interpretation": "Trump announced ceasefire 90 minutes before 8pm deadline. Iran's 10-point demands: permanent war end, sanctions lifting, US forces withdrawal from region, nuclear enrichment recognition, reparations. Iran internally claims it forced US to accept its framework. Both sides claim victory. The gap on nuclear question remains unbridgeable in two weeks: Iran's Persian-language version of the deal includes 'acceptance of enrichment'; English version omits it. Netanyahu confirmed Israel joins ceasefire for Iran only — Lebanon war continues, which immediately became the trigger for IRGC halting Hormuz on Day 2.",
+        "action": "2-week ceasefire agreed — but both sides claim victory on incompatible terms. Nuclear gap remains unbridgeable.",
+        "interpretation": "Iran's 10-point demands include sanctions lifting, US troop withdrawal from region, nuclear enrichment recognition, reparations. Iran's Persian-language version includes 'acceptance of enrichment' — English version omits it. US position: zero enrichment, full uranium handover. These positions cannot coexist in one agreement. The ceasefire bought time but changed nothing structural. Vance at Islamabad: 'We need an affirmative commitment they will not seek a nuclear weapon.' Iran's response: any attempt to limit enrichment 'will fail.'",
         "impact": "🟡 Neutral",
-        "source_title": "Ceasefire terms and Iran's claims — Axios / NBC",
+        "source_title": "Ceasefire terms — Axios / NPR",
         "source_url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan"
     },
     {
-        "date": "Apr 7, 2026",
-        "action": "US strikes Kharg Island and South Pars petrochemicals hours before ceasefire — physical damage locked in regardless of political outcome",
-        "interpretation": "Final pre-ceasefire strikes targeted Iran's core export infrastructure. Rystad Energy estimates $25B+ in regional energy infrastructure reconstruction costs. Even full political resolution cannot undo the physical damage already done. Shipping normalization: 2+ months minimum per Eurasia Group. Insurance market normalization: weeks to months. SPR refill demand: governments as price-insensitive buyers create a structural floor.",
+        "date": "Apr 2-7, 2026",
+        "action": "Goldman / IEA / Eurasia Group / Rystad: physical damage structural — 'You can't jawbone molecules'",
+        "interpretation": "Goldman: largest oil supply disruption in history. IEA: shock exceeds 1973+1979+2022 combined. Eurasia Group: 2+ months minimum for shipping to normalize. Rystad: $25B+ infrastructure reconstruction costs. Ras Laffan LNG export capacity down 17% permanently. Kharg Island struck. South Pars petrochemicals gone. SPR refill demand creates structural price floor — governments are price-insensitive buyers. Brent floor now estimated $80-90 even in full resolution scenario.",
         "impact": "🔺 Bullish",
-        "source_title": "Pre-ceasefire strikes — NPR / Rystad Energy",
-        "source_url": "https://www.npr.org/2026/04/07/nx-s1-5776377/iran-war-updates"
-    },
-    {
-        "date": "Apr 2, 2026",
-        "action": "Goldman / IEA / Eurasia Group: physical supply shortage structural, not temporary — 'You can't jawbone molecules'",
-        "interpretation": "Goldman: largest oil supply disruption in history. IEA: April losses double March, shock exceeds 1973+1979+2022 combined. Eurasia Group: 2+ months minimum for shipping to resume after ceasefire. Brent still ~$98 after a 13% ceasefire drop — still 40% above pre-war $70. The floor has permanently moved up. L-shaped plateau is the base case.",
-        "impact": "🔺 Bullish",
-        "source_title": "Goldman / IEA supply warnings — CNBC / Wall Street CN",
+        "source_title": "Goldman / IEA / Rystad supply assessment",
         "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
     },
 ]
@@ -827,50 +827,55 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 9, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 22, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Yesterday oil fell 16%. Today it's back above $100.
-        That round trip happened in less than 24 hours.
-        This is the most important data point of the entire war
-        for understanding where oil prices go from here.
+        Two weeks after the ceasefire announcement, the situation is this:
+        Iran is seizing ships in Hormuz today.
+        The US is blockading Iranian ports.
+        The Islamabad talks collapsed on the nuclear question.
+        Trump extended the ceasefire with no fixed end date
+        while simultaneously maintaining a naval blockade.
+        Both sides are engaged in active economic and maritime warfare
+        under a nominal ceasefire.
         <br><br>
-        What the market learned overnight:
-        the ceasefire did not reopen Hormuz.
-        Iran's deputy foreign minister confirmed it explicitly —
-        every vessel must coordinate with Iranian authorities to pass.
-        The IRGC vetting system, the ownership checks,
-        the insurance screening, the affiliation audits —
-        all of it is still running.
-        Then Israel struck Lebanon.
-        IRGC halted tanker traffic entirely.
-        WTI went from $94 back to $100 before lunch.
+        The nuclear gap is not a negotiating difference —
+        it is the same gap that caused this war.
+        Vance in Islamabad said the US needs Iran to commit
+        to never seeking a nuclear weapon.
+        Iran's parliament speaker said any limit on enrichment will fail.
+        The two-week ceasefire did not close this gap.
+        The extended ceasefire will not close it either.
+        The question is whether both sides can find
+        a face-saving formula that papers over the gap long enough
+        to declare political victory — or whether
+        the naval blockade escalates back to kinetic strikes.
         <br><br>
-        Trump's 'joint venture' proposal yesterday
-        is the single most important strategic signal of the post-war order.
-        The US president is now openly discussing
-        a co-management arrangement for Hormuz with Iran.
-        This is not a negotiating position —
-        it is an acknowledgment of facts on the ground.
-        The pre-war Hormuz, where the US Navy guaranteed
-        free international navigation,
-        is gone. Trump himself has accepted this.
-        <br><br>
-        The Islamabad talks begin Saturday.
-        The Lebanon question will dominate the first session —
-        Iran says Lebanon is included in the ceasefire,
-        Netanyahu says it is not, Trump has backed Netanyahu.
-        This is not a technical disagreement.
-        It is a structural incompatibility between
-        what Iran agreed to and what Israel will accept.
-        <br><br>
-        The L-shaped plateau call is now validated by the market itself.
+        The oil market has already delivered its verdict
+        on the L-shaped plateau thesis.
         Oil fell 16% on the ceasefire announcement
-        and recovered most of it within one trading session.
-        The market tried to price in full recovery
-        and immediately discovered it could not.
-        Brent is still 40% above pre-war levels
-        after the largest single-day drop since 2020.
-        The floor has moved. Permanently.
+        and recovered to $100 within 24 hours.
+        Brent is now trading in the $95-100 range —
+        still 35-40% above pre-war levels —
+        after the largest single supply shock in recorded history,
+        a nominal ceasefire, a collapsed negotiation,
+        a naval blockade, and three ships seized today.
+        Commodity Context put the post-resolution floor at $80-90.
+        Goldman put it higher.
+        Either way, the $70 world is gone.
+        <br><br>
+        The key variable to watch going into this week:
+        does Iran submit the 'unified proposal' Trump demanded,
+        and if so, does it include any language on nuclear limits
+        that the US can accept?
+        If yes, the ceasefire becomes a genuine diplomatic process.
+        If no — which is the more likely outcome given
+        the fractures in Iranian leadership — 
+        the naval blockade tightens,
+        Kharg Island storage fills,
+        Iranian oil wells shut in,
+        and the pressure for resumed kinetic strikes
+        builds again toward a new deadline.
+        We have seen this pattern four times already.
     </div>
 </div>
 """, unsafe_allow_html=True)
