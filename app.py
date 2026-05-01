@@ -38,6 +38,15 @@ st.markdown("""
     [data-testid="stSubheader"] {
         color: #1a1a1a !important;
     }
+    [data-testid="stSubheader"] p {
+        color: #1a1a1a !important;
+    }
+    .stApp [data-testid="stHeading"] {
+        color: #1a1a1a !important;
+    }
+    .stApp [data-testid="stHeading"] * {
+        color: #1a1a1a !important;
+    }
     [data-testid="stExpander"] summary p {
         color: #1a1a1a !important;
     }
