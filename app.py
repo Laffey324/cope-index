@@ -29,31 +29,16 @@ st.markdown("""
     .stApp {
         background-color: #F2F2F7;
     }
-    .stApp h1, .stApp h2, .stApp h3,
-    .stApp h4, .stApp h5, .stApp h6 {
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
         color: #1a1a1a !important;
     }
-    .stApp p, .stApp span, .stApp div,
-    .stApp li, .stApp label, .stApp caption {
+    .stMarkdown p, .stMarkdown li {
         color: #1a1a1a !important;
     }
-    .stApp a {
-        color: #1a6faf !important;
-    }
-    [data-testid="stSubheader"],
-    [data-testid="stHeading"] {
+    [data-testid="stSubheader"] {
         color: #1a1a1a !important;
     }
-    .stMarkdown h1, .stMarkdown h2,
-    .stMarkdown h3, .stMarkdown p {
-        color: #1a1a1a !important;
-    }
-    hr {
-        border-color: #c0c0c0 !important;
-        opacity: 1 !important;
-    }
-    [data-testid="stExpander"] summary,
-    [data-testid="stExpander"] p {
+    [data-testid="stExpander"] summary p {
         color: #1a1a1a !important;
     }
     [data-testid="stCaptionContainer"] p {
@@ -63,6 +48,10 @@ st.markdown("""
     [data-testid="stMetricValue"],
     [data-testid="stMetricDelta"] {
         color: #1a1a1a !important;
+    }
+    hr {
+        border-color: #c0c0c0 !important;
+        opacity: 1 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -265,7 +254,7 @@ try:
         plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
         yaxis=dict(gridcolor="rgba(128,128,128,0.15)", range=[-10, 160]),
         xaxis=dict(gridcolor="rgba(128,128,128,0.15)"),
-        legend=dict(bgcolor="rgba(0,0,0,0)", borderwidth=0), margin=dict(t=40, b=20))
+        legend=dict(bgcolor="rgba(0,0,0,0)", borderwidth=0, font=dict(color="#1a1a1a")), margin=dict(t=40, b=20))
     st.plotly_chart(fig, use_container_width=True)
 
     wti_latest = float(wti_df["wti"].iloc[-1])
