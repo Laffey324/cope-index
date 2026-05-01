@@ -80,13 +80,13 @@ st.markdown(f"""
     align-items: center;
 ">
     <div style="flex:1;">
-        <div style="font-size:13px; font-weight:700; color:#4a9fd4; letter-spacing:3px; text-transform:uppercase; margin-bottom:10px;">
+        <div style="font-size:13px; font-weight:700; color:#90c8f0; letter-spacing:3px; text-transform:uppercase; margin-bottom:10px;">
             CRUDE OIL POLICY & EVENT RISK DASHBOARD
         </div>
         <div style="font-size:56px; font-weight:900; color:#ffffff; letter-spacing:-2px; line-height:1; margin-bottom:6px;">
             COPE Index
         </div>
-        <div style="font-size:13px; color:#7aa3c0; margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.1);">
+        <div style="font-size:13px; color:#b8d4e8; margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.2);">
             Tracking how geopolitical events and policy signals translate into crude oil price risk
             &nbsp;·&nbsp;
             Last updated: {datetime.now().strftime('%B %d, %Y %H:%M')} ET
@@ -94,17 +94,17 @@ st.markdown(f"""
     </div>
     <div style="display:flex; gap:32px; margin-left:48px;">
         <div style="text-align:center; padding:20px 28px; background:rgba(255,255,255,0.06); border-radius:10px; border:1px solid rgba(255,255,255,0.1);">
-            <div style="font-size:11px; color:#7aa3c0; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Brent Crude</div>
+            <div style="font-size:11px; color:#b8d4e8; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Brent Crude</div>
             <div style="font-size:32px; font-weight:800; color:#ffffff;">{wti_str}</div>
             <div style="font-size:13px; color:{wti_color}; margin-top:4px;">{wti_chg_str} vs prev day</div>
         </div>
         <div style="text-align:center; padding:20px 28px; background:rgba(255,255,255,0.06); border-radius:10px; border:1px solid rgba(255,255,255,0.1);">
-            <div style="font-size:11px; color:#7aa3c0; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">COPE Risk Score</div>
+            <div style="font-size:11px; color:#b8d4e8; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">COPE Risk Score</div>
             <div style="font-size:32px; font-weight:800; color:{risk_color};">{total_score:.1f}/10</div>
             <div style="font-size:13px; color:{risk_color}; margin-top:4px;">{risk_label}</div>
         </div>
         <div style="text-align:center; padding:20px 28px; background:rgba(255,255,255,0.06); border-radius:10px; border:1px solid rgba(255,255,255,0.1);">
-            <div style="font-size:11px; color:#7aa3c0; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Hormuz Status</div>
+            <div style="font-size:11px; color:#b8d4e8; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Hormuz Status</div>
             <div style="font-size:28px; font-weight:800; color:#f87171;">🔴 CLOSED</div>
             <div style="font-size:13px; color:#f87171; margin-top:4px;">Since Feb 28, 2026</div>
         </div>
