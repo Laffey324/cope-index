@@ -29,14 +29,40 @@ st.markdown("""
     .stApp {
         background-color: #F2F2F7;
     }
-    [data-testid="stMarkdownContainer"] p,
-    [data-testid="stMarkdownContainer"] span,
-    [data-testid="stMarkdownContainer"] label {
-        color: #1a1a1a;
+    .stApp h1, .stApp h2, .stApp h3,
+    .stApp h4, .stApp h5, .stApp h6 {
+        color: #1a1a1a !important;
+    }
+    .stApp p, .stApp span, .stApp div,
+    .stApp li, .stApp label, .stApp caption {
+        color: #1a1a1a !important;
+    }
+    .stApp a {
+        color: #1a6faf !important;
+    }
+    [data-testid="stSubheader"],
+    [data-testid="stHeading"] {
+        color: #1a1a1a !important;
+    }
+    .stMarkdown h1, .stMarkdown h2,
+    .stMarkdown h3, .stMarkdown p {
+        color: #1a1a1a !important;
     }
     hr {
         border-color: #c0c0c0 !important;
         opacity: 1 !important;
+    }
+    [data-testid="stExpander"] summary,
+    [data-testid="stExpander"] p {
+        color: #1a1a1a !important;
+    }
+    [data-testid="stCaptionContainer"] p {
+        color: #666666 !important;
+    }
+    [data-testid="stMetricLabel"] p,
+    [data-testid="stMetricValue"],
+    [data-testid="stMetricDelta"] {
+        color: #1a1a1a !important;
     }
 </style>
 """, unsafe_allow_html=True)
