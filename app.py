@@ -128,7 +128,7 @@ st.markdown(f"""
 # ══════════════════════════════════════════
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
-    <div style="font-size:22px; font-weight:700;">🌍 COPE Geopolitical Risk Index</div>
+    <div style="font-size:22px; font-weight:700; color:#1a1a1a;">🌍 COPE Geopolitical Risk Index</div>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("Current assessment of key geopolitical risk factors affecting crude oil supply.")
@@ -220,7 +220,7 @@ def load_price_data():
 
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
-    <div style="font-size:22px; font-weight:700;">📈 Crude Oil Price — WTI & Brent</div>
+    <div style="font-size:22px; font-weight:700; color:#1a1a1a;">📈 Crude Oil Price — WTI & Brent</div>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("""
@@ -368,7 +368,7 @@ def assess_signals(articles):
 
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
-    <div style="font-size:22px; font-weight:700;">🎯 War Outlook & Price Scenarios</div>
+    <div style="font-size:22px; font-weight:700; color:#1a1a1a;">🎯 War Outlook & Price Scenarios</div>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("Real-time war trajectory assessment based on latest headlines — and what each scenario means for oil prices.")
@@ -500,7 +500,7 @@ def fetch_policy_news():
 
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
-    <div style="font-size:22px; font-weight:700;">🇺🇸 Trump & White House Policy Tracker</div>
+    <div style="font-size:22px; font-weight:700; color:#1a1a1a;">🇺🇸 Trump & White House Policy Tracker</div>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("How White House policy decisions are affecting crude oil markets — analyst interpretation of each action.")
@@ -625,7 +625,7 @@ st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6fa
 # ══════════════════════════════════════════
 st.markdown("""
 <div style="border-left:4px solid #1a6faf; padding-left:12px; margin:24px 0 8px 0;">
-    <div style="font-size:22px; font-weight:700;">📝 Analyst Notes</div>
+    <div style="font-size:22px; font-weight:700; color:#1a1a1a;">📝 Analyst Notes</div>
 </div>
 """, unsafe_allow_html=True)
 st.markdown(f"*Last updated: {datetime.now().strftime('%B %d, %Y')}*")
