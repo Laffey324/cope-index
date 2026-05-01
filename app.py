@@ -12,6 +12,20 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+    [data-testid="stAppViewContainer"] {
+        background-color: #ffffff;
+    }
+    [data-testid="stHeader"] {
+        background-color: #ffffff;
+    }
+    .stApp {
+        background-color: #ffffff;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 @st.cache_data(ttl=3600)
 def get_current_wti():
     ticker = yf.Ticker("BZ=F")
