@@ -23,6 +23,15 @@ st.markdown("""
     .stApp {
         background-color: #F2F2F7;
     }
+    .stApp, .stApp p, .stApp div, .stApp span, .stApp label {
+        color: #1a1a1a !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #1a1a1a !important;
+    }
+    [data-testid="stMarkdownContainer"] p {
+        color: #1a1a1a !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
