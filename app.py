@@ -18,7 +18,13 @@ st.markdown("""
         background-color: #F2F2F7;
     }
     [data-testid="stHeader"] {
-        background-color: #F2F2F7;
+        background-color: #F2F2F7 !important;
+    }
+    [data-testid="stToolbar"] {
+        background-color: #F2F2F7 !important;
+    }
+    header[data-testid="stHeader"] {
+        background-color: #F2F2F7 !important;
     }
     .stApp {
         background-color: #F2F2F7;
@@ -31,6 +37,10 @@ st.markdown("""
     }
     [data-testid="stMarkdownContainer"] p {
         color: #1a1a1a !important;
+    }
+    hr {
+        border-color: #c0c0c0 !important;
+        opacity: 1 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -174,7 +184,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, rgba(26,111,175,0.1)); margin:32px 0; opacity:1;'></div>", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════
 # 模块二
@@ -255,7 +265,7 @@ try:
 except Exception as e:
     st.error(f"Error: {e}")
 
-st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, rgba(26,111,175,0.1)); margin:32px 0; opacity:1;'></div>", unsafe_allow_html=True)
 
 
 st.markdown("""
@@ -289,7 +299,7 @@ with col4:
         yaxis=dict(gridcolor="rgba(128,128,128,0.15)", range=[48, 53]), margin=dict(t=10, b=10))
     st.plotly_chart(fig_pmi, use_container_width=True)
 
-st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, rgba(26,111,175,0.1)); margin:32px 0; opacity:1;'></div>", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════
 # 模块五
@@ -435,7 +445,7 @@ try:
 except Exception as e:
     st.error(f"Error loading war outlook: {e}")
 
-st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, rgba(26,111,175,0.1)); margin:32px 0; opacity:1;'></div>", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════
 # 模块六
@@ -597,7 +607,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, transparent); margin:32px 0;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:1px; background:linear-gradient(to right, #1a6faf, rgba(26,111,175,0.1)); margin:32px 0; opacity:1;'></div>", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════
 # 模块七：Analyst Notes
