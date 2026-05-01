@@ -15,13 +15,13 @@ st.set_page_config(
 st.markdown("""
 <style>
     [data-testid="stAppViewContainer"] {
-        background-color: #ffffff;
+        background-color: #F2F2F7;
     }
     [data-testid="stHeader"] {
-        background-color: #ffffff;
+        background-color: #F2F2F7;
     }
     .stApp {
-        background-color: #ffffff;
+        background-color: #F2F2F7;
     }
 </style>
 """, unsafe_allow_html=True)
