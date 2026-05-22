@@ -362,10 +362,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🔴 Dual Blockade Stalemate — Iran Offers Hormuz-for-Nuclear-Delay, US Skeptical, Congress Presses War Powers Deadline"
-    war_color = "#ef4444"
-    war_bg = "rgba(239,68,68,0.06)"
-    war_border = "#ef4444"
+    war_signal = "🟡 Deal in Final Stages — Trump: Talks Near End, WTI Falls Below $100, Hormuz Opening Framework Taking Shape"
+    war_color = "#f59e0b"
+    war_bg = "rgba(245,158,11,0.06)"
+    war_border = "#f59e0b"
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
@@ -516,52 +516,52 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
+        "date": "May 20, 2026",
+        "action": "Trump: Iran talks in 'final stages' — WTI falls below $100 to $98.26. Wood Mackenzie: Brent returns to $80 by year-end if deal by June.",
+        "interpretation": "Trump told reporters yesterday that negotiations with Iran are in their 'final stages' — the most optimistic public statement from the White House since the war began. WTI fell more than 5% to $98.26, breaking below $100 for the first time since the ceasefire. Iran's navy issued a statement saying 'with aggressor's threats neutralized and new protocols in place, safe, stable passage through Hormuz will be ensured' — carefully worded but the closest Iran has come to confirming a framework. Wood Mackenzie: if Hormuz deal is reached by June, Brent eases to ~$80 by end of 2026. Saudi Aramco CEO Nasser: 'If Hormuz opens today, it still takes months to rebalance — delay it a few more weeks and normalization goes to 2027.' The June cliff is real.",
+        "impact": "🔻 Bearish",
+        "source_title": "Trump: Iran talks final stages, WTI below $100 — CNBC",
+        "source_url": "https://www.cnbc.com/2026/05/20/oil-price-today-iran-war-strait-hormuz-trump.html"
+    },
+    {
+        "date": "May 12, 2026",
+        "action": "Deal optimism collapses — WTI rebounds to $102, Brent $107. Iran's Expediency Council: US must pay reparations first.",
+        "interpretation": "A report of imminent deal caused oil to plunge 15% to $88 and stocks to hit record highs — then Iran's Expediency Council member Mohsen Rezaei said the US must pay reparations before any agreement. Prices snapped back. Admiral Stavridis: Trump has three options, none good — walk away, resume bombing, or open Hormuz by force. Stavridis called forced reopening 'most likely' but said it requires significant naval resources, ground troops, and costs $1B per week. Hochstein: 'When you fall off the cliff in oil and energy, it's very hard to get back up.' The June deadline is the market's central focus.",
+        "impact": "🔺 Bullish",
+        "source_title": "Deal hope collapses, WTI rebounds — CNBC",
+        "source_url": "https://www.cnbc.com/2026/05/12/oil-prices-today-brent-wti-trump-iran-war-hormuz.html"
+    },
+    {
+        "date": "May 6, 2026",
+        "action": "Rubio signals US has implicitly accepted 'Hormuz first, nuclear later' framework — a fundamental departure from opening war objectives.",
+        "interpretation": "Al Jazeera's diplomatic editor reported that Rubio's briefing represents a 'sharp departure from Washington's initial position.' The US opened the war with four objectives: destroy Iran's ballistic missiles, dismantle its navy, sever proxy support, prevent nuclear weapons. Now Washington appears to have accepted Iran's core demand: end the war and settle Hormuz first, with the nuclear programme to follow in separate talks. The US paused Hormuz escorts after Pakistan-led mediation gained traction. This is the most significant strategic concession of the entire conflict — and the clearest signal that a framework deal is structurally possible.",
+        "impact": "🔻 Bearish",
+        "source_title": "Has US accepted Hormuz-first, nuclear-later? — Al Jazeera",
+        "source_url": "https://www.aljazeera.com/news/2026/5/6/has-the-us-accepted-irans-demand-to-settle-hormuz-first-nuclear-later"
+    },
+    {
         "date": "Apr 30, 2026",
-        "action": "Trump: 'Blockade is incredible, Iran economy crashing' — Congress presses War Powers deadline, Senator Murkowski demands credible plan within one week",
-        "interpretation": "Trump today said the naval blockade is 'working as planned' and Iran wants a deal 'badly,' losing $500M+ per day. He appeared to discount need to resume bombing: 'I don't know that we need it. We might need it.' But congressional pressure is now acute: War Powers 60-day clock may have expired yesterday (April 29) or expires tomorrow (May 1) depending on legal interpretation. Senator Murkowski announced she will introduce authorization measure if no credible White House plan emerges within one week. Hegseth argues ceasefire days don't count toward 60-day total. This legal pressure creates a new timeline forcing Trump to either get congressional authorization, reach a deal, or resume and then quickly end hostilities.",
+        "action": "Trump: 'Blockade is incredible, Iran economy crashing' — War Powers deadline passes, Senator Murkowski demands credible plan",
+        "interpretation": "Trump said Iran is losing $500M+ per day and wants a deal 'badly.' War Powers 60-day clock expired. Senator Murkowski announced authorization measure if no credible White House plan within one week. Hegseth argued ceasefire days don't count toward 60-day total. Congressional pressure created a new timeline forcing Trump's hand — which likely accelerated the shift toward the 'Hormuz first' framework that Rubio confirmed in May.",
         "impact": "🟡 Neutral",
-        "source_title": "Trump blockade working, War Powers deadline — CNN / NPR",
+        "source_title": "War Powers deadline, blockade update — CNN / NPR",
         "source_url": "https://www.cnn.com/2026/04/30/world/live-news/iran-war-news"
     },
     {
-        "date": "Apr 28, 2026",
-        "action": "Iran submits new proposal: open Hormuz immediately, postpone nuclear talks until after war ends — US signals skepticism",
-        "interpretation": "Iran's latest offer through Pakistan: full Hormuz reopening to all traffic in exchange for deferring nuclear discussions to post-war negotiations. Tehran billboard photographed April 28 reads 'The Strait of Hormuz Remains Closed' — signaling domestic political constraints on any deal. US officials express skepticism: unlikely to accept in current form. Core US position remains: nuclear commitment must be part of any deal, not deferred. Iran's red line: nuclear enrichment is non-negotiable sovereign right. Analyst Mortazavi: 'Tehran will not move if US doesn't lift blockade, Washington will not do so if Iran does not open the strait.' Classic standoff — both sides need the other to move first.",
-        "impact": "🟡 Neutral",
-        "source_title": "Iran's Hormuz-for-nuclear-delay proposal — Al Jazeera",
-        "source_url": "https://www.aljazeera.com/news/2026/4/28/whats-in-irans-latest-proposal-and-how-has-the-us-responded"
-    },
-    {
-        "date": "Apr 11-12, 2026",
-        "action": "Vance meets Iran's Ghalibaf in Islamabad — highest-level US-Iran direct talks since 1979. Talks fail on nuclear question.",
-        "interpretation": "Historic moment: first direct senior-level US-Iran engagement since the Islamic Revolution. But the outcome confirmed the unbridgeable gap: Vance demanded Iran commit to never seeking nuclear weapons. Iran refused. US then launched formal naval blockade of Iranian ports on April 13 — any vessel originating from or destined for Iranian ports subject to interdiction. US Navy entered Hormuz for first time since war began. Iran threatened to attack US ships. Both blockades remain in place simultaneously.",
-        "impact": "🔺 Bullish",
-        "source_title": "Vance-Ghalibaf Islamabad talks — Britannica / NPR",
-        "source_url": "https://www.britannica.com/event/2026-Iran-war"
-    },
-    {
         "date": "Apr 22, 2026",
-        "action": "IRGC seizes 3 ships in Hormuz — US extends ceasefire indefinitely pending Iranian 'unified proposal'",
-        "interpretation": "IRGC seized two vessels and disabled a third on the same day Trump extended the ceasefire. Iran FM called US port blockade 'an act of war.' Iran losing $500M/day per Trump. Kharg Island storage approaching capacity — Iranian oil wells risk forced shut-in. Tehran billboard reading 'Hormuz Remains Closed' reflects domestic political reality: Iranian leadership cannot be seen to capitulate on Hormuz without tangible US concessions.",
+        "action": "IRGC seizes 3 ships in Hormuz — ceasefire extended indefinitely, both blockades remain in place",
+        "interpretation": "IRGC seized two vessels and disabled a third. Iran FM called US port blockade 'an act of war.' Both sides engaged in active maritime hostility under nominal ceasefire. Iran losing $500M/day. Kharg Island storage approaching capacity. The economic pressure on Iran that eventually drove the 'Hormuz first' concession was building visibly at this point.",
         "impact": "🔺 Bullish",
-        "source_title": "IRGC seizes ships, ceasefire extended — CNN / Al Jazeera",
+        "source_title": "IRGC seizes ships — CNN / Al Jazeera",
         "source_url": "https://www.cnn.com/2026/04/22/world/live-news/iran-war-us-trump-blockade-ceasefire"
     },
     {
         "date": "Apr 9, 2026",
-        "action": "Oil rebounds +6% to $100 within 24hrs of ceasefire — L-shaped plateau confirmed by market itself",
-        "interpretation": "Oil fell 16% on ceasefire announcement, recovered to $100 in one session. Market discovered IRGC screening unchanged. Commodity Context: even full Hormuz reopening = $10-20 immediate drop, then Brent stabilizes $80-90 due to infrastructure damage, supply chain disruption, SPR refill demand. The $70 world is gone. House of Commons Library confirms: both US and Iran blockades remain in place. Iran FM: 'We intend to devise a new arrangement to ensure secure maritime traffic' — Iranian control of Hormuz is post-war baseline.",
+        "action": "L-shaped plateau confirmed by market: oil fell 16% on ceasefire, recovered to $100 in 24 hours. Brent floor $80-90 even in full resolution.",
+        "interpretation": "The single most important market validation of the structural thesis. Commodity Context: even full Hormuz reopening = $10-20 immediate drop, then Brent stabilizes $80-90. Wood Mackenzie now says $80 by year-end if June deal. Goldman: 'You can't jawbone molecules.' The physical damage — Kharg Island, South Pars, shipping chains, insurance markets — outlasts any political agreement by months. The $70 world is gone.",
         "impact": "🔺 Bullish",
-        "source_title": "Oil rebounds, L-shaped plateau — CNBC / House of Commons Library",
+        "source_title": "L-shaped plateau — CNBC / Commodity Context",
         "source_url": "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html"
-    },
-    {
-        "date": "Apr 7, 2026",
-        "action": "Goldman / IEA / Rystad: physical damage structural — Brent floor $80-90 even in full resolution scenario",
-        "interpretation": "Goldman: largest oil supply disruption in history. IEA: shock exceeds 1973+1979+2022 combined. Rystad: $25B+ infrastructure reconstruction costs. Iranian officials: $270B in direct and indirect damages within Iran — reparations demand is non-negotiable part of any settlement. Ras Laffan LNG export capacity down 17% permanently. South Pars petrochemicals gone. Shipping normalization: 2+ months minimum. The structural damage outlasts any political agreement by months to years.",
-        "impact": "🔺 Bullish",
-        "source_title": "Goldman / IEA / Rystad supply assessment",
-        "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
     },
 ]
 
@@ -686,54 +686,47 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — April 30, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — May 21, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Two months into this war, the situation has settled into
-        a structured stalemate that neither side can easily exit.
-        The US blockades Iranian ports.
-        Iran controls Hormuz and refuses unconditional opening.
-        Both sides are inflicting economic pain.
-        Both sides claim leverage.
-        Neither side has the political room to make the first concession.
+        Three months after the war began, the endgame is finally visible.
+        Trump said talks are in their 'final stages' yesterday.
+        WTI broke below $100 for the first time since the ceasefire.
+        Iran's navy issued its most conciliatory statement yet.
+        The framework taking shape — Hormuz reopens under Iranian coordination,
+        nuclear question deferred to separate post-war negotiations —
+        is exactly the deal Iran demanded on day one
+        and Washington spent three months refusing.
         <br><br>
-        Iran's latest proposal — open Hormuz now,
-        defer nuclear talks until after the war ends —
-        is actually the most pragmatic offer Tehran has made.
-        It separates the immediate economic crisis
-        from the existential strategic question.
-        The problem is that for Washington and Israel,
-        the nuclear question IS the war.
-        Trump went to war to prevent Iran from getting a bomb.
-        Accepting a Hormuz deal that postpones nuclear discussions
-        indefinitely gives Iran time to reconstitute
-        exactly what the war was meant to destroy.
-        The US skepticism is structurally rational,
-        even if the human cost of continued stalemate is severe.
+        Rubio's May 6th briefing confirmed the strategic reality:
+        the US has implicitly accepted 'Hormuz first, nuclear later.'
+        This is not a victory for Washington's stated war objectives.
+        It is a face-saving formula that gives Trump a headline
+        ('Hormuz is open, mission accomplished')
+        while leaving the nuclear question unresolved —
+        which was, nominally, the reason the war started.
+        Netanyahu has already signaled opposition.
+        Whether Israel accepts a framework that leaves Iran's
+        nuclear programme intact is the remaining wildcard.
         <br><br>
-        The War Powers clock adds a new dimension this week.
-        Whether the 60-day deadline was yesterday or tomorrow
-        depends on legal interpretation —
-        but the political pressure is real and immediate.
-        Senator Murkowski's one-week ultimatum to the White House
-        forces Trump to show his hand:
-        is the blockade a pressure tactic toward a deal,
-        or is it open-ended economic warfare with no exit?
-        If Congress moves toward authorization or termination,
-        the diplomatic timeline compresses sharply.
+        For oil markets, the June cliff is the dominant variable.
+        Saudi Aramco's CEO said it plainly:
+        open Hormuz today and normalization still takes months;
+        delay past mid-June and normalization goes to 2027.
+        Wood Mackenzie puts year-end Brent at $80 in the deal scenario —
+        not a crash, not $70, but a meaningful decline from current levels.
+        The L-shaped plateau framework holds even in the resolution scenario:
+        Kharg Island damage, South Pars gone, shipping insurance
+        not normalizing for weeks, SPR refill demand creating a floor.
         <br><br>
-        For oil markets, the structural picture is unchanged.
-        Brent is still 35-40% above pre-war levels
-        after a ceasefire, a naval blockade, three rounds of talks,
-        and two months of diplomacy.
-        The House of Commons Library confirmed this week:
-        neither blockade has been removed.
-        Iran's FM has said explicitly that post-war Hormuz
-        will operate under 'a new arrangement' —
-        meaning Iranian management.
-        The $70 world required a free Hormuz.
-        That Hormuz no longer exists.
-        The floor is $80-90 in the most optimistic scenario,
-        and we are not yet in that scenario.
+        The war will analysis scores are moving.
+        US domestic political pressure has eased slightly —
+        the War Powers crisis didn't materialize into a congressional confrontation,
+        and Trump's 'final stages' framing gives him an exit narrative.
+        Iran's economic bearing capacity has deteriorated further —
+        $500M/day losses for three months, Kharg storage at capacity,
+        oil wells at forced shut-in risk.
+        The deal is coming not because either side won,
+        but because both sides have run out of better options.
     </div>
 </div>
 """, unsafe_allow_html=True)
