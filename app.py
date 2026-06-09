@@ -297,20 +297,20 @@ st.markdown("""
 
 col3, col4 = st.columns([1, 1])
 with col3:
-    st.metric(label="Mar 2026 PMI", value="50.4", delta="+1.4 vs Feb (Back to Expansion)")
+    st.metric(label="May 2026 PMI", value="50.0", delta="-0.3 vs Apr (Demand Softening)")
     st.caption("PMI >50 = expansion. China is the world's largest crude importer.")
     st.markdown("""
     <div style="background:rgba(148,163,184,0.1); border-left:3px solid #94a3b8; border-radius:6px; padding:14px 16px; margin-top:12px;">
         <div style="font-size:14px; color:#555; line-height:1.7;">
-            China PMI rebounded to <strong>50.4 in March</strong> — back above 50 for the first time in months, driven by post-holiday restocking and seasonal production recovery.
+            China PMI slipped to <strong>50.0 in May</strong>, down from 50.3 in April and 50.4 in March. Still technically in expansion but barely — new orders index fell to 49.9, back in contraction territory.
             <br><br>
-            However, energy cost impact is <strong>lagged</strong> — March data largely reflects pre-war orders. The full effect of $100+ oil on Chinese manufacturing costs will appear in April data. Supply shock continues to override demand signals: Brent at $115+.
+            The oil shock is showing up in the data. <strong>Demand is softening</strong> while production output (51.2) holds up — a classic stagflation pattern: supply-side costs elevated, demand-side weakening. Foreign orders also declined. With Brent still ~$91 and the MOU not yet signed, the June and July PMI readings will be the key signal for whether demand destruction is accelerating.
         </div>
     </div>
     """, unsafe_allow_html=True)
 
 with col4:
-    pmis = pd.DataFrame({"month": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"], "pmi": [49.7, 49.3, 49.4, 49.3, 49.0, 50.4]})
+    pmis = pd.DataFrame({"month": ["Dec", "Jan", "Feb", "Mar", "Apr", "May"], "pmi": [49.4, 49.3, 49.0, 50.4, 50.3, 50.0]})
     fig_pmi = go.Figure()
     fig_pmi.add_trace(go.Scatter(x=pmis["month"], y=pmis["pmi"], mode="lines+markers",
         line=dict(color="#2196F3", width=2), marker=dict(size=8)))
