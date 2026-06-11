@@ -125,8 +125,8 @@ st.markdown(f"""
         </div>
         <div style="text-align:center; padding:20px 28px; background:rgba(255,255,255,0.06); border-radius:10px; border:1px solid rgba(255,255,255,0.1);">
             <div style="font-size:11px; color:#b8d4e8; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Hormuz Status</div>
-            <div style="font-size:28px; font-weight:800; color:#f87171;">🟡 PARTIAL</div>
-            <div style="font-size:13px; color:#f87171; margin-top:4px;">24 ships/day vs 100+ pre-war</div>
+            <div style="font-size:28px; font-weight:800; color:#f87171;">� CLOSED</div>
+            <div style="font-size:13px; color:#f87171; margin-top:4px;">2 ships/day vs ~94 pre-war — IRGC enforcing closure</div>
         </div>
     </div>
 </div>
@@ -144,8 +144,8 @@ st.markdown("Current assessment of key geopolitical risk factors affecting crude
 
 risk_factors = {
     "Iran War & Hormuz Risk": {
-        "score": 7, "trend": "↓",
-        "note": "MOU draft agreed — Hormuz partially open at ~24 ships/day vs 100+ pre-war. Trump has not yet signed. IRGC still firing on vessels. Brent $91, down 20% from $115 war peak but still 30% above pre-war."
+        "score": 7, "trend": "→",
+        "note": "Trump cancelled strikes June 11, claims deal 'almost done' — Iran denies approving any text. IRGC attacked 18 US targets in Kuwait/Bahrain same day. Hormuz: 2 ships/day vs ~94 pre-war. Polymarket: normal traffic by June 30 at 6.5%."
     },
     "Middle East Conflict Risk": {
         "score": 7, "trend": "↓",
@@ -358,7 +358,7 @@ def assess_signals(articles):
         hormuz_evidence = articles[:3]
     open_kw = ["fully open", "reopened", "reopen", "ceasefire", "hormuz open", "shipping resumes"]
     open_hits = [a for a in hormuz_evidence if any(k in a["title_lower"] for k in open_kw)]
-    hormuz_status = "🟡 Partial Recovery Signals" if len(open_hits) >= 2 else "🔴 Effectively Closed"
+    hormuz_status = "� CLOSED Recovery Signals" if len(open_hits) >= 2 else "🔴 Effectively Closed"
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
