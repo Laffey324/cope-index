@@ -125,7 +125,7 @@ st.markdown(f"""
         </div>
         <div style="text-align:center; padding:20px 28px; background:rgba(255,255,255,0.06); border-radius:10px; border:1px solid rgba(255,255,255,0.1);">
             <div style="font-size:11px; color:#b8d4e8; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Hormuz Status</div>
-            <div style="font-size:28px; font-weight:800; color:#f87171;">� CLOSED</div>
+            <div style="font-size:28px; font-weight:800; color:#f87171;">● CLOSED</div>
             <div style="font-size:13px; color:#f87171; margin-top:4px;">2 ships/day vs ~94 pre-war — IRGC enforcing closure</div>
         </div>
     </div>
@@ -621,7 +621,7 @@ with col2:
             <br><br>
             All conventional policy tools are exhausted. SPR below legal floor. Iranian sanctions lifted.
             Russian waivers issued. None moved prices durably.
-            The 5-day postponement window expires Saturday — watch for whether Trump executes, extends, or backs down again.
+            Today Trump cancelled strikes planned for tonight and claimed the deal is 'almost done' — his 38th such announcement per CreditSights. Iran denied approving any text. Watch for Iran's official confirmation to the Pakistani mediator — that is the only signal that counts.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -911,5 +911,5 @@ with col1:
 with col2:
     ir_avg = sum(d["score"] for d in iran_dimensions) / len(iran_dimensions)
     st.markdown(f"### 🇮🇷 Iran")
-    st.caption(f"Average score: **{us_avg:.1f} / 10** &nbsp;·&nbsp; {len(us_dimensions)} dimensions &nbsp;·&nbsp; June 11, 2026")
+    st.caption(f"Average score: **{ir_avg:.1f} / 10** &nbsp;·&nbsp; {len(iran_dimensions)} dimensions &nbsp;·&nbsp; June 11, 2026")
     render_war_will(iran_dimensions, "#E24B4A")
