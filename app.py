@@ -362,7 +362,7 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🟡 Trump Cancels Strikes, Claims Deal 'Almost Done' — Iran Denies Approving Any Text, IRGC Still Enforcing Closure, 2 Ships/Day"
+    war_signal = "🟡 C-17s Fly to Europe for Vance Signing Ceremony — Bloomberg: Deal 'Likely' This Weekend in Geneva, Iran FARS: 'Nonsense'"
     war_color = "#f59e0b"
     war_bg = "rgba(245,158,11,0.06)"
     war_border = "#f59e0b"
@@ -516,33 +516,41 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
+        "date": "Jun 12, 2026",
+        "action": "Four US C-17s fly to Europe for Vance signing ceremony. Bloomberg: deal 'likely' this weekend in Geneva. Iran FARS: 'complete nonsense.' Trump: Iranian draft 'has nothing to do with the actual agreement.'",
+        "interpretation": "The most concrete physical signal of the entire war: four US Air Force C-17 transport planes departed to Europe on Thursday carrying equipment for a possible signing ceremony in Geneva — this is logistical preparation, not a tweet. Bloomberg citing G7 officials: 'A senior Iranian official indicated overnight that a deal is likely.' Axios confirmed MOU terms: Hormuz reopens immediately toll-free, returns to prewar volumes within 30 days, US lifts blockade simultaneously, Iran gets 60-day sanctions waivers to sell oil freely, nuclear enrichment moratorium during 60 days. Deal was reached Wednesday night in Tehran between Qatari mediator Al-Thawadi and Iranian FM Araghchi, with multiple phone calls to Witkoff and Kushner. Netanyahu was kept in the dark — has been calling allies to gather information. Simultaneously: Iran's FARS agency said Sunday Geneva signing is 'complete nonsense.' Trump said the Iranian draft published by state media 'has nothing to do with the actual written agreement.' The gap between physical preparation and public denial is the defining feature of this moment.",
+        "impact": "🔻 Bearish",
+        "source_title": "C-17s fly to Europe, MOU terms confirmed — Axios / Bloomberg",
+        "source_url": "https://www.axios.com/2026/06/12/iran-deal-mou-strait-open-sanctions-relief"
+    },
+    {
         "date": "Jun 11, 2026",
-        "action": "Trump cancels tonight's strikes, claims deal 'almost done' and Iran 'approved' framework — Iran denies approving any text. IRGC attacks 18 US targets in Kuwait and Bahrain same day.",
-        "interpretation": "The most dramatic single day of the war. At 8:22am ET Trump threatened 'very heavy' strikes on Iran tonight and said he wants to seize Kharg Island. Five hours later at 1:28pm ET he posted that strikes are cancelled because 'consultations have been submitted to Iran's supreme leadership and approved.' He said the MOU could be signed this weekend in Europe with Vance present, and that Hormuz opens immediately upon signing. Markets reacted instantly: oil fell 3.9%, Nasdaq +3.5%, semiconductors +7.9%, 10-year yields fell 10bp. Then the reversals came: Iran's FARS agency said 'Iran has not approved any agreement text.' Israel said it was 'surprised' by Trump's announcement. Simultaneously, IRGC attacked 18 US military targets across three airbases in Kuwait and Bahrain. Hormuz: 2 ships transited today vs ~94/day pre-war. Polymarket: Hormuz back to normal by June 30 at 6.5% probability. This is reportedly Trump's 38th announcement that a deal is imminent — CreditSights: 'I'm somewhat surprised the market got such a strong boost given how long this has been going on with limited substantive progress.'",
+        "action": "Trump cancels tonight's strikes, claims deal 'almost done' — Iran denies approving any text. IRGC attacks 18 US targets in Kuwait and Bahrain same day.",
+        "interpretation": "At 8:22am ET Trump threatened 'very heavy' strikes. Five hours later cancelled them citing Iran supreme leadership approval. Markets: oil -3.9%, Nasdaq +3.5%, semiconductors +7.9%. Then: Iran FARS said 'Iran has not approved any agreement text.' Israel 'surprised.' IRGC attacked 18 US targets in Kuwait and Bahrain. Hormuz: 2 ships vs ~94/day pre-war. Polymarket June 30 odds: 18%. CreditSights: 'Trump's 38th announcement that a deal is imminent.'",
         "impact": "🟡 Neutral",
-        "source_title": "Trump cancels strikes, claims deal done — Times of Israel / Wall Street CN",
+        "source_title": "Trump cancels strikes — Times of Israel / Wall Street CN",
         "source_url": "https://www.timesofisrael.com/liveblog-june-11-2026/"
     },
     {
         "date": "Jun 6-10, 2026",
         "action": "Trump sends MOU back demanding nuclear timeline + immediate Hormuz handover. Abraham Accords linkage. US-Iran exchange strikes June 10.",
-        "interpretation": "Trump sent the MOU draft back to Iran demanding: specific nuclear commitment timelines, and Hormuz opens immediately upon signing. Also linked deal to Abraham Accords normalization across the region. US Treasury sanctioned Iran's military oil-sales arm. Both sides exchanged strikes June 10 — US hit Iranian radar and drone sites, Iran responded with Gulf missile strikes. Polymarket June 15 odds fell to 9%.",
+        "interpretation": "Trump sent draft back demanding: specific nuclear timelines, immediate Hormuz handover upon signing. Also linked to Abraham Accords normalization. US Treasury sanctioned Iran's military oil-sales arm. Both sides exchanged strikes June 10. Polymarket June 15 odds fell to 9%. Then reversed sharply on June 11-12 with C-17 deployment.",
         "impact": "🔺 Bullish",
-        "source_title": "MOU sent back, Abraham Accords linkage — Soufan Center",
+        "source_title": "MOU sent back — Soufan Center",
         "source_url": "https://thesoufancenter.org/intelbrief-2026-june-1/"
     },
     {
         "date": "May 28, 2026",
         "action": "US-Iran exchange strikes, reach 60-day MOU draft same evening. Brent worst month since COVID: -19% in May.",
-        "interpretation": "MOU terms per Axios: Hormuz opens toll-free at prewar traffic levels, Iran clears mines within 30 days, US lifts blockade, nuclear enrichment moratorium. Hochstein: 'No matter what happens, Iranians will control Hormuz for the foreseeable future.' Brent fell 19% in May on deal optimism — worst month since COVID. UBS: 246 million barrels drawn down March-April, cumulative losses approaching 1 billion barrels.",
+        "interpretation": "MOU terms: Hormuz opens toll-free at prewar traffic levels, Iran clears mines within 30 days, US lifts blockade, nuclear enrichment moratorium. Hochstein: 'Iranians will control Hormuz for the foreseeable future.' Brent fell 19% in May. UBS: 246 million barrels drawn down March-April, cumulative losses approaching 1 billion barrels.",
         "impact": "🟡 Neutral",
-        "source_title": "MOU draft, oil -19% in May — CNBC / Axios",
+        "source_title": "MOU draft — CNBC / Axios",
         "source_url": "https://www.cnbc.com/2026/05/29/oil-prices-iran-ceasefire-us-trump-strait-hormuz-energy-costs.html"
     },
     {
         "date": "May 6, 2026",
-        "action": "Rubio signals US accepted 'Hormuz first, nuclear later' — fundamental departure from original war objectives",
-        "interpretation": "The US quietly abandoned its four original war objectives and accepted Iran's core demand: settle Hormuz first, nuclear programme to follow. This shift created the MOU framework now being finalized. However Trump's June amendments partially walked this back by demanding nuclear timelines be included in the MOU itself — reflecting the core tension that has prevented signing for two weeks.",
+        "action": "Rubio signals US accepted 'Hormuz first, nuclear later' — fundamental departure from war objectives",
+        "interpretation": "The US quietly abandoned its four original war objectives and accepted Iran's core demand: settle Hormuz first, nuclear programme second. This framework underlies the MOU now being finalized. Trump's June amendments partially walked this back by demanding nuclear timelines in the MOU itself — the tension that delayed signing for three weeks.",
         "impact": "🔻 Bearish",
         "source_title": "US accepts Hormuz-first — Al Jazeera",
         "source_url": "https://www.aljazeera.com/news/2026/5/6/has-the-us-accepted-irans-demand-to-settle-hormuz-first-nuclear-later"
@@ -550,20 +558,13 @@ policy_actions = [
     {
         "date": "Apr 9, 2026",
         "action": "L-shaped plateau confirmed: oil -16% on ceasefire, +6% next session. Structural floor $80-90 even in full resolution.",
-        "interpretation": "The key market validation. Even if MOU is signed this weekend, Wood Mackenzie puts Brent at $80 by year-end — not $70, not a crash. Kharg Island damage, South Pars gone, shipping insurance not normalizing for months, SPR refill demand creates structural floor. Polymarket: Hormuz back to normal by June 30 at only 6.5% — market is not pricing a clean reopening. Goldman: 'You can't jawbone molecules.'",
+        "interpretation": "The key market validation. Even with MOU signed and Hormuz fully open, Wood Mackenzie puts Brent at $80 by year-end — not $70. If Geneva signing happens this weekend, expect 10-15% immediate oil drop followed by stabilization at $80-90 structural floor. Goldman: 'You can't jawbone molecules.' The $70 world is permanently gone.",
         "impact": "🔺 Bullish",
         "source_title": "L-shaped plateau — CNBC",
         "source_url": "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html"
     },
-    {
-        "date": "Apr 7, 2026",
-        "action": "Goldman / IEA / Rystad: physical damage structural — Brent floor $80-90 even in full resolution",
-        "interpretation": "Goldman: largest oil supply disruption in history. IEA: shock exceeds 1973+1979+2022 combined. Rystad: $25B+ infrastructure reconstruction costs. Ras Laffan LNG capacity down 17% permanently. South Pars petrochemicals gone. 1,550+ vessels stranded, 22,500 mariners trapped as of May. The structural damage outlasts any political agreement by months to years.",
-        "impact": "🔺 Bullish",
-        "source_title": "Goldman / IEA / Rystad — CNBC",
-        "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
-    },
 ]
+
 col1, col2 = st.columns([3, 2])
 
 with col1:
@@ -686,46 +687,60 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — June 11, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — June 12, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Today was the most dramatic single day of the entire 104-day war.
-        At 8am Trump threatened to seize Kharg Island and bomb Iran tonight.
-        By 1:30pm he had cancelled the strikes and declared the deal almost done.
-        Markets moved violently on both headlines.
-        Oil fell 3.9%. Nasdaq gained 3.5%. Semiconductors surged 7.9%.
+        Four C-17 transport planes flew to Europe yesterday
+        carrying equipment for a possible Vance signing ceremony in Geneva.
+        That is not a tweet. That is not a Truth Social post.
+        That is a physical logistical action with real fuel costs
+        and real crew deployments.
+        Of all the signals in 105 days of this war,
+        this is the most credible one.
         <br><br>
-        But the facts on the ground have not changed.
-        Hormuz had 2 ships transit today versus 94 per day before the war.
-        The IRGC attacked 18 US military targets in Kuwait and Bahrain this morning.
-        Iran's official media said explicitly:
-        'Iran has not approved any agreement text.'
-        Israel said it was surprised by Trump's announcement.
-        Polymarket puts the probability of Hormuz returning to normal
-        by June 30 at 6.5%.
-        CreditSights noted this is reportedly Trump's 38th announcement
-        that a deal is imminent.
+        Bloomberg is reporting that a senior Iranian official
+        told a G7 counterpart overnight that a deal is likely.
+        Axios has confirmed the MOU terms in detail:
+        Hormuz reopens immediately toll-free,
+        prewar volumes restored within 30 days,
+        US blockade lifted simultaneously,
+        Iran gets 60-day sanctions waivers,
+        nuclear enrichment moratorium during the 60-day window.
+        Qatar's Al-Thawadi negotiated the final text with FM Araghchi
+        in Tehran Wednesday night,
+        with multiple calls to Witkoff and Kushner.
+        Netanyahu was kept in the dark.
         <br><br>
-        The weekend signing is possible. It is not confirmed.
-        The pattern of this war has been consistent:
-        Trump announces, Iran denies, both sides keep fighting,
-        the market overreacts in both directions.
-        The correct response to today is not to price in a resolution —
-        it is to note that the diplomatic pressure is at its highest point
-        and that a deal, if it comes, will produce an immediate 10-15% oil drop
-        followed by a structural floor well above pre-war levels.
+        Yet Iran's FARS agency still says Sunday's Geneva signing
+        is 'complete nonsense.'
+        Trump says the Iranian draft published online
+        has nothing to do with the actual written agreement.
+        Both things can be true simultaneously:
+        the deal framework is real,
+        and neither side wants to be seen as the one
+        who publicly conceded first.
+        The denial is political cover, not a negotiating collapse.
         <br><br>
-        Wood Mackenzie: $80 Brent by year-end if deal by June.
-        Goldman: 'You can't jawbone molecules.'
-        Hochstein: 'Iranians will control Hormuz for the foreseeable future,
-        it doesn't even matter what the deal says.'
+        If the MOU is signed this weekend,
+        the immediate oil market reaction will be sharp:
+        10-15% drop on the announcement,
+        similar to the April 7 ceasefire reaction.
+        Then the structural floor argument takes over.
+        Wood Mackenzie: $80 Brent by year-end.
+        Kharg Island damage, South Pars gone,
+        shipping insurance not normalizing for months,
+        SPR refill demand as governments become
+        price-insensitive buyers.
+        Hochstein: Iranians will control Hormuz
+        for the foreseeable future regardless of what the deal says.
         The $70 world required a free Hormuz.
-        That Hormuz is gone regardless of what happens this weekend.
-        The floor has permanently moved.
-        Watch for Iran's official confirmation to the Pakistani mediator —
-        that is the signal that today's announcement is real.
+        That Hormuz is gone.
+        The floor is $80. That is the best case.
+        And this weekend, we may finally find out
+        if the best case is actually arriving.
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 st.markdown("---")
 st.subheader("⚖️ War Will Analysis — Evidence-Based Scoring")
 st.caption("Each score is derived from cited evidence, not editorial opinion. Click any dimension to see the reasoning.")
@@ -905,11 +920,11 @@ col1, col2 = st.columns(2)
 with col1:
     us_avg = sum(d["score"] for d in us_dimensions) / len(us_dimensions)
     st.markdown(f"### 🇺🇸 United States")
-    st.caption(f"Average score: **{us_avg:.1f} / 10** &nbsp;·&nbsp; {len(us_dimensions)} dimensions &nbsp;·&nbsp; June 11, 2026")
+    st.caption(f"Average score: **{us_avg:.1f} / 10** &nbsp;·&nbsp; {len(us_dimensions)} dimensions &nbsp;·&nbsp; June 12, 2026")
     render_war_will(us_dimensions, "#378ADD")
 
 with col2:
     ir_avg = sum(d["score"] for d in iran_dimensions) / len(iran_dimensions)
     st.markdown(f"### 🇮🇷 Iran")
-    st.caption(f"Average score: **{ir_avg:.1f} / 10** &nbsp;·&nbsp; {len(iran_dimensions)} dimensions &nbsp;·&nbsp; June 11, 2026")
+    st.caption(f"Average score: **{ir_avg:.1f} / 10** &nbsp;·&nbsp; {len(iran_dimensions)} dimensions &nbsp;·&nbsp; June 12, 2026")
     render_war_will(iran_dimensions, "#E24B4A")
