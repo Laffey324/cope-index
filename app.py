@@ -85,7 +85,7 @@ except:
     wti_chg_str = ""
     wti_color = "#888"
 
-total_score = round((7 + 7 + 6 + 6) / 4, 1)
+total_score = round((5 + 5 + 6 + 4) / 4, 1)
 risk_label = "CRITICAL" if total_score >= 8 else "ELEVATED" if total_score >= 6 else "MODERATE"
 risk_color = "#f87171" if total_score >= 8 else "#fbbf24" if total_score >= 6 else "#4ade80"
 
@@ -125,8 +125,8 @@ st.markdown(f"""
         </div>
         <div style="text-align:center; padding:20px 28px; background:rgba(255,255,255,0.06); border-radius:10px; border:1px solid rgba(255,255,255,0.1);">
             <div style="font-size:11px; color:#b8d4e8; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Hormuz Status</div>
-            <div style="font-size:28px; font-weight:800; color:#f87171;">● CLOSED</div>
-            <div style="font-size:13px; color:#f87171; margin-top:4px;">2 ships/day vs ~94 pre-war — IRGC enforcing closure</div>
+            <div style="font-size:28px; font-weight:800; color:#22c55e;">● REOPENING</div>
+            <div style="font-size:13px; color:#22c55e; margin-top:4px;">MOU signed Jun 19 — 300 tankers clearing backlog</div>
         </div>
     </div>
 </div>
@@ -144,20 +144,20 @@ st.markdown("Current assessment of key geopolitical risk factors affecting crude
 
 risk_factors = {
     "Iran War & Hormuz Risk": {
-        "score": 7, "trend": "→",
-        "note": "Trump cancelled strikes June 11, claims deal 'almost done' — Iran denies approving any text. IRGC attacked 18 US targets in Kuwait/Bahrain same day. Hormuz: 2 ships/day vs ~94 pre-war. Polymarket: normal traffic by June 30 at 6.5%."
+        "score": 5, "trend": "↓",
+        "note": "MOU signed June 19 in Geneva — war ends, Hormuz reopening. Brent -5% to $83, WTI -5.5% to $80. Key unresolved: Iran says toll-free only for 60 days, then fees apply. Vance says 'permanently free.' L-shaped floor confirmed by futures: Feb 2027 Brent still ~$80."
     },
     "Middle East Conflict Risk": {
-        "score": 7, "trend": "↓",
-        "note": "Ceasefire holding nominally — Israel-Lebanon war continues, Houthis active. Both sides trading strikes while negotiating MOU. Risk of full re-escalation if Trump refuses to sign."
+        "score": 5, "trend": "↓",
+        "note": "MOU includes cessation of hostilities in Lebanon. Israel's role in 60-day nuclear talks TBD. Houthis ceasefire status unclear. Lebanon rebuilding begins. 1.2 million displaced."
     },
     "Russia Supply Disruption": {
-        "score": 6, "trend": "↓",
-        "note": "Ukraine drone strikes on Russian energy infrastructure ongoing but market attention fully dominated by Hormuz situation. Russia shadow fleet continuing to operate."
+        "score": 6, "trend": "→",
+        "note": "Ukraine drone strikes on Russian energy infrastructure ongoing. Russia shadow fleet continuing to operate. Market attention shifting back to Russia risk as Iran war ends."
     },
     "US Energy Policy Uncertainty": {
-        "score": 6, "trend": "↑",
-        "note": "MOU awaiting Trump signature — single biggest policy decision remaining. Bessent: oil could 'come down very quickly' once deal signed. Hochstein: Iranians will control Hormuz regardless of what deal says."
+        "score": 4, "trend": "↓",
+        "note": "MOU signed — primary uncertainty resolved. SPR refill demand now becomes the key structural floor driver. $300B Iran reconstruction program (Bloomberg) could reshape regional energy investment for years."
     },
 }
 
@@ -362,10 +362,10 @@ def assess_signals(articles):
     hormuz_color = "#f59e0b" if len(open_hits) >= 2 else "#ef4444"
 
     # ── 手动更新 — 每天根据新闻判断修改下面四行
-    war_signal = "🟡 C-17s Fly to Europe for Vance Signing Ceremony — Bloomberg: Deal 'Likely' This Weekend in Geneva, Iran FARS: 'Nonsense'"
-    war_color = "#f59e0b"
-    war_bg = "rgba(245,158,11,0.06)"
-    war_border = "#f59e0b"
+    war_signal = "🟢 MOU Signed June 19 Geneva — War Ends, Hormuz Reopening, 60-Day Nuclear Talks Begin, WTI -5.5% to $80"
+    war_color = "#22c55e"
+    war_bg = "rgba(34,197,94,0.06)"
+    war_border = "#22c55e"
 
     escalation_kw = ["escalat", "attack", "strike", "bomb", "missile", "expand", "retaliat"]
     deescalation_kw = ["ceasefire", "negotiat", "peace", "diplomac", "deal", "truce", "talk"]
@@ -516,52 +516,52 @@ st.markdown("How White House policy decisions are affecting crude oil markets �
 
 policy_actions = [
     {
-        "date": "Jun 12, 2026",
-        "action": "Four US C-17s fly to Europe for Vance signing ceremony. Bloomberg: deal 'likely' this weekend in Geneva. Iran FARS: 'complete nonsense.' Trump: Iranian draft 'has nothing to do with the actual agreement.'",
-        "interpretation": "The most concrete physical signal of the entire war: four US Air Force C-17 transport planes departed to Europe on Thursday carrying equipment for a possible signing ceremony in Geneva — this is logistical preparation, not a tweet. Bloomberg citing G7 officials: 'A senior Iranian official indicated overnight that a deal is likely.' Axios confirmed MOU terms: Hormuz reopens immediately toll-free, returns to prewar volumes within 30 days, US lifts blockade simultaneously, Iran gets 60-day sanctions waivers to sell oil freely, nuclear enrichment moratorium during 60 days. Deal was reached Wednesday night in Tehran between Qatari mediator Al-Thawadi and Iranian FM Araghchi, with multiple phone calls to Witkoff and Kushner. Netanyahu was kept in the dark — has been calling allies to gather information. Simultaneously: Iran's FARS agency said Sunday Geneva signing is 'complete nonsense.' Trump said the Iranian draft published by state media 'has nothing to do with the actual written agreement.' The gap between physical preparation and public denial is the defining feature of this moment.",
+        "date": "Jun 15-19, 2026",
+        "action": "MOU signed June 19 in Geneva — war ends after 116 days. Hormuz reopens. 60-day nuclear talks begin. WTI -5.5% to $80, Brent -5% to $83.",
+        "interpretation": "The war that began February 28 formally ends June 19 with MOU signing in Geneva. Core terms confirmed: immediate cessation of all hostilities including Lebanon, Hormuz reopens to prewar traffic levels, US reduces Middle East military footprint, Iran gets sanctions relief and frozen asset releases ($25B per Reuters), 60-day clock begins for nuclear negotiations. First major energy vessel — LNG tanker 'Disha' — transited Hormuz on June 15, first since the war began. ~300 loaded tankers clearing the Persian Gulf backlog. Critical unresolved tension: Vance says Hormuz will be 'permanently free,' Iran says only 60 days toll-free, then fees for security, navigation, environmental services. This is exactly the toll-booth system IRGC built in March — it has been legitimized, not eliminated. Market verdict: WTI fell 5.5% to $80 but Brent Feb 2027 futures held at $80 — L-shaped plateau confirmed. The $70 world that required a free Hormuz is gone. The new floor is $80.",
         "impact": "🔻 Bearish",
-        "source_title": "C-17s fly to Europe, MOU terms confirmed — Axios / Bloomberg",
-        "source_url": "https://www.axios.com/2026/06/12/iran-deal-mou-strait-open-sanctions-relief"
+        "source_title": "MOU signed June 19, Hormuz reopens — CNN / NBC / Britannica",
+        "source_url": "https://www.cnn.com/2026/06/14/world/live-news/iran-war-trump-israel"
+    },
+    {
+        "date": "Jun 12-14, 2026",
+        "action": "Four C-17s fly to Europe. Pakistan confirms Geneva signing June 19. Both US and Iran publicly confirm deal. MOU text: $300B reconstruction program, nuclear NPT reaffirmation, Lebanon ceasefire.",
+        "interpretation": "The physical logistical preparation — four C-17 transport planes to Europe — was the most credible signal before the deal. Pakistan PM Shehbaz confirmed Geneva as venue. Bloomberg reported MOU includes $300B minimum US/regional partner reconstruction funding for Iran if final deal reached. Iran reaffirmed NPT commitment — nuclear weapons prohibition — as part of MOU, with full nuclear talks in 60-day window. Fortune: Iran and US have differing versions of the text — Iran's version includes $25B frozen asset release, Bloomberg version does not. These discrepancies will be negotiated in the 60-day window.",
+        "impact": "🔻 Bearish",
+        "source_title": "C-17s, Geneva confirmed, MOU terms — Bloomberg / Fortune / CNN",
+        "source_url": "https://fortune.com/2026/06/14/iran-ceasefire-terms-mou-versions-us-deal-sanctions-hormuz-blockade-nuclear-program-frozen-assets/"
     },
     {
         "date": "Jun 11, 2026",
-        "action": "Trump cancels tonight's strikes, claims deal 'almost done' — Iran denies approving any text. IRGC attacks 18 US targets in Kuwait and Bahrain same day.",
-        "interpretation": "At 8:22am ET Trump threatened 'very heavy' strikes. Five hours later cancelled them citing Iran supreme leadership approval. Markets: oil -3.9%, Nasdaq +3.5%, semiconductors +7.9%. Then: Iran FARS said 'Iran has not approved any agreement text.' Israel 'surprised.' IRGC attacked 18 US targets in Kuwait and Bahrain. Hormuz: 2 ships vs ~94/day pre-war. Polymarket June 30 odds: 18%. CreditSights: 'Trump's 38th announcement that a deal is imminent.'",
+        "action": "Trump cancels strikes, claims deal 'almost done' — Iran denies. IRGC attacks 18 US targets in Kuwait and Bahrain same day. Trump's 38th deal announcement.",
+        "interpretation": "The most dramatic day of the war: threats at 8am, cancellation at 1:30pm, markets -3.9% oil, +3.5% Nasdaq. Iran denied approving any text. IRGC attacked 18 US targets. But this was the inflection point — four days later the deal was announced. CreditSights called it Trump's '38th announcement.' This time it was real.",
         "impact": "🟡 Neutral",
-        "source_title": "Trump cancels strikes — Times of Israel / Wall Street CN",
+        "source_title": "Trump cancels strikes — Times of Israel",
         "source_url": "https://www.timesofisrael.com/liveblog-june-11-2026/"
     },
     {
-        "date": "Jun 6-10, 2026",
-        "action": "Trump sends MOU back demanding nuclear timeline + immediate Hormuz handover. Abraham Accords linkage. US-Iran exchange strikes June 10.",
-        "interpretation": "Trump sent draft back demanding: specific nuclear timelines, immediate Hormuz handover upon signing. Also linked to Abraham Accords normalization. US Treasury sanctioned Iran's military oil-sales arm. Both sides exchanged strikes June 10. Polymarket June 15 odds fell to 9%. Then reversed sharply on June 11-12 with C-17 deployment.",
-        "impact": "🔺 Bullish",
-        "source_title": "MOU sent back — Soufan Center",
-        "source_url": "https://thesoufancenter.org/intelbrief-2026-june-1/"
-    },
-    {
-        "date": "May 28, 2026",
-        "action": "US-Iran exchange strikes, reach 60-day MOU draft same evening. Brent worst month since COVID: -19% in May.",
-        "interpretation": "MOU terms: Hormuz opens toll-free at prewar traffic levels, Iran clears mines within 30 days, US lifts blockade, nuclear enrichment moratorium. Hochstein: 'Iranians will control Hormuz for the foreseeable future.' Brent fell 19% in May. UBS: 246 million barrels drawn down March-April, cumulative losses approaching 1 billion barrels.",
-        "impact": "🟡 Neutral",
-        "source_title": "MOU draft — CNBC / Axios",
-        "source_url": "https://www.cnbc.com/2026/05/29/oil-prices-iran-ceasefire-us-trump-strait-hormuz-energy-costs.html"
-    },
-    {
-        "date": "May 6, 2026",
-        "action": "Rubio signals US accepted 'Hormuz first, nuclear later' — fundamental departure from war objectives",
-        "interpretation": "The US quietly abandoned its four original war objectives and accepted Iran's core demand: settle Hormuz first, nuclear programme second. This framework underlies the MOU now being finalized. Trump's June amendments partially walked this back by demanding nuclear timelines in the MOU itself — the tension that delayed signing for three weeks.",
-        "impact": "🔻 Bearish",
-        "source_title": "US accepts Hormuz-first — Al Jazeera",
-        "source_url": "https://www.aljazeera.com/news/2026/5/6/has-the-us-accepted-irans-demand-to-settle-hormuz-first-nuclear-later"
-    },
-    {
         "date": "Apr 9, 2026",
-        "action": "L-shaped plateau confirmed: oil -16% on ceasefire, +6% next session. Structural floor $80-90 even in full resolution.",
-        "interpretation": "The key market validation. Even with MOU signed and Hormuz fully open, Wood Mackenzie puts Brent at $80 by year-end — not $70. If Geneva signing happens this weekend, expect 10-15% immediate oil drop followed by stabilization at $80-90 structural floor. Goldman: 'You can't jawbone molecules.' The $70 world is permanently gone.",
+        "action": "L-shaped plateau confirmed by market: oil -16% on ceasefire, +6% next session. Now validated again: WTI $80 on MOU, Feb 2027 futures also $80.",
+        "interpretation": "The thesis established April 9 is now definitively confirmed. Oil fell 5.5% on the MOU announcement — but Brent Feb 2027 futures held at $80. The market is not pricing a return to $70. Structural reasons unchanged: Kharg Island damage, South Pars gone, shipping insurance normalization weeks to months, 300 tankers clearing backlog, SPR refill demand, Iran toll system legitimized. Goldman was right: 'You can't jawbone molecules.' The $70 world required a free Hormuz. That Hormuz never came back.",
         "impact": "🔺 Bullish",
-        "source_title": "L-shaped plateau — CNBC",
-        "source_url": "https://www.cnbc.com/2026/04/09/oil-prices-today-wti-brent-iran-accuse-us-of-ceasefire-breach.html"
+        "source_title": "L-shaped plateau — NBC / CNBC",
+        "source_url": "https://www.nbcnews.com/business/markets/oil-prices-iran-deal-hormuz-doubts-rcna350087"
+    },
+    {
+        "date": "Feb 28 — Jun 19, 2026",
+        "action": "116-day war summary: Brent $70 → $115 peak → $83 on MOU. Largest oil supply shock in history. 300+ tankers stranded. $25B+ infrastructure damage. 1B barrels cumulative production loss.",
+        "interpretation": "The full arc: US-Israel struck Iran February 28. Hormuz closed to 2 ships/day vs 94 prewar. Brent peaked at $115 (+60%). IEA called it the largest supply shock in history, exceeding 1973+1979+2022 combined. Four ceasefire attempts, 38 Trump deal announcements, one naval blockade, two sides exchanging strikes while negotiating. Final outcome: Iran retains de facto Hormuz management, nuclear program deferred 60 days, $300B reconstruction commitment, sanctions relief. Neither side won. Oil at $83 — 18% below peak, 18% above prewar. The L-shaped floor is the verdict.",
+        "impact": "🟡 Neutral",
+        "source_title": "116-day war — Britannica / IEA",
+        "source_url": "https://www.britannica.com/event/2026-Iran-war"
+    },
+    {
+        "date": "Mar-Apr 2026",
+        "action": "Goldman / IEA / Rystad structural damage assessment — validated by $80 Brent floor post-MOU",
+        "interpretation": "Goldman called it the largest oil supply shock in history. IEA: exceeded 1973+1979+2022 combined. Rystad: $25B+ infrastructure reconstruction costs. All three were right. The $80 Brent floor on MOU day validates every structural argument: you cannot jawbone molecules back into existence. The war is over. The structural damage is not.",
+        "impact": "🔺 Bullish",
+        "source_title": "Goldman / IEA / Rystad — validated",
+        "source_url": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html"
     },
 ]
 
@@ -644,7 +644,7 @@ st.markdown("""
     <div style="font-size:20px; font-weight:800; color:#1a1a1a; margin-bottom:4px;">MARKET THESIS</div>
     <div style="font-size:13px; color:#999; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px;">Core Thesis</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-         Brent is at $91 today — down 20% from the $115 war peak, but still 30% above pre-war levels.
+         The war ended June 19 with MOU signing in Geneva. Brent fell to $83 on the announcement — down 28% from the $115 war peak, but still 18% above pre-war levels. The market has validated the L-shaped plateau thesis: Feb 2027 Brent futures settled at $80 on deal day. The structural damage — Kharg Island, South Pars, shipping insurance, SPR refill demand, Iran's legitimized Hormuz management — outlasts the political agreement by years. The $70 world required a free Hormuz. That Hormuz is gone permanently. The new floor is $80.
         The market is pricing a deal that has not yet been signed.
         A 60-day MOU draft is done: Hormuz reopens toll-free, Iran clears mines, US lifts blockade, nuclear enrichment moratorium.
         Trump has not signed. Both sides are still trading strikes while negotiating.
@@ -687,56 +687,52 @@ with col2:
 
 st.markdown("""
 <div style="background:rgba(26,111,175,0.1); border-left:4px solid #1a6faf; border-radius:6px; padding:18px 20px; margin-top:16px;">
-    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — June 12, 2026</div>
+    <div style="font-size:16px; font-weight:800; color:#1a1a1a; margin-bottom:10px;">Analyst View — June 15, 2026</div>
     <div style="font-size:15px; color:#444; line-height:1.8;">
-        Four C-17 transport planes flew to Europe yesterday
-        carrying equipment for a possible Vance signing ceremony in Geneva.
-        That is not a tweet. That is not a Truth Social post.
-        That is a physical logistical action with real fuel costs
-        and real crew deployments.
-        Of all the signals in 105 days of this war,
-        this is the most credible one.
+        The war is over. The MOU was announced June 14,
+        confirmed by both sides, and will be signed June 19 in Geneva.
+        116 days after it began on February 28,
+        the US-Israel-Iran conflict ends with a negotiated framework
+        that neither side will describe as a defeat.
         <br><br>
-        Bloomberg is reporting that a senior Iranian official
-        told a G7 counterpart overnight that a deal is likely.
-        Axios has confirmed the MOU terms in detail:
-        Hormuz reopens immediately toll-free,
-        prewar volumes restored within 30 days,
-        US blockade lifted simultaneously,
-        Iran gets 60-day sanctions waivers,
-        nuclear enrichment moratorium during the 60-day window.
-        Qatar's Al-Thawadi negotiated the final text with FM Araghchi
-        in Tehran Wednesday night,
-        with multiple calls to Witkoff and Kushner.
-        Netanyahu was kept in the dark.
+        The oil market delivered its verdict this morning:
+        WTI fell 5.5% to $80. Brent fell 5% to $83.
+        Then Brent February 2027 futures settled at $80.
+        That number — $80 — is the L-shaped plateau
+        this dashboard has argued for since April 9.
+        The market tried to price a V-shape on April 7 when the ceasefire was announced.
+        It recovered within 24 hours.
+        Today it is pricing an L-shape.
+        The $70 world that required a free Hormuz is gone.
+        The new floor is $80, and the market agrees.
         <br><br>
-        Yet Iran's FARS agency still says Sunday's Geneva signing
-        is 'complete nonsense.'
-        Trump says the Iranian draft published online
-        has nothing to do with the actual written agreement.
-        Both things can be true simultaneously:
-        the deal framework is real,
-        and neither side wants to be seen as the one
-        who publicly conceded first.
-        The denial is political cover, not a negotiating collapse.
+        The most important unresolved issue is the one
+        that will determine whether $80 holds or drifts lower:
+        the Hormuz toll question.
+        Vance said this morning the strait will be
+        'permanently free and open.'
+        Iran said the 60-day toll-free period ends,
+        then fees apply for security, navigation,
+        environmental protection, and insurance.
+        These two statements cannot both be true.
+        This is the same toll-booth system IRGC built in March —
+        it has not been eliminated, it has been legitimized.
+        Hochstein said it in May and it remains true:
+        Iranians will control Hormuz for the foreseeable future
+        regardless of what any document says.
         <br><br>
-        If the MOU is signed this weekend,
-        the immediate oil market reaction will be sharp:
-        10-15% drop on the announcement,
-        similar to the April 7 ceasefire reaction.
-        Then the structural floor argument takes over.
-        Wood Mackenzie: $80 Brent by year-end.
-        Kharg Island damage, South Pars gone,
-        shipping insurance not normalizing for months,
-        SPR refill demand as governments become
-        price-insensitive buyers.
-        Hochstein: Iranians will control Hormuz
-        for the foreseeable future regardless of what the deal says.
-        The $70 world required a free Hormuz.
-        That Hormuz is gone.
-        The floor is $80. That is the best case.
-        And this weekend, we may finally find out
-        if the best case is actually arriving.
+        The structural damage argument is now complete.
+        300 tankers are clearing the Persian Gulf backlog today.
+        Shipping insurance will not normalize for weeks.
+        Kharg Island damage requires months of repair.
+        South Pars petrochemical capacity is permanently reduced.
+        SPR refill demand will create a structural price floor
+        as governments become price-insensitive buyers
+        through 2027.
+        The war lasted 116 days.
+        The physical consequences will last years.
+        Goldman was right from the beginning:
+        you cannot jawbone molecules.
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -920,11 +916,11 @@ col1, col2 = st.columns(2)
 with col1:
     us_avg = sum(d["score"] for d in us_dimensions) / len(us_dimensions)
     st.markdown(f"### 🇺🇸 United States")
-    st.caption(f"Average score: **{us_avg:.1f} / 10** &nbsp;·&nbsp; {len(us_dimensions)} dimensions &nbsp;·&nbsp; June 12, 2026")
+    st.caption(f"Average score: **{us_avg:.1f} / 10** &nbsp;·&nbsp; {len(us_dimensions)} dimensions &nbsp;·&nbsp; June 15, 2026")
     render_war_will(us_dimensions, "#378ADD")
 
 with col2:
     ir_avg = sum(d["score"] for d in iran_dimensions) / len(iran_dimensions)
     st.markdown(f"### 🇮🇷 Iran")
-    st.caption(f"Average score: **{ir_avg:.1f} / 10** &nbsp;·&nbsp; {len(iran_dimensions)} dimensions &nbsp;·&nbsp; June 12, 2026")
+    st.caption(f"Average score: **{ir_avg:.1f} / 10** &nbsp;·&nbsp; {len(iran_dimensions)} dimensions &nbsp;·&nbsp; June 15, 2026")
     render_war_will(iran_dimensions, "#E24B4A")
